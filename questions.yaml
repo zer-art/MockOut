@@ -7,7 +7,7 @@ logical_reasoning:
   - '10'
   - '4'
   - '27'
-  answer: ''
+  answer: '10'
 - question: 'Find the next two terms of the series:
 
     A, C, F, J, ?, ?  (A). O  (B). U  (C). R  (D). V'
@@ -16,14 +16,14 @@ logical_reasoning:
   - (B) and (A) respectively
   - (C) and (D) respectively
   - (D) and (C) respectively
-  answer: ''
+  answer: '(A) and (B) respectively'
 - question: 'Door is related to bang in the same way as chain is related to:'
   options:
   - Thunder
   - Clinch
   - Tinkle
   - Clank
-  answer: ''
+  answer: Clank
 - question: In a certain code, VISHWANATHAN is written as NAAWTHHSANIV. How is KARUNAKARANA
     written in that code?
   options:
@@ -31,7 +31,7 @@ logical_reasoning:
   - AKNUARRANKA
   - NKKRANKRAUK
   - RURNKAAUNAK
-  answer: ''
+  answer: AKNUARRANKA
 - question: From the given sets, which is an infinite set?
   options:
   - '{x:x∈N and (x-1)(x-2)=0}'
@@ -39,14 +39,19 @@ logical_reasoning:
   - '{x:x∈N and x is odd}'
   - '{x:x∈N and x < 100}'
   answer: '{x:x∈N and x is odd}'
-- question: 'Identify the missing number (?) from the following figure:  | 72 | 24
-    | 6 | | :--- | :--- | :--- | | 96 | 16 | 12 | | 108 | ? | 18 |'
+- question: |
+    Identify the missing number (?) from the following figure:
+
+    | 72 | 24 | 6 |
+    | :--- | :--- | :--- |
+    | 96 | 16 | 12 |
+    | 108 | ? | 18 |
   options:
   - '12'
   - '16'
   - '18'
   - '20'
-  answer: ''
+  answer: '12'
 - question: Introducing a man to her husband, a woman said, "His brother's father
     is the only son of my grandfather." How is the woman related to this man?
   options:
@@ -54,7 +59,7 @@ logical_reasoning:
   - Aunt
   - Sister
   - Daughter
-  answer: ''
+  answer: Sister
 - question: 'Find missing word (?) which is similar to the given words.
 
     Sitar: Guitar: Tanpura: ?'
@@ -63,7 +68,7 @@ logical_reasoning:
   - Violin
   - Harmonium
   - Mridanga
-  answer: ''
+  answer: Violin
 - question: 'Match List-I (Letter number series) with List-II (Missing term):
 
 
@@ -82,7 +87,7 @@ logical_reasoning:
   - (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
   - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
   - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
-  answer: ''
+  answer: (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
 - question: 'Choose the missing term (?) of the following series.
 
     2, 7, 27, 107, 427, ?'
@@ -91,7 +96,7 @@ logical_reasoning:
   - '1707'
   - '4027'
   - '4407'
-  answer: ''
+  answer: '1707'
 - question: In an examination, a student scores 4 marks for every correct answer and
     loses 1 mark for every wrong answer. If she/he attempts all 60 questions and secures
     130 marks, the number of questions she/he attempts wrongly, are?
@@ -100,7 +105,7 @@ logical_reasoning:
   - '22'
   - '21'
   - '37'
-  answer: ''
+  answer: '22'
 - question: 'Choose the correct option to replace the ''?'':
 
     Milk: Emulsion :: Butter:?'
@@ -109,7 +114,7 @@ logical_reasoning:
   - Suspension
   - Sol
   - Gel
-  answer: ''
+  answer: Gel
 - question: 'Consider the following four words, out of which three are alike in some
     manner and one is different: (A) Arrow, (B) Missile, (C) Sword, (D) Bullet. Choose
     the combination that has alike words.'
@@ -118,7 +123,7 @@ logical_reasoning:
   - (B), (C) and (D) only
   - (A), (B) and (C) only
   - (A), (C) and (D) only
-  answer: ''
+  answer: (A), (B) and (D) only
 - question: 'Consider the following alphabet series: ABCDEFGHIJKLMNOPQRSTUVWXYZ. If
     the second half of the given alphabet series is written in reverse order, which
     letter will be seventh to the right of the twelfth letter from the left end?'
@@ -127,7 +132,7 @@ logical_reasoning:
   - S
   - U
   - T
-  answer: ''
+  answer: U
 - question: Which figure comes next in the given series below?  (The document displays
     a sequence involving binary-like digits '0' and '1' in grids labeled A, B, C,
     D)
@@ -138,37 +143,13 @@ logical_reasoning:
   - '0'
   answer: ''
 math:
-- question: 'If
-
-    9!
-
-    1
-
-    ​
-
-    +
-
-    10!
-
-    1
-
-    ​
-
-    =
-
-    11!
-
-    x
-
-    ​
-
-    , then the value of x is:'
+- question: 'If 1/9! + 1/10! = x/11!, then the value of x is:'
   options:
   - '121'
   - '120'
   - '12'
   - '24'
-  answer: ''
+  answer: '121'
 - question: 'Match List-I with List-II:
 
 
@@ -189,7 +170,7 @@ math:
   - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
   - (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
   - (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
-  answer: ''
+  answer: (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
 - question: Out of 5 consonants and 4 vowels, how many words of 3 consonants and 3
     vowels can be made?
   options:
@@ -197,18 +178,18 @@ math:
   - '80'
   - '20'
   - '240'
-  answer: ''
+  answer: '40'
 - question: 'From the given sets, which is an infinite set?
 
     {x:x∈N and (x−1)(x−2)=0}
 
     {x:x∈N and x is prime number and less than 199}'
   options:
-  - '{x:x∈N and x'
-  - '5'
-  - −1=0}
+  - '{x:x∈N and (x-1)(x-2)=0}'
+  - '{x:x∈N and x is prime}'
   - '{x:x∈N and x is odd}'
-  answer: ''
+  - '{x:x∈N and x < 100}'
+  answer: '{x:x∈N and x is odd}'
 - question: 'A fair coin is tossed three times. Let A be the event of getting exactly
     two heads and B be the event of getting at most two tails, then P(A∪B) is:'
   options:
@@ -216,459 +197,118 @@ math:
   - 3/8
   - 1/8
   - 7/8
-  answer: ''
-- question: 'Match List-I with List-II:
+  answer: 7/8
+- question: |
+    Match List-I with List-II:
 
-
-    - (A) If ∣
-
-    λ−1
-
-    0
-
-    ​
-
-    0
-
-    λ−1
-
-    ​
-
-    ∣=0, then λ is — (II) 1
-
-
-    - (B) If Δ=∣
-
-    1
-
-    2
-
-    ​
-
-    2
-
-    4
-
-    ​
-
-    ∣, then Δ is — (I) 0
-
-
-    - (C) If A=[
-
-    1
-
-    0
-
-    ​
-
-    0
-
-    1/2
-
-    ​
-
-    ], then ∣A
-
-    −1
-
-    ∣ is — (IV) 2
-
-
-    - (D) If [
-
-    a+1
-
-    1
-
-    ​
-
-    1
-
-    2
-
-    ​
-
-    ]=[
-
-    −1
-
-    1
-
-    ​
-
-    1
-
-    2
-
-    ​
-
-    ], then a is — (III) -2'
+    (A) If $\begin{vmatrix} \lambda-1 & 0 \\ 0 & \lambda-1 \end{vmatrix}=0$, then $\lambda$ is — (II) 1
+    (B) If $\Delta = \begin{vmatrix} 1 & 2 \\ 2 & 4 \end{vmatrix}$, then $\Delta$ is — (I) 0
+    (C) If $A = \begin{bmatrix} 1 & 0 \\ 0 & 1/2 \end{bmatrix}$, then $|A^{-1}|$ is — (IV) 2
+    (D) If $\begin{bmatrix} a+1 & 1 \\ 1 & 2 \end{bmatrix} = \begin{bmatrix} -1 & 1 \\ 1 & 2 \end{bmatrix}$, then $a$ is — (III) -2
   options:
   - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
   - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
   - (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
   - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
   answer: (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
-- question: 'If a, b and c are in Geometric Progression and a
-
-    1/x
-
-    =b
-
-    1/y
-
-    =c
-
-    1/z
-
-    , then x, y, z are in:'
+- question: 'If $a, b, c$ are in Geometric Progression and $a^{1/x} = b^{1/y} = c^{1/z}$, then $x, y, z$ are in:'
   options:
   - Arithmetic Progression
   - Geometric Progression
   - 2/y=1/x+1/z
   - x=y+z
-  answer: ''
-- question: 'If (x−1) is a factor of 2x
-
-    2
-
-    −5x+k=0, then the value of k is:'
+  answer: Arithmetic Progression
+- question: 'If $(x-1)$ is a factor of $2x^2 - 5x + k = 0$, then the value of $k$ is:'
   options:
   - '2'
   - '5'
   - '3'
   - '4'
-  answer: ''
-- question: 'If x=(2+
-
-    3
-
-    ​
-
-    )
-
-    1/3
-
-    +(2+
-
-    3
-
-    ​
-
-    )
-
-    −1/3
-
-    and x
-
-    3
-
-    −3x+k=0, then the value of k is:
-
-    -4
-
-    4
-
-    3'
+  answer: '3'
+- question: 'If $x = (2+\sqrt{3})^{1/3} + (2+\sqrt{3})^{-1/3}$ and $x^3 - 3x + k = 0$, then the value of $k$ is:'
   options:
-  - ​
+  - '-4'
   - '2'
   - '3'
-  - ​
-  answer: ''
-- question: 'If ∣
-
-    1
-
-    bc
-
-    a(b+c)
-
-    ​
-
-    1
-
-    ca
-
-    b(c+a)
-
-    ​
-
-    1
-
-    ab
-
-    c(a+b)
-
-    ​
-
-    ∣=k, then the value of k is:
-
-    −ab+bc+ca'
+  - '4'
+  answer: '-4'
+- question: 'If $\begin{vmatrix} 1 & bc & a(b+c) \\ 1 & ca & b(c+a) \\ 1 & ab & c(a+b) \end{vmatrix} = k$, then the value of $k$ is:'
   options:
   - (ab+bc+ca)
   - '2'
-  - −2(ab+bc+ca)
+  - -2(ab+bc+ca)
   - '0'
-  answer: ''
-- question: 'The length of major axis and coordinate of vertices for the ellipse 3x
-
-    2
-
-    +2y
-
-    2
-
-    =6 respectively are:
-
-    2
-
-    2
-
-    ​
-
-    ,(0,±
-
-    3
-
-    ​
-
-    )
-
-    2
-
-    3
-
-    ​
-
-    ,(0,±
-
-    3
-
-    ​
-
-    )
-
-    2
-
-    2
-
-    ​
-
-    ,(±
-
-    3
-
-    ​
-
-    ,0)
-
-    2
-
-    3
-
-    ​'
+  answer: '0'
+- question: 'The length of major axis and coordinate of vertices for the ellipse $3x^2 + 2y^2 = 6$ respectively are:'
   options:
-  - ',(±'
-  - '3'
-  - ​
-  - ',0)'
-  answer: ''
-- question: 'The center and radius for the circle x
-
-    2
-
-    +y
-
-    2
-
-    +6x−4y+4=0 respectively are:'
+  - '$2\sqrt{2}, (0, \pm\sqrt{3})$'
+  - '$2\sqrt{3}, (0, \pm\sqrt{3})$'
+  - '$2\sqrt{2}, (\pm\sqrt{3}, 0)$'
+  - '$2\sqrt{3}, (\pm\sqrt{3}, 0)$'
+  answer: '$2\sqrt{3}, (0, \pm\sqrt{3})$'
+- question: 'The center and radius for the circle $x^2 + y^2 + 6x - 4y + 4 = 0$ respectively are:'
   options:
   - (2, 3) and 3
   - (3, 2) and 8
   - (2, -3) and 3
   - (-3, 2) and 3
-  answer: ''
-- question: 'If the line through (3, y) and (2, 7) is parallel to the line through
-    (-1, 4) and (0, 6), then the value of y is:'
+  answer: (-3, 2) and 3
+- question: 'If the line through (3, y) and (2, 7) is parallel to the line through (-1, 4) and (0, 6), then the value of $y$ is:'
   options:
   - '-7'
   - '9'
   - '7'
   - '2'
-  answer: ''
-- question: 'The points (K,2−2K), (−K+1,2K) and (−4−K,6−2K) are collinear if:  (A)
-    K=1/2, (B) K=−1/2, (C) K=3/2, (D) K=−1, (E) K=1.'
+  answer: '9'
+- question: 'The points $(K, 2-2K)$, $(-K+1, 2K)$ and $(-4-K, 6-2K)$ are collinear if:'
   options:
-  - (A) and (D) only
-  - (A) and (E) only
-  - (B) and (D) only
-  - (D) only
-  answer: ''
-- question: 'If x
-
-    2
-
-    =−16y is an equation of parabola then:  (A) directrix is y=4, (B) directrix is
-    x=4, (C) focus is (0, -4), (D) focus is (-4, 0), (E) length of latusrectum = 16.'
+  - K = 1/2
+  - K = -1/2
+  - K = 3/2
+  - K = -1
+  answer: K = 1/2
+- question: 'If $x^2 = -16y$ is an equation of a parabola, then:'
   options:
-  - (A) and (E) only
-  - (B), (C) and (E) only
-  - (A), (C) and (E) only
-  - (B), (D) and (E) only
-  answer: ''
-- question: 'The value of lim
-
-    x→∞
-
-    ​
-
-    (1+
-
-    3x
-
-    2
-
-    ​
-
-    )
-
-    x
-
-    is:
-
-    e
-
-    e
-
-    2'
+  - directrix is y=4
+  - directrix is x=4
+  - focus is (0, -4)
+  - length of latusrectum = 16
+  answer: focus is (0, -4)
+- question: 'The value of $\lim_{x \to \infty} (1+\frac{3}{x^2})^x$ is:'
   options:
   - e
   - 2/3
-  - e
+  - 1
   - 1/3
-  answer: ''
-- question: 'If f(x)={xsin(1/x),x
-
-    
-
-    =0;[cite
-
-    s
-
-    ​
-
-    tart]0,x=0}, then f(x) is:'
+  answer: '1'
+- question: 'If $f(x) = x \sin(1/x)$ for $x \neq 0$ and $f(0) = 0$, then $f(x)$ is:'
   options:
-  - continuous for all x∈R
+  - continuous for all x in R
   - continuous at 0, 1 only
   - not continuous at 1
   - not continuous at 0
-  answer: ''
-- question: '∫
-
-    x
-
-    2
-
-    +x+2
-
-    2x+1
-
-    ​
-
-    dx is:
-
-    log(2x+1)+c
-
-    log
-
-    (x
-
-    2
-
-    +x+2)
-
-    (2x+1)
-
-    ​
-
-    +c'
+  answer: continuous for all x in R
+- question: '$\int \frac{x^2+x+2}{2x+1} dx$ is:'
   options:
-  - log(x
-  - '2'
-  - +x+2)+c
-  - log(1/2)+c
-  answer: ''
-- question: 'Bag A contains 3 Red and 4 Black balls while Bag B contains 5 Red and
-    6 Black balls. One ball is drawn at random from one of the bags and is found to
-    be red. The probability it was from Bag B is:'
+  - $\frac{x^2}{4} + \frac{x}{4} + \frac{7}{8} \log(2x+1) + c$
+  - $\log(x^2+x+2)+c$
+  - $\log(1/2)+c$
+  - None of the above
+  answer: None of the above
+- question: 'Bag A contains 3 Red and 4 Black balls while Bag B contains 5 Red and 6 Black balls. One ball is drawn at random from one of the bags and is found to be red. The probability it was from Bag B is:'
   options:
   - 35/68
   - 7/38
   - 14/37
   - 34/43
-  answer: ''
-- question: 'Match List-I with List-II:
+  answer: 35/68
+- question: |
+    Match List-I with List-II:
 
-
-    - (A) lim
-
-    x→0
-
-    ​
-
-    (1+2x)
-
-    1/x
-
-    — (II) e
-
-    2
-
-
-    - (B) lim
-
-    x→∞
-
-    ​
-
-    (1+1/x)
-
-    x
-
-    — (III) e
-
-
-    - (C) lim
-
-    x→0
-
-    ​
-
-    (1+5x)
-
-    1/x
-
-    — (IV) e
-
-    5
-
-
-    - (D) lim
-
-    x→∞
-
-    ​
-
-    (1+3/x)
-
-    2x
-
-    — (I) e
-
-    6'
+    (A) $\lim_{x \to 0} (1+2x)^{1/x}$ — (II) $e^2$
+    (B) $\lim_{x \to \infty} (1+1/x)^x$ — (III) $e$
+    (C) $\lim_{x \to 0} (1+5x)^{1/x}$ — (IV) $e^5$
+    (D) $\lim_{x \to \infty} (1+3/x)^{2x}$ — (I) $e^6$
   options:
   - (A)-(IV), (B)-(I), (C)-(III), (D)-(II)
   - (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
@@ -689,13 +329,13 @@ math:
   - 'Vertex: (-1,-2), Focus: (0,-2), Axis: y=2, Tangent: x=-1'
   - 'Vertex: (2,-1), Focus: (2,0), Axis: x=2, Tangent: y=-1'
   answer: 'Vertex: (-1,2), Focus: (0,2), Axis: y=2, Tangent: x=-1'
-- question: 'What is the length of the latus rectum for the standard parabola y^2 = 4ax?'
+- question: 'Find the length of the latus rectum and coordinates of focus for the parabola $y^2 - 8x - 2y + 17 = 0$.'
   options:
-  - '4a'
-  - '2a'
-  - 'a'
-  - '8a'
-  answer: '4a'
+  - '8, (4, 1)'
+  - '4, (2, 1)'
+  - '8, (2, 1)'
+  - '4, (4, 1)'
+  answer: '8, (4, 1)'
 - question: 'For the general second-degree equation ax^2 + by^2 + 2hxy + 2gx + 2fy + c = 0 to represent a parabola, what must be true?'
   options:
   - 'h^2 = ab and Δ ≠ 0'
@@ -921,15 +561,13 @@ cs:
   - Linear Search
   - Jump search
   answer: ''
-- question: 'Shortest path in unweighted graph:  (A) BFS always finds shortest path.
-    (B) DFS always finds shortest path. (C) DFS does not guarantee shortest path.
-    (D) BFS does not guarantee shortest path.'
+- question: 'Which statements are TRUE for shortest path in unweighted graph? (A) BFS always finds shortest path. (B) DFS always finds shortest path. (C) DFS does not guarantee shortest path. (D) BFS does not guarantee shortest path.'
   options:
   - (B) and (D) only
   - (A) and (C) only
   - (A) and (B) only
   - (C) and (D) only
-  answer: ''
+  answer: '(A) and (C) only'
 - question: In a Binary Search Tree, which procedure's running time is distinct?
   options:
   - TREE-SUCCESSOR
@@ -952,14 +590,13 @@ cs:
   - Best case time Complexity
   - Final Output
   answer: ''
-- question: 'Arrange pseudocode for searching element k in linked list L: (A) while
-    loop, (B) x=L.head, (C) x=x.next, (D) return x.'
+- question: 'Arrange pseudocode for searching element k in linked list L:'
   options:
   - (B), (A), (C), (D)
   - (A), (B), (C), (D)
   - (C), (B), (A), (D)
   - (B), (C), (A), (D)
-  answer: ''
+  answer: '(B), (A), (C), (D)'
 - question: 'Given index i in a heap, we cannot compute:'
   options:
   - Parent (i)
@@ -967,72 +604,13 @@ cs:
   - Left (i)
   - Right (i)
   answer: ''
-- question: 'Find the Minimal Function for the provided K-map:  (Grid shows ''1''s
-    and ''X''s for variables PQ/RS)
-
-    Q
-
-    ′
-
-    S+P
-
-    ′
-
-    Q
-
-    Q
-
-    ′
-
-    S
-
-    ′
-
-    +P
-
-    ′
-
-    S
-
-    ′
-
-    P
-
-    ′
-
-    Q
-
-    ′
-
-    +P
-
-    ′
-
-    S
-
-    ′
-
-    +Q
-
-    ′
-
-    S
-
-    ′
-
-    PQ+Q
-
-    ′
-
-    S
-
-    ′'
+- question: 'Simplify the boolean expression: Y = AB + A(B+C) + B(B+C)'
   options:
-  - +P
-  - ′
-  - S
-  - ′
-  answer: ''
+  - 'AB + AC'
+  - 'A + B'
+  - 'B + AC'
+  - 'A + BC'
+  answer: 'B + AC'
 - question: 'Arrange memories by speed (fastest to slowest): (A) HDD, (B) Cache, (C)
     RAM, (D) Registers.'
   options:
@@ -1146,13 +724,13 @@ cs:
   - addr = 14, data = 4
   - addr = 15, data = 4
   answer: ''
-- question: The following circuit generates the same output as?
+- question: 'Which logic gate produces a HIGH output only if the inputs are different?'
   options:
   - XOR GATE
   - XNOR GATE
   - NAND GATE
   - NOR GATE
-  answer: ''
+  answer: XOR GATE
 - question: Which data structure follows LIFO?
   options:
   - Queue
@@ -1251,13 +829,13 @@ cs:
   - Quadratic Probing
   - Double Hashing
   answer: Chaining
-- question: What is the height of a balanced BST with n nodes?
+- question: 'What is the minimum number of nodes required to construct an AVL tree of height 3 (assuming root at height 0)?'
   options:
-  - O(n log n)
-  - O(log n)
-  - O(n)
-  - O(1)
-  answer: O(log n)
+  - '4'
+  - '5'
+  - '7'
+  - '12'
+  answer: '7'
 - question: Insertion Sort best case complexity?
   options:
   - O(n)
@@ -1335,13 +913,13 @@ cs:
   - AND circuit
   - XOR circuit
   answer: XOR circuit
-- question: 'What is the result of Bitwise OR on decimal numbers 35 and 7?'
+- question: 'What is the result of $(35 \ \& \ 7) \oplus (35 \ | \ 7)$ in decimal?'
   options:
+  - '32'
   - '35'
-  - '7'
-  - '42'
+  - '36'
   - '39'
-  answer: '39'
+  answer: '36'
 - question: 'If you want to execute more than one program at a time, the system software must be capable of:'
   options:
   - Coupling
@@ -1356,13 +934,13 @@ cs:
   - Deadlock Avoidance
   - Deadlock Recovery
   answer: Deadlock Avoidance
-- question: 'Loading Operating System from secondary memory to primary memory is called:'
+- question: 'The small program stored in ROM that loads the operating system kernel into memory is called:'
   options:
-  - Compiling
-  - Booting
-  - Refreshing
-  - Reassembling
-  answer: Booting
+  - Bootstrap Loader
+  - Linker
+  - Loader
+  - Swapper
+  answer: Bootstrap Loader
 - question: 'Which statement regarding Threads is correct? Statement 1: Thread is a dispatchable unit that does not execute sequentially. Statement 2: It is not possible to alter the behavior of a thread by altering its context.'
   options:
   - Both statements are Correct.
@@ -1398,13 +976,13 @@ cs:
   - Independent of time
   - Present Input and Past Output
   answer: Present Input and Past Output
-- question: 'What is the addressing mode where the memory address of the data is given as an operand?'
+- question: 'In the instruction `MOV AX, [BX + SI + 10H]`, which addressing mode is used?'
   options:
+  - Base Indexed
+  - Register Indirect
+  - Based Indexed with Displacement
   - Immediate
-  - Register
-  - Direct (Absolute)
-  - Implicit
-  answer: Direct (Absolute)
+  answer: Based Indexed with Displacement
 - question: 'Which statement is correct regarding Interpreters vs Compilers? Statement 1: Interpreters usually take less time to analyze source code (but more to execute). Statement 2: Compilers translate one statement at a time.'
   options:
   - Only Statement 1 is correct.
@@ -1475,20 +1053,20 @@ cs:
   - Bottom-up approach
   - Dynamic Memory Allocation
   answer: Dynamic Memory Allocation
-- question: 'What is the Worst Case efficiency of Quick Sort?'
+- question: 'Quick Sort exhibits its worst-case time complexity $O(n^2)$ when:'
   options:
-  - O(n^2)
-  - O(nlogn)
-  - O(n)
-  - O(logn)
-  answer: O(n^2)
-- question: 'What is the time efficiency class of Heap Sort in the Worst Case?'
+  - The pivot is the median
+  - The array is already sorted
+  - The array contains distinct elements
+  - The pivot is chosen randomly
+  answer: The array is already sorted
+- question: 'Which sorting algorithm has a worst-case time complexity of $O(n \log n)$ and is NOT a stable sort?'
   options:
-  - O(n^2)
-  - O(nlogn)
-  - O(n)
-  - O(logn)
-  answer: O(nlogn)
+  - Merge Sort
+  - Heap Sort
+  - Bubble Sort
+  - Insertion Sort
+  answer: Heap Sort
 - question: 'Hexadecimal representation of Octal number 657 is:'
   options:
   - 1AF
@@ -1531,7 +1109,18 @@ cs:
   - x'z + xy
   - x'z + x'y
   answer: x'z + xy
-- question: 'Round Robin Scheduling Calculation: Given Processes P1-P5, Time Quantum = 5ms. Calculate Average Waiting Time.'
+- question: |
+    Given the following processes and burst times with Time Quantum = 5ms:
+
+    | Process | Burst Time |
+    | :--- | :--- |
+    | P1 | 10 |
+    | P2 | 29 |
+    | P3 | 3 |
+    | P4 | 7 |
+    | P5 | 12 |
+
+    Calculate the Average Waiting Time using Round Robin scheduling.
   options:
   - 25.2 ms
   - 26.2 ms
@@ -1545,20 +1134,38 @@ cs:
   - Register Indirect
   - Immediate
   answer: Register Indirect
-- question: 'Direct Mapped Cache Calculation: Given 64 Blocks, Block Size 16 Bytes. Map Byte Address 75. Which block number?'
+- question: 'Given a direct-mapped cache with 64 blocks and a block size of 16 bytes, to which block does the byte address 1200 map?'
   options:
   - '10'
   - '12'
   - '11'
   - '13'
   answer: '11'
-- question: 'Deadlock Safe Sequence Calculation: Given Resources and Needs.'
+- question: |
+    Consider a system with 5 processes (P0 through P4) and 3 resource types (A, B, C).
+    Resource types A, B, and C have 10, 5, and 7 instances, respectively.
+
+    Start State (Allocation):
+    P0: 0 1 0
+    P1: 2 0 0
+    P2: 3 0 2
+    P3: 2 1 1
+    P4: 0 0 2
+
+    Max Demand:
+    P0: 7 5 3
+    P1: 3 2 2
+    P2: 9 0 2
+    P3: 2 2 2
+    P4: 4 3 3
+
+    Which of the following is a safe sequence?
   options:
-  - Sequence P1, P2, P3, P4
-  - Sequence P2, P1, P3, P4
-  - Sequence P4, P3, P2, P1
-  - Sequence P3, P1, P2, P4
-  answer: Sequence P3, P1, P2, P4
+  - Sequence P1, P3, P4, P0, P2
+  - Sequence P1, P3, P4, P2, P0
+  - Sequence P1, P3, P0, P4, P2
+  - Sequence P1, P3, P2, P4, P0
+  answer: Sequence P1, P3, P4, P0, P2
 - question: 'Which technique is used in Merge Sort?'
   options:
   - Greedy
@@ -1594,13 +1201,22 @@ cs:
   - 101010.01
   - 101110.11
   answer: 101010.11
-- question: 'Stack/Queue Operation: Push A,B,C,D -> Pop 4 times -> Enqueue -> Dequeue 2 -> Push to Stack -> Pop 1. What is popped?'
+- question: |
+    Consider an empty Stack 'S' and an empty Queue 'Q'.
+    Operations:
+    1. Push(S, x); Push(S, y); Push(S, z)
+    2. Enqueue(Q, Pop(S)); Enqueue(Q, Pop(S))
+    3. Pop(S)
+    4. Enqueue(Q, w)
+    5. Push(S, Dequeue(Q)); Push(S, Dequeue(Q))
+    
+    If x=1, y=2, z=3, w=4, what is the sequence of elements popped from S if we execute Pop(S) three times now?
   options:
-  - Element A
-  - Element B
-  - Element C
-  - Element D
-  answer: Element D
+  - 3, 2, 1
+  - 2, 3, 4
+  - 2, 3, 1
+  - 1, 2, 4
+  answer: 2, 3, 1
 - question: 'Which is NOT a valid Boolean Algebra Law?'
   options:
   - x+xy=x
@@ -1622,13 +1238,13 @@ cs:
   - '0'
   - '1'
   answer: '1'
-- question: 'Prim''s Algorithm Sequence: Given a weighted graph, identify valid edge addition sequence.'
+- question: 'Prim''s algorithm is used to find the Minimum Spanning Tree (MST) of a connected weighted graph. Which data structure is typically used to efficiently select the minimum weight edge?'
   options:
-  - Sequence A
-  - Sequence B
-  - Sequence C
-  - Sequence D
-  answer: Sequence B
+  - Queue
+  - Stack
+  - Priority Queue
+  - Hash Map
+  answer: Priority Queue
 - question: 'Match Algorithm Complexities: (A) Floyd Warshall, (B) Kruskal, (C) Bellman Ford.'
   options:
   - Matches Floyd-O(VE), Kruskal-O(n^3), Bellman-O(ElogE)
@@ -1657,14 +1273,14 @@ cs:
   - 120 ms
   - 150 ms
   answer: 120 ms
-- question: 'Boolean Law Condition: Given x#y implies a specific truth table. When is a derived equation true?'
+- question: 'Given the boolean operation x#y = x''y + xy'', which derived equation is always TRUE?'
   options:
-  - When x is 0
-  - When y is 1
-  - Never
-  - It is independent (always true)
-  answer: It is independent (always true)
-- question: 'Height of BST: Insert 10, 1, 3, 5, 15, 12, 16. What is the height?'
+  - x # x = 1
+  - x # 0 = x
+  - x # 1 = x
+  - x # y = 0
+  answer: x # 0 = x
+- question: 'Insert the keys 10, 1, 3, 5, 15, 12, 16 into a BST. What is the height of the resulting tree (Root at 0)?'
   options:
   - '2'
   - '3'
@@ -1680,25 +1296,25 @@ cs:
   answer: AB+CD-*
 - question: 'Convert Infix to Prefix: (A+B)×(C−D)'
   options:
-  - ×+AB-CD
-  - *+AB-CD
-  - +AB*-CD
-  - -CD*+AB
-  answer: *+AB-CD
-- question: 'Program Counter Jump: Given 24-bit instruction size. How many bytes does PC jump? Which address is reachable?'
+  - '×+AB-CD'
+  - '*+AB-CD'
+  - '+AB*-CD'
+  - '-CD*+AB'
+  answer: '*+AB-CD'
+- question: 'A CPU has a 24-bit instruction size and is byte-addressable. If the Program Counter (PC) increments by the instruction size, and the current PC is 600, what will be the next PC value (in decimal)?'
   options:
   - '601'
-  - '600'
+  - '603'
   - '602'
-  - '599'
-  answer: '600'
-- question: 'Disk Capacity Calculation: Given Surfaces, Tracks, Sectors, Bytes. Calculate total capacity.'
+  - '604'
+  answer: '603'
+- question: 'A hard disk spins at 3600 RPM. What is the average rotational latency?'
   options:
-  - 2^28 bytes
-  - 2^29 bytes
-  - 2^30 bytes
-  - 2^27 bytes
-  answer: 2^28 bytes
+  - 4.17 ms
+  - 8.33 ms
+  - 16.67 ms
+  - 5.55 ms
+  answer: 8.33 ms
 - question: 'A Graph in which all nodes are of equal degree is called:'
   options:
   - Complete Graph
