@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Pawan Parida <135092407+zer-art@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "mock test"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = ">=3.14.3,<3.15"
+streamlit = ">=1.54.0,<2"
+pyyaml = ">=6.0.3,<7"
+pypdf = ">=6.7.0,<7"

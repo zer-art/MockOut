@@ -1,0 +1,1714 @@
+logical_reasoning:
+- question: 'One term in the given number series is wrong. Find out the wrong term.
+
+    3, 10, 27, 4, 16, 64, 5, 25, 125'
+  options:
+  - '3'
+  - '10'
+  - '4'
+  - '27'
+  answer: ''
+- question: 'Find the next two terms of the series:
+
+    A, C, F, J, ?, ?  (A). O  (B). U  (C). R  (D). V'
+  options:
+  - (A) and (B) respectively
+  - (B) and (A) respectively
+  - (C) and (D) respectively
+  - (D) and (C) respectively
+  answer: ''
+- question: 'Door is related to bang in the same way as chain is related to:'
+  options:
+  - Thunder
+  - Clinch
+  - Tinkle
+  - Clank
+  answer: ''
+- question: In a certain code, VISHWANATHAN is written as NAAWTHHSANIV. How is KARUNAKARANA
+    written in that code?
+  options:
+  - KAANRAURNAAK
+  - AKNUARRANKA
+  - NKKRANKRAUK
+  - RURNKAAUNAK
+  answer: ''
+- question: From the given sets, which is an infinite set?
+  options:
+  - '{x:x∈N and (x-1)(x-2)=0}'
+  - '{x:x∈N and x is prime number and less than 199}'
+  - '{x:x∈N and x is odd}'
+  - '{x:x∈N and x < 100}'
+  answer: '{x:x∈N and x is odd}'
+- question: 'Identify the missing number (?) from the following figure:  | 72 | 24
+    | 6 | | :--- | :--- | :--- | | 96 | 16 | 12 | | 108 | ? | 18 |'
+  options:
+  - '12'
+  - '16'
+  - '18'
+  - '20'
+  answer: ''
+- question: Introducing a man to her husband, a woman said, "His brother's father
+    is the only son of my grandfather." How is the woman related to this man?
+  options:
+  - Mother
+  - Aunt
+  - Sister
+  - Daughter
+  answer: ''
+- question: 'Find missing word (?) which is similar to the given words.
+
+    Sitar: Guitar: Tanpura: ?'
+  options:
+  - Trumpet
+  - Violin
+  - Harmonium
+  - Mridanga
+  answer: ''
+- question: 'Match List-I (Letter number series) with List-II (Missing term):
+
+
+    - (A) D4, F6, H8, J10, ? — (I) U121
+
+
+    - (B) 2B, 4C, 8E, 14H, ? — (II) 111
+
+
+    - (C) 3F, 6G, ?, 18L, 27P — (III) 22L
+
+
+    - (D) W144, ?, S100, Q81, O64 — (IV) L12'
+  options:
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  - (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
+  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  answer: ''
+- question: 'Choose the missing term (?) of the following series.
+
+    2, 7, 27, 107, 427, ?'
+  options:
+  - '1262'
+  - '1707'
+  - '4027'
+  - '4407'
+  answer: ''
+- question: In an examination, a student scores 4 marks for every correct answer and
+    loses 1 mark for every wrong answer. If she/he attempts all 60 questions and secures
+    130 marks, the number of questions she/he attempts wrongly, are?
+  options:
+  - '38'
+  - '22'
+  - '21'
+  - '37'
+  answer: ''
+- question: 'Choose the correct option to replace the ''?'':
+
+    Milk: Emulsion :: Butter:?'
+  options:
+  - Aerosol
+  - Suspension
+  - Sol
+  - Gel
+  answer: ''
+- question: 'Consider the following four words, out of which three are alike in some
+    manner and one is different: (A) Arrow, (B) Missile, (C) Sword, (D) Bullet. Choose
+    the combination that has alike words.'
+  options:
+  - (A), (B) and (D) only
+  - (B), (C) and (D) only
+  - (A), (B) and (C) only
+  - (A), (C) and (D) only
+  answer: ''
+- question: 'Consider the following alphabet series: ABCDEFGHIJKLMNOPQRSTUVWXYZ. If
+    the second half of the given alphabet series is written in reverse order, which
+    letter will be seventh to the right of the twelfth letter from the left end?'
+  options:
+  - R
+  - S
+  - U
+  - T
+  answer: ''
+- question: Which figure comes next in the given series below?  (The document displays
+    a sequence involving binary-like digits '0' and '1' in grids labeled A, B, C,
+    D)
+  options:
+  - 0, 0
+  - 1, 1
+  - 1, 0, 1
+  - '0'
+  answer: ''
+math:
+- question: 'If
+
+    9!
+
+    1
+
+    ​
+
+    +
+
+    10!
+
+    1
+
+    ​
+
+    =
+
+    11!
+
+    x
+
+    ​
+
+    , then the value of x is:'
+  options:
+  - '121'
+  - '120'
+  - '12'
+  - '24'
+  answer: ''
+- question: 'Match List-I with List-II:
+
+
+    - (A) If X and Y are sets, n(X)=17,n(Y)=23,n(X∪Y)=38, then n(X∩Y) is — (IV) 2
+
+
+    - (B) If n(X)=28,n(Y)=32,n(X∩Y)=10, then n(X∪Y) is — (III) 50
+
+
+    - (C) If n(X)=10, then n(7X) is — (II) 10 (Note: Context suggests a typo in source
+    table)
+
+
+    - (D) If n(Y)=20, then n(Y/2) is — (I) 20 (Note: Context suggests a typo in source
+    table)'
+  options:
+  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+  - (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+  - (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
+  answer: ''
+- question: Out of 5 consonants and 4 vowels, how many words of 3 consonants and 3
+    vowels can be made?
+  options:
+  - '40'
+  - '80'
+  - '20'
+  - '240'
+  answer: ''
+- question: 'From the given sets, which is an infinite set?
+
+    {x:x∈N and (x−1)(x−2)=0}
+
+    {x:x∈N and x is prime number and less than 199}'
+  options:
+  - '{x:x∈N and x'
+  - '5'
+  - −1=0}
+  - '{x:x∈N and x is odd}'
+  answer: ''
+- question: 'A fair coin is tossed three times. Let A be the event of getting exactly
+    two heads and B be the event of getting at most two tails, then P(A∪B) is:'
+  options:
+  - 1/2
+  - 3/8
+  - 1/8
+  - 7/8
+  answer: ''
+- question: 'Match List-I with List-II:
+
+
+    - (A) If ∣
+
+    λ−1
+
+    0
+
+    ​
+
+    0
+
+    λ−1
+
+    ​
+
+    ∣=0, then λ is — (II) 1
+
+
+    - (B) If Δ=∣
+
+    1
+
+    2
+
+    ​
+
+    2
+
+    4
+
+    ​
+
+    ∣, then Δ is — (I) 0
+
+
+    - (C) If A=[
+
+    1
+
+    0
+
+    ​
+
+    0
+
+    1/2
+
+    ​
+
+    ], then ∣A
+
+    −1
+
+    ∣ is — (IV) 2
+
+
+    - (D) If [
+
+    a+1
+
+    1
+
+    ​
+
+    1
+
+    2
+
+    ​
+
+    ]=[
+
+    −1
+
+    1
+
+    ​
+
+    1
+
+    2
+
+    ​
+
+    ], then a is — (III) -2'
+  options:
+  - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+  - (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+  - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+  answer: (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+- question: 'If a, b and c are in Geometric Progression and a
+
+    1/x
+
+    =b
+
+    1/y
+
+    =c
+
+    1/z
+
+    , then x, y, z are in:'
+  options:
+  - Arithmetic Progression
+  - Geometric Progression
+  - 2/y=1/x+1/z
+  - x=y+z
+  answer: ''
+- question: 'If (x−1) is a factor of 2x
+
+    2
+
+    −5x+k=0, then the value of k is:'
+  options:
+  - '2'
+  - '5'
+  - '3'
+  - '4'
+  answer: ''
+- question: 'If x=(2+
+
+    3
+
+    ​
+
+    )
+
+    1/3
+
+    +(2+
+
+    3
+
+    ​
+
+    )
+
+    −1/3
+
+    and x
+
+    3
+
+    −3x+k=0, then the value of k is:
+
+    -4
+
+    4
+
+    3'
+  options:
+  - ​
+  - '2'
+  - '3'
+  - ​
+  answer: ''
+- question: 'If ∣
+
+    1
+
+    bc
+
+    a(b+c)
+
+    ​
+
+    1
+
+    ca
+
+    b(c+a)
+
+    ​
+
+    1
+
+    ab
+
+    c(a+b)
+
+    ​
+
+    ∣=k, then the value of k is:
+
+    −ab+bc+ca'
+  options:
+  - (ab+bc+ca)
+  - '2'
+  - −2(ab+bc+ca)
+  - '0'
+  answer: ''
+- question: 'The length of major axis and coordinate of vertices for the ellipse 3x
+
+    2
+
+    +2y
+
+    2
+
+    =6 respectively are:
+
+    2
+
+    2
+
+    ​
+
+    ,(0,±
+
+    3
+
+    ​
+
+    )
+
+    2
+
+    3
+
+    ​
+
+    ,(0,±
+
+    3
+
+    ​
+
+    )
+
+    2
+
+    2
+
+    ​
+
+    ,(±
+
+    3
+
+    ​
+
+    ,0)
+
+    2
+
+    3
+
+    ​'
+  options:
+  - ',(±'
+  - '3'
+  - ​
+  - ',0)'
+  answer: ''
+- question: 'The center and radius for the circle x
+
+    2
+
+    +y
+
+    2
+
+    +6x−4y+4=0 respectively are:'
+  options:
+  - (2, 3) and 3
+  - (3, 2) and 8
+  - (2, -3) and 3
+  - (-3, 2) and 3
+  answer: ''
+- question: 'If the line through (3, y) and (2, 7) is parallel to the line through
+    (-1, 4) and (0, 6), then the value of y is:'
+  options:
+  - '-7'
+  - '9'
+  - '7'
+  - '2'
+  answer: ''
+- question: 'The points (K,2−2K), (−K+1,2K) and (−4−K,6−2K) are collinear if:  (A)
+    K=1/2, (B) K=−1/2, (C) K=3/2, (D) K=−1, (E) K=1.'
+  options:
+  - (A) and (D) only
+  - (A) and (E) only
+  - (B) and (D) only
+  - (D) only
+  answer: ''
+- question: 'If x
+
+    2
+
+    =−16y is an equation of parabola then:  (A) directrix is y=4, (B) directrix is
+    x=4, (C) focus is (0, -4), (D) focus is (-4, 0), (E) length of latusrectum = 16.'
+  options:
+  - (A) and (E) only
+  - (B), (C) and (E) only
+  - (A), (C) and (E) only
+  - (B), (D) and (E) only
+  answer: ''
+- question: 'The value of lim
+
+    x→∞
+
+    ​
+
+    (1+
+
+    3x
+
+    2
+
+    ​
+
+    )
+
+    x
+
+    is:
+
+    e
+
+    e
+
+    2'
+  options:
+  - e
+  - 2/3
+  - e
+  - 1/3
+  answer: ''
+- question: 'If f(x)={xsin(1/x),x
+
+    
+
+    =0;[cite
+
+    s
+
+    ​
+
+    tart]0,x=0}, then f(x) is:'
+  options:
+  - continuous for all x∈R
+  - continuous at 0, 1 only
+  - not continuous at 1
+  - not continuous at 0
+  answer: ''
+- question: '∫
+
+    x
+
+    2
+
+    +x+2
+
+    2x+1
+
+    ​
+
+    dx is:
+
+    log(2x+1)+c
+
+    log
+
+    (x
+
+    2
+
+    +x+2)
+
+    (2x+1)
+
+    ​
+
+    +c'
+  options:
+  - log(x
+  - '2'
+  - +x+2)+c
+  - log(1/2)+c
+  answer: ''
+- question: 'Bag A contains 3 Red and 4 Black balls while Bag B contains 5 Red and
+    6 Black balls. One ball is drawn at random from one of the bags and is found to
+    be red. The probability it was from Bag B is:'
+  options:
+  - 35/68
+  - 7/38
+  - 14/37
+  - 34/43
+  answer: ''
+- question: 'Match List-I with List-II:
+
+
+    - (A) lim
+
+    x→0
+
+    ​
+
+    (1+2x)
+
+    1/x
+
+    — (II) e
+
+    2
+
+
+    - (B) lim
+
+    x→∞
+
+    ​
+
+    (1+1/x)
+
+    x
+
+    — (III) e
+
+
+    - (C) lim
+
+    x→0
+
+    ​
+
+    (1+5x)
+
+    1/x
+
+    — (IV) e
+
+    5
+
+
+    - (D) lim
+
+    x→∞
+
+    ​
+
+    (1+3/x)
+
+    2x
+
+    — (I) e
+
+    6'
+  options:
+  - (A)-(IV), (B)-(I), (C)-(III), (D)-(II)
+  - (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
+  - (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+  - (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+  answer: (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+- question: 'Find the equation of the parabola with focus at (0,0) and directrix given by the line x+y−4=0.'
+  options:
+  - 'x^2 + y^2 - 2xy + 8x + 8y - 16 = 0'
+  - 'x^2 + y^2 + 2xy + 8x + 8y - 16 = 0'
+  - 'x^2 + y^2 - 2xy - 8x - 8y + 16 = 0'
+  - 'x^2 + y^2 + 2xy - 8x - 8y + 16 = 0'
+  answer: 'x^2 + y^2 - 2xy + 8x + 8y - 16 = 0'
+- question: 'Find the vertex, focus, axis, and tangent at the vertex for the parabola equation: y^2 - 4x - 4y = 0.'
+  options:
+  - 'Vertex: (-1,2), Focus: (0,2), Axis: y=2, Tangent: x=-1'
+  - 'Vertex: (1,2), Focus: (0,2), Axis: y=-2, Tangent: x=1'
+  - 'Vertex: (-1,-2), Focus: (0,-2), Axis: y=2, Tangent: x=-1'
+  - 'Vertex: (2,-1), Focus: (2,0), Axis: x=2, Tangent: y=-1'
+  answer: 'Vertex: (-1,2), Focus: (0,2), Axis: y=2, Tangent: x=-1'
+- question: 'What is the length of the latus rectum for the standard parabola y^2 = 4ax?'
+  options:
+  - '4a'
+  - '2a'
+  - 'a'
+  - '8a'
+  answer: '4a'
+- question: 'For the general second-degree equation ax^2 + by^2 + 2hxy + 2gx + 2fy + c = 0 to represent a parabola, what must be true?'
+  options:
+  - 'h^2 = ab and Δ ≠ 0'
+  - 'h^2 = ab and Δ = 0'
+  - 'h^2 > ab and Δ ≠ 0'
+  - 'h^2 < ab and Δ ≠ 0'
+  answer: 'h^2 = ab and Δ ≠ 0'
+- question: 'If the focus is at (-a,0) and the directrix is x=a, what is the equation of the parabola?'
+  options:
+  - 'y^2 = -4ax'
+  - 'y^2 = 4ax'
+  - 'x^2 = -4ay'
+  - 'x^2 = 4ay'
+  answer: 'y^2 = -4ax'
+cs:
+- question: Which of the following scheduler/schedulers is/are also called CPU scheduler?
+    (A) Short Term, (B) Long Term, (C) Medium Term, (D) Asymmetric.
+  options:
+  - (A), (B) and (D) only
+  - (A), (B) and (C) only
+  - (A), (B), (C) and (D)
+  - (A) only
+  answer: ''
+- question: 'A situation where two or more processes are blocked, waiting for resources
+    held by each other is called:'
+  options:
+  - Pooling
+  - Deadlock
+  - Thrashing
+  - Paging
+  answer: ''
+- question: 'External fragmentation occurs:'
+  options:
+  - When total memory exists for a request but is not contiguous.
+  - When total memory exists and is contiguous.
+  - When memory is empty.
+  - Always.
+  answer: ''
+- question: Which disk scheduling algorithm looks for the track closest to the current
+    head position?
+  options:
+  - LOOK
+  - SSTF
+  - FCFS
+  - SCAN
+  answer: ''
+- question: Which CPU scheduling algorithm prefers the process with the shortest burst
+    time?
+  options:
+  - FCFS
+  - SJF
+  - Round Robin
+  - Priority Scheduling
+  answer: ''
+- question: '''The Dining Philosopher'' problem can be solved by:'
+  options:
+  - Use of semaphores
+  - Use of overlays
+  - Mutual exclusion
+  - Bounded waiting
+  answer: ''
+- question: 'For a deadlock to occur, the four conditions namely Mutual Exclusion,
+    Hold and wait, No preemption, circular wait:'
+  options:
+  - May or may not hold
+  - Circular wait does not imply hold and wait
+  - Are completely independent
+  - Must hold simultaneously
+  answer: ''
+- question: Which of the following is a way to recover from the deadlock which has
+    already occurred?
+  options:
+  - Process termination
+  - Non preemption of resources
+  - Banker's algorithm
+  - Circular wait
+  answer: ''
+- question: 'Logical address space: 32 KB, Page Size: 4 KB, Physical Memory size:
+    64 KB. The number of pages and page frames are:'
+  options:
+  - 4, 16
+  - 4, 12
+  - 8, 16
+  - 3, 16
+  answer: ''
+- question: 'Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2. Page frames:
+    3. Calculate page faults using LRU.'
+  options:
+  - '10'
+  - '8'
+  - '9'
+  - '11'
+  answer: ''
+- question: 'Match CPU Scheduling Algorithms with Features:
+
+
+    - (A) FCFS — (III) Often long average waiting time
+
+
+    - (B) Round Robin — (I) FCFS + preemption
+
+
+    - (C) Multi level queue — (IV) Permanent assignment to specific queue
+
+
+    - (D) Multi-level Feedback — (II) Allows processes to move between queues'
+  options:
+  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  answer: ''
+- question: 'Match List-I with List-II (Disk terms):
+
+
+    - (A) Seek Time — (IV) Time to move heads to desired cylinder
+
+
+    - (B) Access Time — (III) Seek Time + Rotational Latency
+
+
+    - (C) Rotational Latency — (II) Time for disk to rotate sector to head
+
+
+    - (D) Disk Bandwidth — (I) Bytes transferred divided by total time'
+  options:
+  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  answer: (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+- question: 'Arrange process statements for critical section structure: (A) Critical,
+    (B) Remainder, (C) Entry, (D) Exit.'
+  options:
+  - (C), (B), (A), (D)
+  - (C), (A), (B), (D)
+  - (C), (A), (D), (B)
+  - (C), (B), (D), (A)
+  answer: ''
+- question: 'Arrange MS DOS layers from inner most to outer most: (A) ROM BIOS Drivers,
+    (B) Resident System Program, (C) MS DOS Drivers, (D) Application Program.'
+  options:
+  - (A), (C), (B), (D)
+  - (D), (B), (C), (A)
+  - (B), (A), (D), (C)
+  - (C), (B), (D), (A)
+  answer: ''
+- question: Which of the following is not an application of DFS?
+  options:
+  - Topological Sort
+  - Determining Strongly Connected Components
+  - Finding minimum distance in unweighted graph optimally
+  - Solving Maze Problem
+  answer: ''
+- question: 'Match Algorithms with Data Structures:
+
+
+    - (A) BFS — (IV) Queue
+
+
+    - (B) DFS — (I) Stack
+
+
+    - (C) Heap sort — (III) Priority Queue
+
+
+    - (D) Secondary storage — (II) B Trees'
+  options:
+  - (A)-(IV), (B)-(I), (C)-(III), (D)-(II)
+  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  answer: (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+- question: 'In a binary search tree, the worst case time complexity of inserting
+    and deleting a key is:'
+  options:
+  - O(lg n) for insertion and O(lg n) for deletion
+  - O(n) for insertion and O(lg n) for deletion
+  - O(n) for insertion and O(n) for deletion
+  - O(lg n) for insertion and O(n) for deletion
+  answer: ''
+- question: 'Match Algorithm with Recurrence Relation:
+
+
+    - (A) Binary Search — (I) T(n)=T(n/2)+c
+
+
+    - (B) Merge Sort — (II) T(n)=2T(n/2)+Θ(n)
+
+
+    - (C) Quick sort (worst case) — (III) T(n)=T(n−1)+Θ(n)
+
+
+    - (D) Linear Search — (IV) T(n)=T(n−1)+c'
+  options:
+  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  answer: ''
+- question: 'Arrange time complexities in increasing order: (A) Bubble sort (worst),
+    (B) Deleting head in linked list, (C) Binary search, (D) Merge sort (worst).'
+  options:
+  - (A), (B), (C), (D)
+  - (B), (C), (D), (A)
+  - (B), (A), (D), (C)
+  - (C), (B), (D), (A)
+  answer: ''
+- question: 'Which statements are TRUE (|E| = edges):  (A) Directed graph: sum of
+    adjacency list lengths = |E|  (B) Undirected graph: sum of adjacency list lengths
+    = 2|E|  (C) Dense graph: adjacency matrix is preferable  (D) Adjacency matrix
+    memory depends on |E|'
+  options:
+  - (A), (B) and (D) only
+  - (A), (B) and (C) only
+  - (A), (B), (C) and (D)
+  - (B), (C) and (D) only
+  answer: ''
+- question: In ____ the search time is independent of the number of elements n.
+  options:
+  - Binary Search
+  - Hashing
+  - Linear Search
+  - Jump search
+  answer: ''
+- question: 'Shortest path in unweighted graph:  (A) BFS always finds shortest path.
+    (B) DFS always finds shortest path. (C) DFS does not guarantee shortest path.
+    (D) BFS does not guarantee shortest path.'
+  options:
+  - (B) and (D) only
+  - (A) and (C) only
+  - (A) and (B) only
+  - (C) and (D) only
+  answer: ''
+- question: In a Binary Search Tree, which procedure's running time is distinct?
+  options:
+  - TREE-SUCCESSOR
+  - TREE-MAXIMUM
+  - INORDER-WALK
+  - TREE-MINIMUM
+  answer: ''
+- question: 'All elements hashing to the same slot are placed in the same linked list
+    in:'
+  options:
+  - Universal hashing
+  - Linear Probing
+  - Quadratic probing
+  - Chaining
+  answer: ''
+- question: 'Quicksort and randomized Quicksort differ in:'
+  options:
+  - Selection of Pivot element
+  - Worst case time complexity
+  - Best case time Complexity
+  - Final Output
+  answer: ''
+- question: 'Arrange pseudocode for searching element k in linked list L: (A) while
+    loop, (B) x=L.head, (C) x=x.next, (D) return x.'
+  options:
+  - (B), (A), (C), (D)
+  - (A), (B), (C), (D)
+  - (C), (B), (A), (D)
+  - (B), (C), (A), (D)
+  answer: ''
+- question: 'Given index i in a heap, we cannot compute:'
+  options:
+  - Parent (i)
+  - Heap size
+  - Left (i)
+  - Right (i)
+  answer: ''
+- question: 'Find the Minimal Function for the provided K-map:  (Grid shows ''1''s
+    and ''X''s for variables PQ/RS)
+
+    Q
+
+    ′
+
+    S+P
+
+    ′
+
+    Q
+
+    Q
+
+    ′
+
+    S
+
+    ′
+
+    +P
+
+    ′
+
+    S
+
+    ′
+
+    P
+
+    ′
+
+    Q
+
+    ′
+
+    +P
+
+    ′
+
+    S
+
+    ′
+
+    +Q
+
+    ′
+
+    S
+
+    ′
+
+    PQ+Q
+
+    ′
+
+    S
+
+    ′'
+  options:
+  - +P
+  - ′
+  - S
+  - ′
+  answer: ''
+- question: 'Arrange memories by speed (fastest to slowest): (A) HDD, (B) Cache, (C)
+    RAM, (D) Registers.'
+  options:
+  - (D), (C), (B), (A)
+  - (A), (C), (B), (D)
+  - (B), (D), (C), (A)
+  - (D), (B), (C), (A)
+  answer: ''
+- question: 'Match decimal additions (signed-complement) with binary representations:
+
+
+    - (A) +6, +13 — (II) 00010011
+
+
+    - (B) -6, +13 — (I) 00000111
+
+
+    - (C) +6, -13 — (III) 11101101 (or IV/III based on 1s/2s complement)
+
+
+    - (D) -6, -13 — (IV) 1111101 (Note: Source representation varies)'
+  options:
+  - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
+  - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  answer: ''
+- question: 'Arrange 3 to 8 line decoder steps: (A) Enable = 1, (B) Activate 1 of
+    8 lines, (C) Apply input code, (D) Convert 3-bit to 8 outputs.'
+  options:
+  - (A), (B), (C), (D)
+  - (A), (D), (C), (B)
+  - (A), (C), (D), (B)
+  - (A), (B), (D), (C)
+  answer: ''
+- question: 'Minimum hamming distance d
+
+    min
+
+    ​
+
+    to correct p errors:
+
+    2p'
+  options:
+  - 2p+1
+  - 2p-1
+  - '2'
+  - p−2
+  answer: ''
+- question: 'Consider the statements:  (A) Combinational: no memory; Sequential: memory.
+    (B) Sequential: current inputs only; Combinational: current/past.  (Note: typically
+    inverted) (C) Flip-flops are combinational.  (D) Multiplexer is combinational.'
+  options:
+  - (A) and (D) only
+  - (A), (B) and (D) only
+  - (A), (B), (C) and (D)
+  - (B), (C) and (D) only
+  answer: ''
+- question: 'Match JK Flip Flop inputs with Next State:
+
+
+    - (A) 00 — (IV) No Change
+
+
+    - (B) 01 — (III) Reset
+
+
+    - (C) 10 — (II) Set
+
+
+    - (D) 11 — (I) Toggle'
+  options:
+  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
+  answer: ''
+- question: 'IEEE754 result of (NaN == NaN):'
+  options:
+  - 'false'
+  - 'true'
+  - error
+  - '1'
+  answer: ''
+- question: 'IEEE754 representation of +0 and -0:'
+  options:
+  - Same sign, different mantissa.
+  - Differ only in sign bit.
+  - Same representation.
+  - Differ in exponent and mantissa.
+  answer: ''
+- question: 'Minimum number of 2:1 Muxes to design a 16:1 Mux:'
+  options:
+  - '12'
+  - '14'
+  - '15'
+  - '16'
+  answer: ''
+- question: 'Simplify: a''b'' + ab + a''b'
+  options:
+  - a + b'
+  - a' + b
+  - a' + b'
+  - a + b
+  answer: ''
+- question: 'Memory capacity 32K×16 address/data lines:'
+  options:
+  - addr = 14, data = 16
+  - addr = 15, data = 16
+  - addr = 14, data = 4
+  - addr = 15, data = 4
+  answer: ''
+- question: The following circuit generates the same output as?
+  options:
+  - XOR GATE
+  - XNOR GATE
+  - NAND GATE
+  - NOR GATE
+  answer: ''
+- question: Which data structure follows LIFO?
+  options:
+  - Queue
+  - Graph
+  - Stack
+  - Tree
+  answer: Stack
+- question: Worst case complexity of Quick Sort?
+  options:
+  - O(n)
+  - O(log n)
+  - O(n^2)
+  - O(n log n)
+  answer: O(n^2)
+- question: Which traversal yields sorted order in BST?
+  options:
+  - Level-order
+  - In-order
+  - Post-order
+  - Pre-order
+  answer: In-order
+- question: Max number of nodes in a binary tree of height h?
+  options:
+  - 2h
+  - h^2
+  - 2^h
+  - 2^(h+1) - 1
+  answer: 2^(h+1) - 1
+- question: Which of these is a non-linear data structure?
+  options:
+  - Queue
+  - Array
+  - Tree
+  - Stack
+  answer: Tree
+- question: 'Binary Search can be applied on:'
+  options:
+  - Unsorted Array
+  - Stack
+  - Sorted Array
+  - Linked List
+  answer: Sorted Array
+- question: Minimum number of edges in a connected graph with V vertices?
+  options:
+  - V
+  - V+1
+  - V-1
+  - V/2
+  answer: V-1
+- question: Which sorting algorithm is stable?
+  options:
+  - Merge Sort
+  - Quick Sort
+  - Heap Sort
+  - Selection Sort
+  answer: Merge Sort
+- question: 'Postfix expression evaluation uses:'
+  options:
+  - Tree
+  - Heap
+  - Queue
+  - Stack
+  answer: Stack
+- question: BFS uses which data structure?
+  options:
+  - Stack
+  - Hash Table
+  - Heap
+  - Queue
+  answer: Queue
+- question: DFS uses which data structure?
+  options:
+  - Heap
+  - Stack
+  - Tree
+  - Queue
+  answer: Stack
+- question: 'AVL tree is a:'
+  options:
+  - B-Tree
+  - Heap
+  - Complete Binary Tree
+  - Self-balancing BST
+  answer: Self-balancing BST
+- question: Time complexity to access element in Array vs Linked List?
+  options:
+  - O(n) vs O(1)
+  - O(1) vs O(n)
+  - O(1) vs O(1)
+  - O(n) vs O(n)
+  answer: O(1) vs O(n)
+- question: Which hashing technique uses linked lists?
+  options:
+  - Linear Probing
+  - Chaining
+  - Quadratic Probing
+  - Double Hashing
+  answer: Chaining
+- question: What is the height of a balanced BST with n nodes?
+  options:
+  - O(n log n)
+  - O(log n)
+  - O(n)
+  - O(1)
+  answer: O(log n)
+- question: Insertion Sort best case complexity?
+  options:
+  - O(n)
+  - O(n^2)
+  - O(n log n)
+  - O(1)
+  answer: O(n)
+- question: A full binary tree with n leaves has how many internal nodes?
+  options:
+  - n
+  - n-1
+  - n+1
+  - 2n
+  answer: n-1
+- question: Which data structure is best for Priority Queue?
+  options:
+  - Heap
+  - Stack
+  - Array
+  - Queue
+  answer: Heap
+- question: 'Topological sort is applicable to:'
+  options:
+  - DAG
+  - Undirected Graph
+  - Tree
+  - Cyclic Graph
+  answer: DAG
+- question: 'Floyd-Warshall algorithm computes:'
+  options:
+  - MST
+  - All-pairs shortest paths
+  - Topological Sort
+  - Single-source shortest path
+  answer: All-pairs shortest paths
+- question: Which activity is NOT included in the first pass of a two-pass assembler?
+  options:
+  - Building of symbol table
+  - Construction of intermediate code
+  - Separation of mnemonic opcode and operand fields
+  - Generation of final object code
+  answer: Generation of final object code
+- question: 'What is the law A+A=A called?'
+  options:
+  - Identity Law
+  - Null Law
+  - Idempotent Law
+  - Complement Law
+  answer: Idempotent Law
+- question: 'Which of the following is NOT a collision resolution technique?'
+  options:
+  - Addressing
+  - Chaining
+  - Both A and B
+  - Indexing
+  answer: Indexing
+- question: 'In which storage replacement strategy is a program placed in the largest available hole in memory?'
+  options:
+  - Best Fit
+  - First Fit
+  - Worst Fit
+  - Next Fit
+  answer: Worst Fit
+- question: 'Match the following: (A) Time Sharing → Round Robin; Batch → FIFO; Disk Scheduling → SCAN'
+  options:
+  - Matches Time Sharing-Round Robin, Batch-FIFO, Disk-SCAN
+  - Matches Time Sharing-FIFO, Batch-Round Robin, Disk-SCAN
+  - Matches Time Sharing-SCAN, Batch-FIFO, Disk-Round Robin
+  - Matches Time Sharing-Round Robin, Batch-SCAN, Disk-FIFO
+  answer: Matches Time Sharing-Round Robin, Batch-FIFO, Disk-SCAN
+- question: 'A Half Adder is also known as:'
+  options:
+  - NAND circuit
+  - NOR circuit
+  - AND circuit
+  - XOR circuit
+  answer: XOR circuit
+- question: 'What is the result of Bitwise OR on decimal numbers 35 and 7?'
+  options:
+  - '35'
+  - '7'
+  - '42'
+  - '39'
+  answer: '39'
+- question: 'If you want to execute more than one program at a time, the system software must be capable of:'
+  options:
+  - Coupling
+  - Multi-tasking
+  - Compiling
+  - Linking
+  answer: Multi-tasking
+- question: 'Banker''s Algorithm is used for:'
+  options:
+  - Deadlock Prevention
+  - Deadlock Detection
+  - Deadlock Avoidance
+  - Deadlock Recovery
+  answer: Deadlock Avoidance
+- question: 'Loading Operating System from secondary memory to primary memory is called:'
+  options:
+  - Compiling
+  - Booting
+  - Refreshing
+  - Reassembling
+  answer: Booting
+- question: 'Which statement regarding Threads is correct? Statement 1: Thread is a dispatchable unit that does not execute sequentially. Statement 2: It is not possible to alter the behavior of a thread by altering its context.'
+  options:
+  - Both statements are Correct.
+  - Both statements are Incorrect.
+  - Only Statement 1 is correct.
+  - Only Statement 2 is correct.
+  answer: Both statements are Incorrect.
+- question: 'Which statement is true about Privileged Instructions?'
+  options:
+  - Can only be executed by Operating System (in Kernel Mode)
+  - Can be executed by User Programs
+  - Can be executed in User Mode
+  - None of the above
+  answer: Can only be executed by Operating System (in Kernel Mode)
+- question: '"Locality of Reference" is associated with:'
+  options:
+  - Hard Disk
+  - Main Memory
+  - Registers
+  - Cache Memory
+  answer: Cache Memory
+- question: 'Which logic circuit sends data from a single source to two or more separate destinations?'
+  options:
+  - Multiplexer
+  - Encoder
+  - Decoder
+  - De-Multiplexer
+  answer: De-Multiplexer
+- question: 'The output of a Sequential Circuit depends on:'
+  options:
+  - Present Input only
+  - Past Output only
+  - Independent of time
+  - Present Input and Past Output
+  answer: Present Input and Past Output
+- question: 'What is the addressing mode where the memory address of the data is given as an operand?'
+  options:
+  - Immediate
+  - Register
+  - Direct (Absolute)
+  - Implicit
+  answer: Direct (Absolute)
+- question: 'Which statement is correct regarding Interpreters vs Compilers? Statement 1: Interpreters usually take less time to analyze source code (but more to execute). Statement 2: Compilers translate one statement at a time.'
+  options:
+  - Only Statement 1 is correct.
+  - Only Statement 2 is correct.
+  - Both statements are Correct.
+  - Both statements are Incorrect.
+  answer: Only Statement 1 is correct.
+- question: 'Divide and Conquer policy is used in:'
+  options:
+  - Merge Sort
+  - Binary Search
+  - Quick Sort
+  - All of the above
+  answer: All of the above
+- question: 'Which one is a high-level abstraction over Semaphores?'
+  options:
+  - Mutex
+  - Spinlock
+  - Critical Section
+  - Monitors
+  answer: Monitors
+- question: 'Which memory allocation method suffers from External Fragmentation?'
+  options:
+  - Paging
+  - Swapping
+  - Segmentation
+  - Fixed Partitioning
+  answer: Segmentation
+- question: 'A Multiplexer (Mux) logic is characterized as:'
+  options:
+  - One to Many
+  - Many to One
+  - Many to Many
+  - One to One
+  answer: Many to One
+- question: 'The average time required to reach a storage location in memory and obtain its content is:'
+  options:
+  - Seek Time
+  - Turnaround Time
+  - Access Time
+  - Transfer Time
+  answer: Access Time
+- question: 'Which condition is NOT responsible for Deadlock to occur?'
+  options:
+  - Hold and Wait
+  - Circular Wait
+  - Preemption
+  - Mutual Exclusion
+  answer: Preemption
+- question: '"Degree of Multiprogramming" is controlled by which scheduler?'
+  options:
+  - Short Term
+  - Medium Term
+  - Long Term
+  - Dispatcher
+  answer: Long Term
+- question: 'A Distributed System is a collection of processors that:'
+  options:
+  - Share memory
+  - Share clock
+  - Do not share memory or clock
+  - Share both
+  answer: Do not share memory or clock
+- question: 'Which is NOT a property of Dynamic Programming?'
+  options:
+  - Optimal Substructure
+  - Overlapping Subproblems
+  - Bottom-up approach
+  - Dynamic Memory Allocation
+  answer: Dynamic Memory Allocation
+- question: 'What is the Worst Case efficiency of Quick Sort?'
+  options:
+  - O(n^2)
+  - O(nlogn)
+  - O(n)
+  - O(logn)
+  answer: O(n^2)
+- question: 'What is the time efficiency class of Heap Sort in the Worst Case?'
+  options:
+  - O(n^2)
+  - O(nlogn)
+  - O(n)
+  - O(logn)
+  answer: O(nlogn)
+- question: 'Hexadecimal representation of Octal number 657 is:'
+  options:
+  - 1AF
+  - D71
+  - 1BF
+  - C61
+  answer: 1AF
+- question: 'Which is NOT a basic logical operator?'
+  options:
+  - AND
+  - OR
+  - NOT
+  - XOR
+  answer: XOR
+- question: 'Regarding Readers-Writers problem, which statements are correct? (A) Mutual Exclusion necessary for Reader-Reader (B) Mutual Exclusion necessary for Writer-Writer (C) Mutual Exclusion necessary for Reader-Writer'
+  options:
+  - Mutual Exclusion necessary for Reader-Reader
+  - Mutual Exclusion necessary for Writer-Writer
+  - Mutual Exclusion necessary for Reader-Writer
+  - None of the above
+  answer: Mutual Exclusion necessary for Reader-Writer
+- question: 'Producer-Consumer problem can be solved using:'
+  options:
+  - Semaphores
+  - Monitors
+  - Message Passing
+  - All of the above
+  answer: All of the above
+- question: 'Mechanism where several users share a medium without interference is:'
+  options:
+  - Frequency Modulation
+  - Amplitude Modulation
+  - Multiplexing
+  - Demodulation
+  answer: Multiplexing
+- question: 'Simplification of Boolean Expression (K-map/Logic):'
+  options:
+  - xz' + xy
+  - xz + x'y
+  - x'z + xy
+  - x'z + x'y
+  answer: x'z + xy
+- question: 'Round Robin Scheduling Calculation: Given Processes P1-P5, Time Quantum = 5ms. Calculate Average Waiting Time.'
+  options:
+  - 25.2 ms
+  - 26.2 ms
+  - 27.2 ms
+  - 24.2 ms
+  answer: 26.2 ms
+- question: 'MOV [BX], AL is an example of which addressing mode?'
+  options:
+  - Direct
+  - Register
+  - Register Indirect
+  - Immediate
+  answer: Register Indirect
+- question: 'Direct Mapped Cache Calculation: Given 64 Blocks, Block Size 16 Bytes. Map Byte Address 75. Which block number?'
+  options:
+  - '10'
+  - '12'
+  - '11'
+  - '13'
+  answer: '11'
+- question: 'Deadlock Safe Sequence Calculation: Given Resources and Needs.'
+  options:
+  - Sequence P1, P2, P3, P4
+  - Sequence P2, P1, P3, P4
+  - Sequence P4, P3, P2, P1
+  - Sequence P3, P1, P2, P4
+  answer: Sequence P3, P1, P2, P4
+- question: 'Which technique is used in Merge Sort?'
+  options:
+  - Greedy
+  - Backtracking
+  - Dynamic Programming
+  - Divide and Conquer
+  answer: Divide and Conquer
+- question: 'Number of rotations to build AVL Tree with keys: 9, 6, 5, 8, 7, 10.'
+  options:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  answer: '3'
+- question: 'Physical location determined by a formula transforming a file key is:'
+  options:
+  - B-Tree
+  - Sequential
+  - Indexed
+  - Hashed File
+  answer: Hashed File
+- question: 'Number of edges in an N-vertex Complete Graph:'
+  options:
+  - n(n-1)/2
+  - n(n+1)/2
+  - n^2
+  - n
+  answer: n(n-1)/2
+- question: 'Binary equivalent of Decimal 42.75:'
+  options:
+  - 101010.11
+  - 110101.11
+  - 101010.01
+  - 101110.11
+  answer: 101010.11
+- question: 'Stack/Queue Operation: Push A,B,C,D -> Pop 4 times -> Enqueue -> Dequeue 2 -> Push to Stack -> Pop 1. What is popped?'
+  options:
+  - Element A
+  - Element B
+  - Element C
+  - Element D
+  answer: Element D
+- question: 'Which is NOT a valid Boolean Algebra Law?'
+  options:
+  - x+xy=x
+  - x(x+y)=x
+  - x+x'=x
+  - x+x=x
+  answer: x+x'=x
+- question: 'Which sorting algorithm performs in least time in Worst Case?'
+  options:
+  - Quick Sort
+  - Merge Sort & Heap Sort
+  - Bubble Sort
+  - Selection Sort
+  answer: Merge Sort & Heap Sort
+- question: 'Hashing Calculation: Hash Function H(k)=k mod 13. Keys: 661, 182, 24, 103 (Linear Probing). Location of 103?'
+  options:
+  - '11'
+  - '12'
+  - '0'
+  - '1'
+  answer: '1'
+- question: 'Prim''s Algorithm Sequence: Given a weighted graph, identify valid edge addition sequence.'
+  options:
+  - Sequence A
+  - Sequence B
+  - Sequence C
+  - Sequence D
+  answer: Sequence B
+- question: 'Match Algorithm Complexities: (A) Floyd Warshall, (B) Kruskal, (C) Bellman Ford.'
+  options:
+  - Matches Floyd-O(VE), Kruskal-O(n^3), Bellman-O(ElogE)
+  - Matches Floyd-O(n^3), Kruskal-O(VE), Bellman-O(ElogE)
+  - Matches Floyd-O(n^3), Kruskal-O(ElogE), Bellman-O(VE)
+  - Matches Floyd-O(ElogE), Kruskal-O(VE), Bellman-O(n^3)
+  answer: Matches Floyd-O(n^3), Kruskal-O(ElogE), Bellman-O(VE)
+- question: 'Simplify Boolean Function using K-Map (4 variables): (from Qtemp Q51)'
+  options:
+  - Option A
+  - Option B
+  - Option C
+  - Option D
+  answer: Option D
+- question: 'Effective Memory Access Time Calculation: TLB Hit 80%, TLB Time 15ns, Memory Time 150ns.'
+  options:
+  - 185ns
+  - 195ns
+  - 200ns
+  - 210ns
+  answer: 195ns
+- question: 'Disk Scheduling (SSTF) Calculation: Head at 20. Queue: 10, 22, 2, 40, 6, 38. Total time?'
+  options:
+  - 60 ms
+  - 100 ms
+  - 120 ms
+  - 150 ms
+  answer: 120 ms
+- question: 'Boolean Law Condition: Given x#y implies a specific truth table. When is a derived equation true?'
+  options:
+  - When x is 0
+  - When y is 1
+  - Never
+  - It is independent (always true)
+  answer: It is independent (always true)
+- question: 'Height of BST: Insert 10, 1, 3, 5, 15, 12, 16. What is the height?'
+  options:
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  answer: '3'
+- question: 'Convert Infix to Postfix: (A+B)×(C−D)'
+  options:
+  - AB+CD-*
+  - AB+CD*-
+  - A+BCD*-
+  - ABC+D*-
+  answer: AB+CD-*
+- question: 'Convert Infix to Prefix: (A+B)×(C−D)'
+  options:
+  - ×+AB-CD
+  - *+AB-CD
+  - +AB*-CD
+  - -CD*+AB
+  answer: *+AB-CD
+- question: 'Program Counter Jump: Given 24-bit instruction size. How many bytes does PC jump? Which address is reachable?'
+  options:
+  - '601'
+  - '600'
+  - '602'
+  - '599'
+  answer: '600'
+- question: 'Disk Capacity Calculation: Given Surfaces, Tracks, Sectors, Bytes. Calculate total capacity.'
+  options:
+  - 2^28 bytes
+  - 2^29 bytes
+  - 2^30 bytes
+  - 2^27 bytes
+  answer: 2^28 bytes
+- question: 'A Graph in which all nodes are of equal degree is called:'
+  options:
+  - Complete Graph
+  - Non-regular Graph
+  - Regular Graph
+  - Multigraph
+  answer: Regular Graph
+
+
+
+
+
+
