@@ -40,12 +40,13 @@ logical_reasoning:
   - '{x:x∈N and x < 100}'
   answer: '{x:x∈N and x is odd}'
 - question: |
-    Identify the missing number (?) from the following figure:
+    Identify the missing number (?) from the following table:
 
-    | 72 | 24 | 6 |
-    | :--- | :--- | :--- |
-    | 96 | 16 | 12 |
-    | 108 | ? | 18 |
+    | Column 1 | Column 2 | Column 3 |
+    |----------|----------|----------|
+    | 72       | 24       | 6        |
+    | 96       | 16       | 12       |
+    | 108      | ?        | 18       |
   options:
   - '12'
   - '16'
@@ -69,19 +70,22 @@ logical_reasoning:
   - Harmonium
   - Mridanga
   answer: Violin
-- question: 'Match List-I (Letter number series) with List-II (Missing term):
+- question: |
+    Match List-I (Letter number series) with List-II (Missing term):
 
+    **List-I:**
+    - (A) D4, F6, H8, J10, ?
+    - (B) 2B, 4C, 8E, 14H, ?
+    - (C) 3F, 6G, ?, 18L, 27P
+    - (D) W144, ?, S100, Q81, O64
 
-    - (A) D4, F6, H8, J10, ? — (I) U121
+    **List-II:**
+    - (I) U121
+    - (II) 111
+    - (III) 22L
+    - (IV) L12
 
-
-    - (B) 2B, 4C, 8E, 14H, ? — (II) 111
-
-
-    - (C) 3F, 6G, ?, 18L, 27P — (III) 22L
-
-
-    - (D) W144, ?, S100, Q81, O64 — (IV) L12'
+    Choose the correct matching:
   options:
   - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
   - (A)-(III), (B)-(IV), (C)-(II), (D)-(I)
@@ -143,34 +147,35 @@ logical_reasoning:
   - '0'
   answer: ''
 math:
-- question: 'If 1/9! + 1/10! = x/11!, then the value of x is:'
+- question: 'If 1/10! + 1/11! = x/12!, then the value of x is:'
   options:
-  - '121'
-  - '120'
+  - '144'
+  - '132'
   - '12'
-  - '24'
-  answer: '121'
-- question: 'Match List-I with List-II:
+  - '156'
+  answer: '144'
+- question: |
+    Match List-I with List-II:
 
+    **List-I:**
+    - (A) If X and Y are sets, n(X)=17, n(Y)=23, n(X∪Y)=38, then n(X∩Y) is
+    - (B) If n(X)=28, n(Y)=32, n(X∩Y)=10, then n(X∪Y) is
+    - (C) If n(X)=10, then n(7X) is
+    - (D) If n(Y)=20, then n(Y/2) is
 
-    - (A) If X and Y are sets, n(X)=17,n(Y)=23,n(X∪Y)=38, then n(X∩Y) is — (IV) 2
+    **List-II:**
+    - (I) 50
+    - (II) 2
+    - (III) 10
+    - (IV) 20
 
-
-    - (B) If n(X)=28,n(Y)=32,n(X∩Y)=10, then n(X∪Y) is — (III) 50
-
-
-    - (C) If n(X)=10, then n(7X) is — (II) 10 (Note: Context suggests a typo in source
-    table)
-
-
-    - (D) If n(Y)=20, then n(Y/2) is — (I) 20 (Note: Context suggests a typo in source
-    table)'
+    Choose the correct matching:
   options:
-  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
   - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
-  - (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
-  - (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
-  answer: (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  - (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+  - (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+  answer: (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
 - question: Out of 5 consonants and 4 vowels, how many words of 3 consonants and 3
     vowels can be made?
   options:
@@ -179,17 +184,14 @@ math:
   - '20'
   - '240'
   answer: '40'
-- question: 'From the given sets, which is an infinite set?
-
-    {x:x∈N and (x−1)(x−2)=0}
-
-    {x:x∈N and x is prime number and less than 199}'
+- question: |
+    If A and B are two sets with $n(A) = 12$, $n(B) = 15$, and $n(A \cap B) = 5$, then what is $n(A \cup B)$ and $n(A - B)$ respectively?
   options:
-  - '{x:x∈N and (x-1)(x-2)=0}'
-  - '{x:x∈N and x is prime}'
-  - '{x:x∈N and x is odd}'
-  - '{x:x∈N and x < 100}'
-  answer: '{x:x∈N and x is odd}'
+  - 22 and 7
+  - 27 and 12
+  - 22 and 5
+  - 27 and 7
+  answer: 22 and 7
 - question: 'A fair coin is tossed three times. Let A be the event of getting exactly
     two heads and B be the event of getting at most two tails, then P(A∪B) is:'
   options:
@@ -201,16 +203,25 @@ math:
 - question: |
     Match List-I with List-II:
 
-    (A) If $\begin{vmatrix} \lambda-1 & 0 \\ 0 & \lambda-1 \end{vmatrix}=0$, then $\lambda$ is — (II) 1
-    (B) If $\Delta = \begin{vmatrix} 1 & 2 \\ 2 & 4 \end{vmatrix}$, then $\Delta$ is — (I) 0
-    (C) If $A = \begin{bmatrix} 1 & 0 \\ 0 & 1/2 \end{bmatrix}$, then $|A^{-1}|$ is — (IV) 2
-    (D) If $\begin{bmatrix} a+1 & 1 \\ 1 & 2 \end{bmatrix} = \begin{bmatrix} -1 & 1 \\ 1 & 2 \end{bmatrix}$, then $a$ is — (III) -2
+    **List-I:**
+    - (A) If $\begin{vmatrix} \lambda-1 & 0 \\ 0 & \lambda-1 \end{vmatrix}=0$, then $\lambda$ is
+    - (B) If $\Delta = \begin{vmatrix} 1 & 2 \\ 2 & 4 \end{vmatrix}$, then $\Delta$ is
+    - (C) If $A = \begin{bmatrix} 1 & 0 \\ 0 & 1/2 \end{bmatrix}$, then $|A^{-1}|$ is
+    - (D) If $\begin{bmatrix} a+1 & 1 \\ 1 & 2 \end{bmatrix} = \begin{bmatrix} -1 & 1 \\ 1 & 2 \end{bmatrix}$, then $a$ is
+
+    **List-II:**
+    - (I) 2
+    - (II) -2
+    - (III) 1
+    - (IV) 0
+
+    Choose the correct matching:
   options:
-  - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
   - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
-  - (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
-  - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
-  answer: (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
+  - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+  answer: (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
 - question: 'If $a, b, c$ are in Geometric Progression and $a^{1/x} = b^{1/y} = c^{1/z}$, then $x, y, z$ are in:'
   options:
   - Arithmetic Progression
@@ -305,16 +316,25 @@ math:
 - question: |
     Match List-I with List-II:
 
-    (A) $\lim_{x \to 0} (1+2x)^{1/x}$ — (II) $e^2$
-    (B) $\lim_{x \to \infty} (1+1/x)^x$ — (III) $e$
-    (C) $\lim_{x \to 0} (1+5x)^{1/x}$ — (IV) $e^5$
-    (D) $\lim_{x \to \infty} (1+3/x)^{2x}$ — (I) $e^6$
+    **List-I:**
+    - (A) $\lim_{x \to 0} (1+2x)^{1/x}$
+    - (B) $\lim_{x \to \infty} (1+1/x)^x$
+    - (C) $\lim_{x \to 0} (1+5x)^{1/x}$
+    - (D) $\lim_{x \to \infty} (1+3/x)^{2x}$
+
+    **List-II:**
+    - (I) $e^5$
+    - (II) $e^6$
+    - (III) $e^2$
+    - (IV) $e$
+
+    Choose the correct matching:
   options:
-  - (A)-(IV), (B)-(I), (C)-(III), (D)-(II)
-  - (A)-(I), (B)-(IV), (C)-(III), (D)-(II)
-  - (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
-  - (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
-  answer: (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
+  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
+  - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  - (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  answer: (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
 - question: 'Find the equation of the parabola with focus at (0,0) and directrix given by the line x+y−4=0.'
   options:
   - 'x^2 + y^2 - 2xy + 8x + 8y - 16 = 0'
@@ -429,54 +449,70 @@ cs:
   - '9'
   - '11'
   answer: ''
-- question: 'Match CPU Scheduling Algorithms with Features:
+- question: |
+    Match CPU Scheduling Algorithms with Features:
 
+    **List-I (Algorithms):**
+    - (A) FCFS
+    - (B) Round Robin
+    - (C) Multi level queue
+    - (D) Multi-level Feedback
 
-    - (A) FCFS — (III) Often long average waiting time
+    **List-II (Features):**
+    - (I) Permanent assignment to specific queue
+    - (II) Often long average waiting time
+    - (III) Allows processes to move between queues
+    - (IV) FCFS + preemption
 
-
-    - (B) Round Robin — (I) FCFS + preemption
-
-
-    - (C) Multi level queue — (IV) Permanent assignment to specific queue
-
-
-    - (D) Multi-level Feedback — (II) Allows processes to move between queues'
+    Choose the correct matching:
   options:
-  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
   - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
-  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-  answer: ''
-- question: 'Match List-I with List-II (Disk terms):
+  - (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  answer: (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+- question: |
+    Match List-I with List-II (Disk terms):
 
+    **List-I:**
+    - (A) Seek Time
+    - (B) Access Time
+    - (C) Rotational Latency
+    - (D) Disk Bandwidth
 
-    - (A) Seek Time — (IV) Time to move heads to desired cylinder
+    **List-II:**
+    - (I) Time to move heads to desired cylinder
+    - (II) Seek Time + Rotational Latency
+    - (III) Time for disk to rotate sector to head
+    - (IV) Bytes transferred divided by total time
 
-
-    - (B) Access Time — (III) Seek Time + Rotational Latency
-
-
-    - (C) Rotational Latency — (II) Time for disk to rotate sector to head
-
-
-    - (D) Disk Bandwidth — (I) Bytes transferred divided by total time'
+    Choose the correct matching:
   options:
   - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
-  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
-  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
-  answer: (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-- question: 'Arrange process statements for critical section structure: (A) Critical,
-    (B) Remainder, (C) Entry, (D) Exit.'
+  - (A)-(II), (B)-(III), (C)-(I), (D)-(IV)
+  - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+  - (A)-(IV), (B)-(I), (C)-(II), (D)-(III)
+  answer: (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+- question: |
+    Arrange process statements for critical section structure in correct order:
+
+    - (A) Critical Section
+    - (B) Remainder Section
+    - (C) Entry Section
+    - (D) Exit Section
   options:
   - (C), (B), (A), (D)
   - (C), (A), (B), (D)
   - (C), (A), (D), (B)
   - (C), (B), (D), (A)
   answer: ''
-- question: 'Arrange MS DOS layers from inner most to outer most: (A) ROM BIOS Drivers,
-    (B) Resident System Program, (C) MS DOS Drivers, (D) Application Program.'
+- question: |
+    Arrange MS DOS layers from innermost to outermost:
+
+    - (A) ROM BIOS Drivers
+    - (B) Resident System Program
+    - (C) MS DOS Drivers
+    - (D) Application Program
   options:
   - (A), (C), (B), (D)
   - (D), (B), (C), (A)
@@ -490,25 +526,28 @@ cs:
   - Finding minimum distance in unweighted graph optimally
   - Solving Maze Problem
   answer: ''
-- question: 'Match Algorithms with Data Structures:
+- question: |
+    Match Algorithms with Data Structures:
 
+    **List-I (Algorithms):**
+    - (A) BFS
+    - (B) DFS
+    - (C) Heap sort
+    - (D) Secondary storage
 
-    - (A) BFS — (IV) Queue
+    **List-II (Data Structures):**
+    - (I) Priority Queue
+    - (II) Queue
+    - (III) B Trees
+    - (IV) Stack
 
-
-    - (B) DFS — (I) Stack
-
-
-    - (C) Heap sort — (III) Priority Queue
-
-
-    - (D) Secondary storage — (II) B Trees'
+    Choose the correct matching:
   options:
+  - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
   - (A)-(IV), (B)-(I), (C)-(III), (D)-(II)
-  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
-  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-  answer: (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
+  - (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
+  - (A)-(I), (B)-(III), (C)-(IV), (D)-(II)
+  answer: (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
 - question: 'In a binary search tree, the worst case time complexity of inserting
     and deleting a key is:'
   options:
@@ -517,37 +556,48 @@ cs:
   - O(n) for insertion and O(n) for deletion
   - O(lg n) for insertion and O(n) for deletion
   answer: ''
-- question: 'Match Algorithm with Recurrence Relation:
+- question: |
+    Match Algorithm with Recurrence Relation:
 
+    **List-I (Algorithms):**
+    - (A) Binary Search
+    - (B) Merge Sort
+    - (C) Quick sort (worst case)
+    - (D) Linear Search
 
-    - (A) Binary Search — (I) T(n)=T(n/2)+c
+    **List-II (Recurrence Relations):**
+    - (I) $T(n)=T(n-1)+c$
+    - (II) $T(n)=T(n/2)+c$
+    - (III) $T(n)=T(n-1)+\Theta(n)$
+    - (IV) $T(n)=2T(n/2)+\Theta(n)$
 
-
-    - (B) Merge Sort — (II) T(n)=2T(n/2)+Θ(n)
-
-
-    - (C) Quick sort (worst case) — (III) T(n)=T(n−1)+Θ(n)
-
-
-    - (D) Linear Search — (IV) T(n)=T(n−1)+c'
+    Choose the correct matching:
   options:
-  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
-  - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
-  - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-  answer: ''
-- question: 'Arrange time complexities in increasing order: (A) Bubble sort (worst),
-    (B) Deleting head in linked list, (C) Binary search, (D) Merge sort (worst).'
+  - (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+  - (A)-(III), (B)-(I), (C)-(II), (D)-(IV)
+  - (A)-(I), (B)-(III), (C)-(IV), (D)-(II)
+  - (A)-(IV), (B)-(II), (C)-(I), (D)-(III)
+  answer: (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
+- question: |
+    Arrange time complexities in increasing order:
+
+    - (A) Bubble sort (worst case)
+    - (B) Deleting head in linked list
+    - (C) Binary search
+    - (D) Merge sort (worst case)
   options:
   - (A), (B), (C), (D)
   - (B), (C), (D), (A)
   - (B), (A), (D), (C)
   - (C), (B), (D), (A)
   answer: ''
-- question: 'Which statements are TRUE (|E| = edges):  (A) Directed graph: sum of
-    adjacency list lengths = |E|  (B) Undirected graph: sum of adjacency list lengths
-    = 2|E|  (C) Dense graph: adjacency matrix is preferable  (D) Adjacency matrix
-    memory depends on |E|'
+- question: |
+    Which statements are TRUE? (|E| = number of edges)
+
+    - (A) Directed graph: sum of adjacency list lengths = |E|
+    - (B) Undirected graph: sum of adjacency list lengths = 2|E|
+    - (C) Dense graph: adjacency matrix is preferable
+    - (D) Adjacency matrix memory depends on |E|
   options:
   - (A), (B) and (D) only
   - (A), (B) and (C) only
@@ -561,7 +611,13 @@ cs:
   - Linear Search
   - Jump search
   answer: ''
-- question: 'Which statements are TRUE for shortest path in unweighted graph? (A) BFS always finds shortest path. (B) DFS always finds shortest path. (C) DFS does not guarantee shortest path. (D) BFS does not guarantee shortest path.'
+- question: |
+    Which statements are TRUE for shortest path in unweighted graph?
+
+    - (A) BFS always finds shortest path
+    - (B) DFS always finds shortest path
+    - (C) DFS does not guarantee shortest path
+    - (D) BFS does not guarantee shortest path
   options:
   - (B) and (D) only
   - (A) and (C) only
@@ -590,7 +646,13 @@ cs:
   - Best case time Complexity
   - Final Output
   answer: ''
-- question: 'Arrange pseudocode for searching element k in linked list L:'
+- question: |
+    Arrange pseudocode for searching element k in linked list L:
+
+    - (A) if x.key == k
+    - (B) x = L.head
+    - (C) return x
+    - (D) while x != NIL and x.key != k
   options:
   - (B), (A), (C), (D)
   - (A), (B), (C), (D)
@@ -611,84 +673,99 @@ cs:
   - 'B + AC'
   - 'A + BC'
   answer: 'B + AC'
-- question: 'Arrange memories by speed (fastest to slowest): (A) HDD, (B) Cache, (C)
-    RAM, (D) Registers.'
+- question: |
+    Arrange memories by speed (fastest to slowest):
+
+    - (A) HDD
+    - (B) Cache
+    - (C) RAM
+    - (D) Registers
   options:
   - (D), (C), (B), (A)
   - (A), (C), (B), (D)
   - (B), (D), (C), (A)
   - (D), (B), (C), (A)
   answer: ''
-- question: 'Match decimal additions (signed-complement) with binary representations:
+- question: |
+    Match decimal additions (signed-complement) with binary representations:
 
+    **List-I (Decimal Additions):**
+    - (A) +6, +13
+    - (B) -6, +13
+    - (C) +6, -13
+    - (D) -6, -13
 
-    - (A) +6, +13 — (II) 00010011
+    **List-II (Binary Results):**
+    - (I) 00000111
+    - (II) 00010011
+    - (III) 11111101
+    - (IV) 11110011
 
-
-    - (B) -6, +13 — (I) 00000111
-
-
-    - (C) +6, -13 — (III) 11101101 (or IV/III based on 1s/2s complement)
-
-
-    - (D) -6, -13 — (IV) 1111101 (Note: Source representation varies)'
+    Choose the correct matching:
   options:
   - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
   - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
   - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
   - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
   answer: ''
-- question: 'Arrange 3 to 8 line decoder steps: (A) Enable = 1, (B) Activate 1 of
-    8 lines, (C) Apply input code, (D) Convert 3-bit to 8 outputs.'
+- question: |
+    Arrange 3 to 8 line decoder steps in correct order:
+
+    - (A) Enable = 1
+    - (B) Activate 1 of 8 lines
+    - (C) Apply input code
+    - (D) Convert 3-bit to 8 outputs
   options:
   - (A), (B), (C), (D)
   - (A), (D), (C), (B)
   - (A), (C), (D), (B)
   - (A), (B), (D), (C)
   answer: ''
-- question: 'Minimum hamming distance d
-
-    min
-
-    ​
-
-    to correct p errors:
-
-    2p'
+- question: |
+    Minimum hamming distance $d_{min}$ required to correct $p$ errors:
   options:
-  - 2p+1
-  - 2p-1
-  - '2'
-  - p−2
-  answer: ''
-- question: 'Consider the statements:  (A) Combinational: no memory; Sequential: memory.
-    (B) Sequential: current inputs only; Combinational: current/past.  (Note: typically
-    inverted) (C) Flip-flops are combinational.  (D) Multiplexer is combinational.'
+  - $2p+1$
+  - $2p-1$
+  - $2p$
+  - $p-2$
+  answer: $2p+1$
+- question: |
+    Consider the statements:
+
+    - (A) Combinational circuits have no memory; Sequential circuits have memory
+    - (B) Sequential circuits depend only on current inputs; Combinational circuits depend on current and past inputs
+    - (C) Flip-flops are combinational circuits
+    - (D) Multiplexer is a combinational circuit
+
+    Which statements are correct?
   options:
   - (A) and (D) only
   - (A), (B) and (D) only
   - (A), (B), (C) and (D)
   - (B), (C) and (D) only
   answer: ''
-- question: 'Match JK Flip Flop inputs with Next State:
+- question: |
+    Match JK Flip Flop inputs with Next State:
 
+    **List-I (JK Inputs):**
+    - (A) J=0, K=0
+    - (B) J=0, K=1
+    - (C) J=1, K=0
+    - (D) J=1, K=1
 
-    - (A) 00 — (IV) No Change
+    **List-II (Next State):**
+    - (I) Reset
+    - (II) Toggle
+    - (III) No Change
+    - (IV) Set
 
-
-    - (B) 01 — (III) Reset
-
-
-    - (C) 10 — (II) Set
-
-
-    - (D) 11 — (I) Toggle'
+    Choose the correct matching:
   options:
-  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
-  - (A)-(IV), (B)-(III), (C)-(II), (D)-(I)
+  - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
+  - (A)-(II), (B)-(IV), (C)-(III), (D)-(I)
   - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
   - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
-  answer: ''
+  answer: (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
 - question: 'IEEE754 result of (NaN == NaN):'
   options:
   - 'false'
@@ -899,13 +976,26 @@ cs:
   - Worst Fit
   - Next Fit
   answer: Worst Fit
-- question: 'Match the following: (A) Time Sharing → Round Robin; Batch → FIFO; Disk Scheduling → SCAN'
+- question: |
+    Match the following: Time Sharing, Batch, and Disk Scheduling with their appropriate algorithms:
+
+    **List-I (System Types):**
+    - (A) Time Sharing
+    - (B) Batch
+    - (C) Disk Scheduling
+
+    **List-II (Algorithms):**
+    - (I) FIFO
+    - (II) SCAN
+    - (III) Round Robin
+
+    Choose the correct matching:
   options:
-  - Matches Time Sharing-Round Robin, Batch-FIFO, Disk-SCAN
-  - Matches Time Sharing-FIFO, Batch-Round Robin, Disk-SCAN
-  - Matches Time Sharing-SCAN, Batch-FIFO, Disk-Round Robin
-  - Matches Time Sharing-Round Robin, Batch-SCAN, Disk-FIFO
-  answer: Matches Time Sharing-Round Robin, Batch-FIFO, Disk-SCAN
+  - (A)-(III), (B)-(I), (C)-(II)
+  - (A)-(I), (B)-(II), (C)-(III)
+  - (A)-(II), (B)-(III), (C)-(I)
+  - (A)-(I), (B)-(III), (C)-(II)
+  answer: (A)-(III), (B)-(I), (C)-(II)
 - question: 'A Half Adder is also known as:'
   options:
   - NAND circuit
@@ -941,7 +1031,11 @@ cs:
   - Loader
   - Swapper
   answer: Bootstrap Loader
-- question: 'Which statement regarding Threads is correct? Statement 1: Thread is a dispatchable unit that does not execute sequentially. Statement 2: It is not possible to alter the behavior of a thread by altering its context.'
+- question: |
+    Which statement regarding Threads is correct?
+
+    - Statement 1: Thread is a dispatchable unit that does not execute sequentially
+    - Statement 2: It is not possible to alter the behavior of a thread by altering its context
   options:
   - Both statements are Correct.
   - Both statements are Incorrect.
@@ -983,7 +1077,11 @@ cs:
   - Based Indexed with Displacement
   - Immediate
   answer: Based Indexed with Displacement
-- question: 'Which statement is correct regarding Interpreters vs Compilers? Statement 1: Interpreters usually take less time to analyze source code (but more to execute). Statement 2: Compilers translate one statement at a time.'
+- question: |
+    Which statement is correct regarding Interpreters vs Compilers?
+
+    - Statement 1: Interpreters usually take less time to analyze source code (but more to execute)
+    - Statement 2: Compilers translate one statement at a time
   options:
   - Only Statement 1 is correct.
   - Only Statement 2 is correct.
@@ -1081,7 +1179,12 @@ cs:
   - NOT
   - XOR
   answer: XOR
-- question: 'Regarding Readers-Writers problem, which statements are correct? (A) Mutual Exclusion necessary for Reader-Reader (B) Mutual Exclusion necessary for Writer-Writer (C) Mutual Exclusion necessary for Reader-Writer'
+- question: |
+    Regarding Readers-Writers problem, which statements are correct?
+
+    - (A) Mutual Exclusion necessary for Reader-Reader
+    - (B) Mutual Exclusion necessary for Writer-Writer
+    - (C) Mutual Exclusion necessary for Reader-Writer
   options:
   - Mutual Exclusion necessary for Reader-Reader
   - Mutual Exclusion necessary for Writer-Writer
@@ -1102,23 +1205,24 @@ cs:
   - Multiplexing
   - Demodulation
   answer: Multiplexing
-- question: 'Simplification of Boolean Expression (K-map/Logic):'
+- question: |
+    Using K-Map, simplify the Boolean function $F(x,y,z) = \sum m(1,2,3,5,7)$. Which of the following is the minimal sum-of-products form?
   options:
-  - xz' + xy
-  - xz + x'y
-  - x'z + xy
-  - x'z + x'y
-  answer: x'z + xy
+  - $xy + xz' + x'y'z$
+  - $x + y'z$
+  - $x'z + xy + y'z'$
+  - $x'y'z + xy + xz'$
+  answer: $x + y'z$
 - question: |
     Given the following processes and burst times with Time Quantum = 5ms:
 
-    | Process | Burst Time |
-    | :--- | :--- |
-    | P1 | 10 |
-    | P2 | 29 |
-    | P3 | 3 |
-    | P4 | 7 |
-    | P5 | 12 |
+    | Process | Burst Time (ms) |
+    |---------|----------------|
+    | P1      | 10             |
+    | P2      | 29             |
+    | P3      | 3              |
+    | P4      | 7              |
+    | P5      | 12             |
 
     Calculate the Average Waiting Time using Round Robin scheduling.
   options:
@@ -1145,19 +1249,23 @@ cs:
     Consider a system with 5 processes (P0 through P4) and 3 resource types (A, B, C).
     Resource types A, B, and C have 10, 5, and 7 instances, respectively.
 
-    Start State (Allocation):
-    P0: 0 1 0
-    P1: 2 0 0
-    P2: 3 0 2
-    P3: 2 1 1
-    P4: 0 0 2
+    **Allocation Matrix:**
+    | Process | A | B | C |
+    |---------|---|---|---|
+    | P0      | 0 | 1 | 0 |
+    | P1      | 2 | 0 | 0 |
+    | P2      | 3 | 0 | 2 |
+    | P3      | 2 | 1 | 1 |
+    | P4      | 0 | 0 | 2 |
 
-    Max Demand:
-    P0: 7 5 3
-    P1: 3 2 2
-    P2: 9 0 2
-    P3: 2 2 2
-    P4: 4 3 3
+    **Max Demand Matrix:**
+    | Process | A | B | C |
+    |---------|---|---|---|
+    | P0      | 7 | 5 | 3 |
+    | P1      | 3 | 2 | 2 |
+    | P2      | 9 | 0 | 2 |
+    | P3      | 2 | 2 | 2 |
+    | P4      | 4 | 3 | 3 |
 
     Which of the following is a safe sequence?
   options:
@@ -1203,7 +1311,8 @@ cs:
   answer: 101010.11
 - question: |
     Consider an empty Stack 'S' and an empty Queue 'Q'.
-    Operations:
+
+    **Operations performed in order:**
     1. Push(S, x); Push(S, y); Push(S, z)
     2. Enqueue(Q, Pop(S)); Enqueue(Q, Pop(S))
     3. Pop(S)
@@ -1245,70 +1354,93 @@ cs:
   - Priority Queue
   - Hash Map
   answer: Priority Queue
-- question: 'Match Algorithm Complexities: (A) Floyd Warshall, (B) Kruskal, (C) Bellman Ford.'
+- question: |
+    Match Algorithm Complexities:
+
+    **List-I (Algorithms):**
+    - (A) Floyd Warshall
+    - (B) Kruskal
+    - (C) Bellman Ford
+
+    **List-II (Complexities):**
+    - (I) $O(VE)$
+    - (II) $O(E \log E)$
+    - (III) $O(n^3)$
+
+    Choose the correct matching:
   options:
-  - Matches Floyd-O(VE), Kruskal-O(n^3), Bellman-O(ElogE)
-  - Matches Floyd-O(n^3), Kruskal-O(VE), Bellman-O(ElogE)
-  - Matches Floyd-O(n^3), Kruskal-O(ElogE), Bellman-O(VE)
-  - Matches Floyd-O(ElogE), Kruskal-O(VE), Bellman-O(n^3)
-  answer: Matches Floyd-O(n^3), Kruskal-O(ElogE), Bellman-O(VE)
-- question: 'Simplify Boolean Function using K-Map (4 variables): (from Qtemp Q51)'
+  - (A)-(III), (B)-(II), (C)-(I)
+  - (A)-(I), (B)-(III), (C)-(II)
+  - (A)-(II), (B)-(I), (C)-(III)
+  - (A)-(III), (B)-(I), (C)-(II)
+  answer: (A)-(III), (B)-(II), (C)-(I)
+- question: |
+    Simplify the Boolean Function using K-Map (4 variables A, B, C, D):
+    
+    $F(A,B,C,D) = \sum m(0,2,5,7,8,10,13,15)$
   options:
-  - Option A
-  - Option B
-  - Option C
-  - Option D
-  answer: Option D
-- question: 'Effective Memory Access Time Calculation: TLB Hit 80%, TLB Time 15ns, Memory Time 150ns.'
+  - $BD + B'D'$
+  - $AC + A'C'$
+  - $AB + CD$
+  - $A'B' + CD'$
+  answer: $BD + B'D'$
+- question: |
+    A system uses TLB with the following characteristics: On a TLB hit, page table lookup is avoided. On a TLB miss, the page table must be accessed from memory. Given that TLB lookup takes 15ns, memory access takes 150ns, and 80% of memory references result in a TLB hit, what is the effective memory access time? (Assume no page faults)
   options:
-  - 185ns
+  - 165ns
+  - 177ns
+  - 183ns
   - 195ns
-  - 200ns
-  - 210ns
   answer: 195ns
-- question: 'Disk Scheduling (SSTF) Calculation: Head at 20. Queue: 10, 22, 2, 40, 6, 38. Total time?'
+- question: |
+    A disk queue contains requests for the following cylinder numbers in order: 10, 22, 2, 40, 6, 38. The disk head is currently positioned at cylinder 20. Using the Shortest Seek Time First (SSTF) algorithm, what is the total head movement (in cylinders) required to service all requests?
   options:
-  - 60 ms
-  - 100 ms
-  - 120 ms
-  - 150 ms
-  answer: 120 ms
-- question: 'Given the boolean operation x#y = x''y + xy'', which derived equation is always TRUE?'
+  - 76 cylinders
+  - 98 cylinders
+  - 102 cylinders
+  - 118 cylinders
+  answer: 76 cylinders
+- question: 'Given the boolean operation $x \# y = x''y + xy''$ (XOR operation), which derived equation is always TRUE?'
   options:
-  - x # x = 1
-  - x # 0 = x
-  - x # 1 = x
-  - x # y = 0
-  answer: x # 0 = x
-- question: 'Insert the keys 10, 1, 3, 5, 15, 12, 16 into a BST. What is the height of the resulting tree (Root at 0)?'
+  - $x \# x = 1$
+  - $x \# 0 = x$
+  - $x \# 1 = x$
+  - $x \# y = 0$
+  answer: $x \# 0 = x$
+- question: |
+    Starting with an empty Binary Search Tree (BST), the following keys are inserted in the given sequence: 10, 1, 3, 5, 15, 12, 16. Assuming standard BST insertion rules (smaller keys to the left, larger to the right) and treating the root node as having height 0, what is the maximum distance from the root to any leaf node?
   options:
   - '2'
   - '3'
   - '4'
   - '5'
   answer: '3'
-- question: 'Convert Infix to Postfix: (A+B)×(C−D)'
+- question: |
+    When converting the infix expression $(A+B) \times (C-D)$ to postfix notation using the standard algorithm with operator precedence (multiplication before addition/subtraction) and left-to-right associativity, what is the resulting postfix expression?
   options:
   - AB+CD-*
   - AB+CD*-
   - A+BCD*-
   - ABC+D*-
   answer: AB+CD-*
-- question: 'Convert Infix to Prefix: (A+B)×(C−D)'
+- question: |
+    Consider the infix expression $(A+B) \times (C-D)$. When this expression is converted to prefix (Polish) notation where operators precede their operands and the multiplication operator is represented by '*', which of the following represents the correct prefix form?
   options:
   - '×+AB-CD'
   - '*+AB-CD'
   - '+AB*-CD'
   - '-CD*+AB'
   answer: '*+AB-CD'
-- question: 'A CPU has a 24-bit instruction size and is byte-addressable. If the Program Counter (PC) increments by the instruction size, and the current PC is 600, what will be the next PC value (in decimal)?'
+- question: |
+    A processor architecture uses a 24-bit instruction word and operates in byte-addressable memory mode. The Program Counter (PC) automatically increments by the size of one complete instruction after each fetch cycle. Given that the PC currently holds the value 600 (decimal), what will be the PC value after fetching the next instruction?
   options:
   - '601'
   - '603'
   - '602'
   - '604'
   answer: '603'
-- question: 'A hard disk spins at 3600 RPM. What is the average rotational latency?'
+- question: |
+    A hard disk drive operates at a rotational speed of 3600 RPM (revolutions per minute). Assuming the worst-case scenario for rotational positioning, what is the average rotational latency (the average time spent waiting for the desired sector to rotate under the read/write head)?
   options:
   - 4.17 ms
   - 8.33 ms
@@ -1322,6 +1454,70 @@ cs:
   - Regular Graph
   - Multigraph
   answer: Regular Graph
+- question: |
+    Using K-Map, simplify the Boolean function:
+    
+    $F(A,B,C,D) = \sum m(1,3,5,7,9,11,13,15)$
+  options:
+  - $A$
+  - $B$
+  - $C$
+  - $D$
+  answer: $D$
+- question: |
+    Simplify using K-Map (3 variables):
+    
+    $F(A,B,C) = \sum m(0,2,4,5,6)$
+  options:
+  - $A' + BC'$
+  - $A + B'C$
+  - $B' + AC$
+  - $C' + AB'$
+  answer: $C' + AB'$
+- question: |
+    Which minterms are grouped together in the K-Map for the function $F(A,B,C,D) = \sum m(0,1,2,3,8,9,10,11)$?
+  options:
+  - Two groups of 4 minterms each
+  - One group of 8 minterms
+  - Four groups of 2 minterms each
+  - Eight groups of 1 minterm each
+  answer: One group of 8 minterms
+- question: |
+    Simplify the Boolean function using K-Map:
+    
+    $F(A,B,C) = \sum m(1,4,5,6,7)$
+  options:
+  - $AB + AC' + BC$
+  - $A + BC'$
+  - $AB' + AC$
+  - $A + B'C$
+  answer: $A + B'C$
+- question: |
+    Using K-Map for 4 variables, find the simplified form:
+    
+    $F(W,X,Y,Z) = \sum m(0,1,2,5,6,7,8,9,14)$
+  options:
+  - $W'X' + XY' + W'YZ$
+  - $W'X + XY + WZ'$
+  - $WX' + X'Y + WYZ$
+  - $WX + XY' + W'Z$
+  answer: $W'X' + XY' + W'YZ$
+- question: |
+    In a K-Map, what is the maximum size of a group that can be formed?
+  options:
+  - Equal to the number of variables
+  - Power of 2 up to total minterms
+  - Always 4
+  - Always 8
+  answer: Power of 2 up to total minterms
+- question: |
+    For the Boolean function $F(A,B,C,D) = \sum m(5,7,13,15)$, what is the simplified expression?
+  options:
+  - $BD$
+  - $AC$
+  - $AD$
+  - $BC$
+  answer: $AD$
 
 
 

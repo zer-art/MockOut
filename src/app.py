@@ -2,6 +2,8 @@ import streamlit as st
 import yaml
 import random
 import time
+import re
+import copy
 import streamlit.components.v1 as components
 
 # --- Constants ---
@@ -22,14 +24,9 @@ def local_css():
         }
         .question-card {
             background-color: #f9f9f9;
-            padding: 20px;
+            padding: 10px 20px;
             border-radius: 10px;
             border: 1px solid #ddd;
-            margin-bottom: 20px;
-        }
-        .question-text {
-            font-size: 1.2em;
-            font-weight: 500;
             margin-bottom: 10px;
         }
         .category-tag {
@@ -39,7 +36,6 @@ def local_css():
             border-radius: 4px;
             font-size: 0.8em;
             display: inline-block;
-            margin-bottom: 10px;
         }
         .timer-box {
             font-size: 24px; 
@@ -69,34 +65,122 @@ def load_questions():
         st.error(f"Error parsing YAML: {e}")
         return None
 
+def tweak_numbers_in_text(text, variance=0.15):
+    """Tweaks numerical values in text by a small random variance."""
+    if not text or not isinstance(text, str):
+        return text
+    
+    def replace_number(match):
+        num_str = match.group(0)
+        try:
+            # Skip if it's part of a LaTeX command or variable name
+            if match.start() > 0 and text[match.start()-1] in ['$', '\\', '_', '^']:
+                return num_str
+            
+            num = float(num_str)
+            # Don't tweak small numbers (0-5) or common constants
+            if abs(num) <= 5 or num in [10, 100, 1000]:
+                return num_str
+            
+            # Apply random variance
+            variation = random.uniform(-variance, variance)
+            new_num = num * (1 + variation)
+            
+            # Keep integer if original was integer
+            if '.' not in num_str:
+                new_num = int(round(new_num))
+                return str(new_num)
+            else:
+                return f"{new_num:.2f}"
+        except:
+            return num_str
+    
+    # Match numbers but avoid LaTeX commands
+    return re.sub(r'\b\d+(?:\.\d+)?\b', replace_number, text)
+
+def get_question_id(question):
+    """Generate a unique ID for a question based on its content."""
+    # Use first 50 chars of question as ID
+    q_text = question.get('question', '')[:50]
+    return hash(q_text)
+
+def weighted_sample(questions, count, question_history, max_history=5):
+    """Sample questions with lower probability for recently used ones."""
+    if not questions or count <= 0:
+        return []
+    
+    if len(questions) <= count:
+        return questions[:]
+    
+    # Calculate weights based on history
+    weights = []
+    for q in questions:
+        q_id = get_question_id(q)
+        # Find how recently this question was used
+        try:
+            recent_index = question_history.index(q_id)
+            # More recent = lower weight (0.2 for most recent, gradually increases)
+            weight = 0.2 + (recent_index / max_history) * 0.8
+        except ValueError:
+            # Not in history = full weight
+            weight = 1.0
+        weights.append(weight)
+    
+    # Normalize weights
+    total_weight = sum(weights)
+    if total_weight == 0:
+        return random.sample(questions, count)
+    
+    normalized_weights = [w / total_weight for w in weights]
+    
+    # Use weighted random selection
+    selected = random.choices(questions, weights=normalized_weights, k=count)
+    return selected
+
 def select_questions(all_questions):
-    """Randomly selects questions based on category counts."""
+    """Randomly selects questions based on category counts with weighted selection."""
     selected = []
     
-    def sample_safe(questions, count, category_name):
-        if not questions:
-            return []
-        if len(questions) < count:
-            return questions 
-        return random.sample(questions, count)
-
+    # Get question history from session state
+    question_history = st.session_state.get('question_history', [])
+    
     if 'cs' in all_questions:
-        cs_qs = sample_safe(all_questions['cs'], CS_COUNT, "Computer Science")
-        for q in cs_qs: q['category'] = 'Computer Science'
+        cs_qs = weighted_sample(all_questions['cs'], CS_COUNT, question_history)
+        for q in cs_qs: 
+            q['category'] = 'Computer Science'
         selected.extend(cs_qs)
         
     if 'math' in all_questions:
-        math_qs = sample_safe(all_questions['math'], MATH_COUNT, "Mathematics")
-        for q in math_qs: q['category'] = 'Mathematics'
+        math_qs = weighted_sample(all_questions['math'], MATH_COUNT, question_history)
+        for q in math_qs: 
+            q['category'] = 'Mathematics'
         selected.extend(math_qs)
 
     if 'logical_reasoning' in all_questions:
-        lr_qs = sample_safe(all_questions['logical_reasoning'], LR_COUNT, "Logical Reasoning")
-        for q in lr_qs: q['category'] = 'Logical Reasoning'
+        lr_qs = weighted_sample(all_questions['logical_reasoning'], LR_COUNT, question_history)
+        for q in lr_qs: 
+            q['category'] = 'Logical Reasoning'
         selected.extend(lr_qs)
 
-    random.shuffle(selected)
-    return selected
+    # Tweak numerical values in questions
+    tweaked_selected = []
+    for q in selected:
+        q_copy = copy.deepcopy(q)
+        # Tweak question text
+        q_copy['question'] = tweak_numbers_in_text(q_copy['question'])
+        # Tweak options if they contain numbers
+        if 'options' in q_copy:
+            q_copy['options'] = [tweak_numbers_in_text(opt) for opt in q_copy['options']]
+        tweaked_selected.append(q_copy)
+    
+    # Update question history with newly selected questions
+    new_ids = [get_question_id(q) for q in selected]
+    updated_history = new_ids + question_history
+    # Keep only last 50 question IDs
+    st.session_state.question_history = updated_history[:50]
+    
+    random.shuffle(tweaked_selected)
+    return tweaked_selected
 
 def initialize_session_state():
     """Initializes session state variables."""
@@ -116,6 +200,8 @@ def initialize_session_state():
         st.session_state.q_start_time = None
     if 'submitted' not in st.session_state:
         st.session_state.submitted = False
+    if 'question_history' not in st.session_state:
+        st.session_state.question_history = []  # Track recently used questions
 
 def update_time_spent():
     """Updates the time spent on the current question."""
@@ -250,9 +336,11 @@ if st.session_state.exam_started and not st.session_state.submitted:
             st.markdown(f"""
             <div class="question-card">
                 <span class="category-tag">{q.get('category', 'General')}</span>
-                <div class="question-text">Q{idx+1}. {q['question']}</div>
             </div>
             """, unsafe_allow_html=True)
+            
+            # Render question with LaTeX support
+            st.markdown(f"### Q{idx+1}. {q['question']}")
         
         # Answer Selection
         current_answer = st.session_state.user_answers.get(idx, None)
@@ -375,8 +463,11 @@ elif st.session_state.submitted:
             st.divider()
 
     if st.button("🔄 Retake Exam", type="primary"):
+        # Preserve question history across retakes
+        history = st.session_state.get('question_history', [])
         for key in list(st.session_state.keys()):
             del st.session_state[key]
+        st.session_state.question_history = history
         st.rerun()
 
 # --- Start Screen ---
@@ -391,6 +482,15 @@ else:
             - **Total Questions:** {CS_COUNT + MATH_COUNT + LR_COUNT}
             - **Marking Scheme:** +4 for Correct, -1 for Incorrect
             """)
+            
+            # Show question history status
+            history_count = len(st.session_state.get('question_history', []))
+            if history_count > 0:
+                st.success(f"""
+                🎯 **Smart Randomization Active**  
+                {history_count} questions from recent attempts will have lower probability.  
+                Numerical values are slightly varied to enhance practice.
+                """)
             
             st.markdown("### Subject Distribution")
             col_a, col_b, col_c = st.columns(3)
