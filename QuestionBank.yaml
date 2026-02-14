@@ -146,6 +146,126 @@ logical_reasoning:
   - 1, 0, 1
   - '0'
   answer: ''
+- question: 'Numerical Analogy: If 24 is related to 102 in a certain way (24 = 2×2×2×3, sum of factors = 1+2+3+4+6+8+12+24 = 60, plus 42 = 102), then 16 is related to which number?'
+  options:
+  - '47'
+  - '57'
+  - '67'
+  - '77'
+  answer: '57'
+- question: 'Numerical Analogy: If 36 is related to 111 (3+6=9, 36×3=108, 108+3=111), then 48 is related to which number?'
+  options:
+  - '156'
+  - '147'
+  - '168'
+  - '159'
+  answer: '147'
+- question: 'Verbal Analogy: Laziness is to Alertness as Hostility is to:'
+  options:
+  - Pride
+  - Amity
+  - Enmity
+  - Hatred
+  answer: Amity
+- question: 'Verbal Analogy: Courage is to Cowardice as Generosity is to:'
+  options:
+  - Kindness
+  - Selfishness
+  - Charity
+  - Wealth
+  answer: Selfishness
+- question: |
+    Syllogism: Statements: Some roads are metro. Some metro are cars.
+    
+    Conclusions:
+    (I) All cars are either road or metro.
+    (II) Some cars are metro.
+    
+    Which conclusion(s) follow?
+  options:
+  - Only conclusion I follows
+  - Only conclusion II follows
+  - Either I or II follows
+  - Neither I nor II follows
+  answer: Neither I nor II follows
+- question: |
+    Syllogism: Statements: No table is lion. All lions are bells.
+    
+    Conclusions:
+    (I) No bell is table.
+    (II) Some bells are lions.
+    
+    Which conclusion(s) follow?
+  options:
+  - Only conclusion I follows
+  - Only conclusion II follows
+  - Both I and II follow
+  - Neither I nor II follows
+  answer: Only conclusion II follows
+- question: |
+    Linear Seating Arrangement: Five people V, W, X, Y, Z are sitting in a row facing North. W is between V and X. Y is to the left of Z, who is at one end. X is at the center. Who is to the right of X?
+  options:
+  - V
+  - W
+  - Y
+  - Z
+  answer: Z
+- question: |
+    Linear Seating Arrangement: Seven people A, B, C, D, E, F, G are sitting in a row. C is sitting between A and E. B is third to the right of E. F is at one extreme end. D is between B and G. Who is sitting in the middle?
+  options:
+  - A
+  - C
+  - D
+  - E
+  answer: E
+- question: |
+    Circular Seating Arrangement: Six people Jassi, Akash, Garima, Nitin, Vaishali, and Kailash are sitting around a round table facing the center. Kailash is to the left of Garima. Garima is opposite Akash. Vaishali is between Akash and Jassi. Who is to the left of Nitin?
+  options:
+  - Jassi
+  - Kailash
+  - Garima
+  - Vaishali
+  answer: Jassi
+- question: |
+    Circular Seating Arrangement: Eight friends P, Q, R, S, T, U, V, W are sitting around a circular table facing the center. P sits third to the left of Q. R sits second to the right of P. S is not a neighbor of Q. T sits second to the left of S. U sits between T and W. Who sits opposite to R?
+  options:
+  - S
+  - T
+  - U
+  - W
+  answer: T
+- question: |
+    Mathematical Operations: Using the symbol replacements (# = +, @ = ×, & = ÷, $ = -), calculate the value of: 200 & 5 @ 3 $ 20 # 5
+  options:
+  - '105'
+  - '100'
+  - '95'
+  - '105'
+  answer: '105'
+- question: |
+    Mathematical Operations: Using letter codes (S = -, P = ÷, R = ×, Q = +), find the value of: 100 S 12 P 6 R 4 Q 5
+  options:
+  - '97'
+  - '91'
+  - '93'
+  - '95'
+  answer: '97'
+- question: |
+    Blood Relations: Pointing to a photograph, a man said "She is the daughter of my grandfather's only son." How is the woman in the photograph related to the man?
+  options:
+  - Mother
+  - Sister
+  - Daughter
+  - Wife
+  answer: Sister
+- question: |
+    Blood Relations: A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?
+  options:
+  - Grandmother
+  - Granddaughter
+  - Daughter
+  - Niece
+  answer: Granddaughter
 math:
 - question: 'If 1/10! + 1/11! = x/12!, then the value of x is:'
   options:
@@ -1518,6 +1638,119 @@ cs:
   - $AD$
   - $BC$
   answer: $AD$
+- question: |
+    A CPU has 24-bit instructions. A program starts at address 300 (in decimal). Which one of the following is a legal program counter (all values in decimal)?
+  options:
+  - '400'
+  - '500'
+  - '600'
+  - '700'
+  answer: '600'
+- question: |
+    A processor uses 32-bit instruction format in a byte-addressable memory system. If a program begins execution at memory address 1000 (decimal), which of the following addresses represents a valid instruction boundary?
+  options:
+  - '1005'
+  - '1008'
+  - '1010'
+  - '1015'
+  answer: '1008'
+- question: |
+    In a computer system with 16-bit instructions and byte-addressable memory, a program counter currently holds the value 512 (decimal). After executing 5 instructions sequentially, what will be the program counter value?
+  options:
+  - '522'
+  - '527'
+  - '532'
+  - '542'
+  answer: '522'
+- question: 'In the case of Zero-address instruction method, the operands are stored in:'
+  options:
+  - Registers
+  - Accumulators
+  - Push down stack
+  - Cache
+  answer: Push down stack
+- question: 'In which addressing mode is less memory required?'
+  options:
+  - Register direct
+  - Register indirect
+  - Direct
+  - Indirect
+  answer: Register direct
+- question: 'Content of the program counter is added to the address part of the instruction in order to obtain the effective address is called:'
+  options:
+  - Relative address mode
+  - Index addressing mode
+  - Register mode
+  - More than one of the above
+  answer: Relative address mode
+- question: 'Which of the following stores operand during execution and result of operation after execution?'
+  options:
+  - General purpose registers
+  - Stack register
+  - Flag register
+  - Accumulator
+  answer: Accumulator
+- question: 'Which of the following registers contain the instructions to be executed in CPU?'
+  options:
+  - Index Register
+  - Instruction Register
+  - Memory Data Register
+  - Memory Address Register
+  answer: Instruction Register
+- question: 'Which of the following addressing mode is best suited to access elements of an array of contiguous memory locations?'
+  options:
+  - Indexed addressing mode
+  - Base Register addressing mode
+  - Relative address mode
+  - Displacement mode
+  answer: Indexed addressing mode
+- question: 'What is the addressing mode used in the instruction PUSH B?'
+  options:
+  - Direct
+  - Register
+  - Register indirect
+  - Immediate
+  answer: Register
+- question: 'Addressing mode in which the address field of instruction specifies a register in the CPU, whose contents give the address of the operand in memory is called:'
+  options:
+  - Indirect addressing mode
+  - Relative addressing mode
+  - Register addressing mode
+  - Register indirect addressing mode
+  answer: Register indirect addressing mode
+- question: 'The instruction, Add #45, R1 does:'
+  options:
+  - Adds the value of 45 to the address of R1 and stores 45 in that address
+  - Adds 45 to the value of R1 and stores it in R1
+  - Finds the memory location 45 and adds that content to that of R1
+  - None of the mentioned
+  answer: Adds 45 to the value of R1 and stores it in R1
+- question: 'Add #45, when this instruction is executed the following happen/s:'
+  options:
+  - The processor raises an error and requests for one more operand
+  - The value stored in memory location 45 is retrieved and one more operand is requested
+  - The value 45 gets added to the value on the stack and is pushed onto the stack
+  - None of the mentioned
+  answer: The value 45 gets added to the value on the stack and is pushed onto the stack
+- question: 'In the following indexed addressing mode instruction, MOV 5(R1), LOC the effective address is:'
+  options:
+  - EA = 5+R1
+  - EA = R1
+  - EA = [R1]
+  - EA = 5+ [R1]
+  answer: EA = 5+ [R1]
+- question: |
+    When we use auto increment or auto decrement, which of the following is/are true?
+    
+    (1) In both, the address is used to retrieve the operand and then the address gets altered
+    (2) In auto increment, the operand is retrieved first and then the address altered
+    (3) Both of them can be used on general purpose registers as well as memory locations
+  options:
+  - 1, 2, 3
+  - '2'
+  - 1, 3
+  - 2, 3
+  answer: '2,3'
 
 
 
