@@ -7,15 +7,17 @@ import copy
 import streamlit.components.v1 as components
 
 # --- Constants ---
-QUESTIONS_FILE = "questions.yaml"
+QUESTIONS_FILE = "QuestionBank.yaml"
 TOTAL_TIME_MINUTES = 90
 CS_COUNT = 36
 MATH_COUNT = 24
 LR_COUNT = 15
 
+
 # --- Custom CSS ---
 def local_css():
-    st.markdown("""
+    st.markdown(
+        """
     <style>
         .stButton>button {
             width: 100%;
@@ -49,7 +51,10 @@ def local_css():
             margin-bottom: 20px;
         }
     </style>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
+
 
 # --- functions ---
 def load_questions():
@@ -65,53 +70,56 @@ def load_questions():
         st.error(f"Error parsing YAML: {e}")
         return None
 
+
 def tweak_numbers_in_text(text, variance=0.15):
     """Tweaks numerical values in text by a small random variance."""
     if not text or not isinstance(text, str):
         return text
-    
+
     def replace_number(match):
         num_str = match.group(0)
         try:
             # Skip if it's part of a LaTeX command or variable name
-            if match.start() > 0 and text[match.start()-1] in ['$', '\\', '_', '^']:
+            if match.start() > 0 and text[match.start() - 1] in ["$", "\\", "_", "^"]:
                 return num_str
-            
+
             num = float(num_str)
             # Don't tweak small numbers (0-5) or common constants
             if abs(num) <= 5 or num in [10, 100, 1000]:
                 return num_str
-            
+
             # Apply random variance
             variation = random.uniform(-variance, variance)
             new_num = num * (1 + variation)
-            
+
             # Keep integer if original was integer
-            if '.' not in num_str:
+            if "." not in num_str:
                 new_num = int(round(new_num))
                 return str(new_num)
             else:
                 return f"{new_num:.2f}"
         except:
             return num_str
-    
+
     # Match numbers but avoid LaTeX commands
-    return re.sub(r'\b\d+(?:\.\d+)?\b', replace_number, text)
+    return re.sub(r"\b\d+(?:\.\d+)?\b", replace_number, text)
+
 
 def get_question_id(question):
     """Generate a unique ID for a question based on its content."""
     # Use first 50 chars of question as ID
-    q_text = question.get('question', '')[:50]
+    q_text = question.get("question", "")[:50]
     return hash(q_text)
+
 
 def weighted_sample(questions, count, question_history, max_history=5):
     """Sample questions with lower probability for recently used ones."""
     if not questions or count <= 0:
         return []
-    
+
     if len(questions) <= count:
         return questions[:]
-    
+
     # Calculate weights based on history
     weights = []
     for q in questions:
@@ -125,41 +133,44 @@ def weighted_sample(questions, count, question_history, max_history=5):
             # Not in history = full weight
             weight = 1.0
         weights.append(weight)
-    
+
     # Normalize weights
     total_weight = sum(weights)
     if total_weight == 0:
         return random.sample(questions, count)
-    
+
     normalized_weights = [w / total_weight for w in weights]
-    
+
     # Use weighted random selection
     selected = random.choices(questions, weights=normalized_weights, k=count)
     return selected
 
+
 def select_questions(all_questions):
     """Randomly selects questions based on category counts with weighted selection."""
     selected = []
-    
+
     # Get question history from session state
-    question_history = st.session_state.get('question_history', [])
-    
-    if 'cs' in all_questions:
-        cs_qs = weighted_sample(all_questions['cs'], CS_COUNT, question_history)
-        for q in cs_qs: 
-            q['category'] = 'Computer Science'
+    question_history = st.session_state.get("question_history", [])
+
+    if "cs" in all_questions:
+        cs_qs = weighted_sample(all_questions["cs"], CS_COUNT, question_history)
+        for q in cs_qs:
+            q["category"] = "Computer Science"
         selected.extend(cs_qs)
-        
-    if 'math' in all_questions:
-        math_qs = weighted_sample(all_questions['math'], MATH_COUNT, question_history)
-        for q in math_qs: 
-            q['category'] = 'Mathematics'
+
+    if "math" in all_questions:
+        math_qs = weighted_sample(all_questions["math"], MATH_COUNT, question_history)
+        for q in math_qs:
+            q["category"] = "Mathematics"
         selected.extend(math_qs)
 
-    if 'logical_reasoning' in all_questions:
-        lr_qs = weighted_sample(all_questions['logical_reasoning'], LR_COUNT, question_history)
-        for q in lr_qs: 
-            q['category'] = 'Logical Reasoning'
+    if "logical_reasoning" in all_questions:
+        lr_qs = weighted_sample(
+            all_questions["logical_reasoning"], LR_COUNT, question_history
+        )
+        for q in lr_qs:
+            q["category"] = "Logical Reasoning"
         selected.extend(lr_qs)
 
     # Tweak numerical values in questions
@@ -167,55 +178,63 @@ def select_questions(all_questions):
     for q in selected:
         q_copy = copy.deepcopy(q)
         # Tweak question text
-        q_copy['question'] = tweak_numbers_in_text(q_copy['question'])
+        q_copy["question"] = tweak_numbers_in_text(q_copy["question"])
         # Tweak options if they contain numbers
-        if 'options' in q_copy:
-            q_copy['options'] = [tweak_numbers_in_text(opt) for opt in q_copy['options']]
+        if "options" in q_copy:
+            q_copy["options"] = [
+                tweak_numbers_in_text(opt) for opt in q_copy["options"]
+            ]
         tweaked_selected.append(q_copy)
-    
+
     # Update question history with newly selected questions
     new_ids = [get_question_id(q) for q in selected]
     updated_history = new_ids + question_history
     # Keep only last 50 question IDs
     st.session_state.question_history = updated_history[:50]
-    
+
     random.shuffle(tweaked_selected)
     return tweaked_selected
 
+
 def initialize_session_state():
     """Initializes session state variables."""
-    if 'exam_started' not in st.session_state:
+    if "exam_started" not in st.session_state:
         st.session_state.exam_started = False
-    if 'start_time' not in st.session_state:
+    if "start_time" not in st.session_state:
         st.session_state.start_time = None
-    if 'questions' not in st.session_state:
+    if "questions" not in st.session_state:
         st.session_state.questions = []
-    if 'user_answers' not in st.session_state:
+    if "user_answers" not in st.session_state:
         st.session_state.user_answers = {}
-    if 'time_spent' not in st.session_state:
-        st.session_state.time_spent = {} # Map question index to total seconds
-    if 'current_q_index' not in st.session_state:
+    if "time_spent" not in st.session_state:
+        st.session_state.time_spent = {}  # Map question index to total seconds
+    if "current_q_index" not in st.session_state:
         st.session_state.current_q_index = 0
-    if 'q_start_time' not in st.session_state:
+    if "q_start_time" not in st.session_state:
         st.session_state.q_start_time = None
-    if 'submitted' not in st.session_state:
+    if "submitted" not in st.session_state:
         st.session_state.submitted = False
-    if 'question_history' not in st.session_state:
+    if "question_history" not in st.session_state:
         st.session_state.question_history = []  # Track recently used questions
+
 
 def update_time_spent():
     """Updates the time spent on the current question."""
     if st.session_state.q_start_time is not None:
         elapsed = time.time() - st.session_state.q_start_time
         idx = st.session_state.current_q_index
-        st.session_state.time_spent[idx] = st.session_state.time_spent.get(idx, 0) + elapsed
+        st.session_state.time_spent[idx] = (
+            st.session_state.time_spent.get(idx, 0) + elapsed
+        )
+
 
 def navigate_to(index):
     """Navigates to the specific question index."""
-    update_time_spent() # Save time for current question
+    update_time_spent()  # Save time for current question
     st.session_state.current_q_index = index
-    st.session_state.q_start_time = time.time() # Reset start time for new question
+    st.session_state.q_start_time = time.time()  # Reset start time for new question
     st.rerun()
+
 
 def start_exam():
     all_qs = load_questions()
@@ -230,16 +249,18 @@ def start_exam():
         st.session_state.q_start_time = time.time()
         st.rerun()
 
+
 def submit_exam():
-    update_time_spent() # Final time capture
+    update_time_spent()  # Final time capture
     st.session_state.submitted = True
-    st.session_state.exam_started = False 
+    st.session_state.exam_started = False
     st.rerun()
+
 
 def get_timer_html(remaining_seconds):
     """Generates HTML/JS for the sidebar timer."""
     timer_id = f"timer_{int(time.time())}"
-    
+
     js_code = f"""
     <div id="{timer_id}" class="timer-box">
         Loading...
@@ -265,59 +286,77 @@ def get_timer_html(remaining_seconds):
     """
     return js_code
 
+
 # --- Main App ---
-st.set_page_config(page_title="Mock Test App", page_icon="📝", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(
+    page_title="Mock Test App",
+    page_icon="📝",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 local_css()
 initialize_session_state()
 
 # --- Header ---
 if not st.session_state.exam_started and not st.session_state.submitted:
-    st.markdown("<h1 style='text-align: center; color: #4F8BF9;'>Mock Test Application</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>MCA Entrance Preparation</h3>", unsafe_allow_html=True)
+    st.markdown(
+        "<h1 style='text-align: center; color: #4F8BF9;'>Mock Test Application</h1>",
+        unsafe_allow_html=True,
+    )
+    st.markdown(
+        "<h3 style='text-align: center;'>MCA Entrance Preparation</h3>",
+        unsafe_allow_html=True,
+    )
 else:
     st.title("Mock Test Application")
 
 
 # --- Exam Phase ---
 if st.session_state.exam_started and not st.session_state.submitted:
-    
+
     # --- Sidebar ---
     with st.sidebar:
         st.markdown("### ⏳ Timer")
         # 1. Timer
         elapsed_global = time.time() - st.session_state.start_time
         remaining_seconds = max(0, (TOTAL_TIME_MINUTES * 60) - elapsed_global)
-        
+
         if remaining_seconds <= 0:
             st.warning("Time is up!")
             submit_exam()
         else:
             components.html(get_timer_html(remaining_seconds), height=80)
-            
+
         st.markdown("---")
-        
+
         # 2. Question Palette
         st.markdown("### 🧭 Navigation")
-        
+
         q_count = len(st.session_state.questions)
-        
+
         # Pagination for palette if too many questions? No, single grid is better for overview
         with st.container(height=400):
-            cols = st.columns(5) # 5 columns for buttons
+            cols = st.columns(5)  # 5 columns for buttons
             for i in range(q_count):
                 with cols[i % 5]:
-                    is_current = (i == st.session_state.current_q_index)
-                    is_answered = (i in st.session_state.user_answers)
-                    
+                    is_current = i == st.session_state.current_q_index
+                    is_answered = i in st.session_state.user_answers
+
                     label = f"{i+1}"
-                    btn_type = "primary" if is_current else ("secondary" if not is_answered else "secondary") 
-                    
+                    btn_type = (
+                        "primary"
+                        if is_current
+                        else ("secondary" if not is_answered else "secondary")
+                    )
+
                     # Style hack: If answered, maybe bold? Streamlit buttons are limited.
                     # We rely on 'primary' for current focus.
-                    
-                    if st.button(label, key=f"nav_{i}", type=btn_type, use_container_width=True):
+
+                    if st.button(
+                        label, key=f"nav_{i}", type=btn_type, use_container_width=True
+                    ):
                         navigate_to(i)
-        
+
         st.markdown("---")
         if st.button("🚩 Submit Exam", type="primary", use_container_width=True):
             submit_exam()
@@ -326,38 +365,48 @@ if st.session_state.exam_started and not st.session_state.submitted:
     if 0 <= st.session_state.current_q_index < len(st.session_state.questions):
         idx = st.session_state.current_q_index
         q = st.session_state.questions[idx]
-        
+
         # Progress Bar
-        progress = (len(st.session_state.user_answers) / len(st.session_state.questions))
-        st.progress(progress, text=f"Progress: {len(st.session_state.user_answers)}/{len(st.session_state.questions)} answered")
-        
+        progress = len(st.session_state.user_answers) / len(st.session_state.questions)
+        st.progress(
+            progress,
+            text=f"Progress: {len(st.session_state.user_answers)}/{len(st.session_state.questions)} answered",
+        )
+
         # Question Container
         with st.container():
-            st.markdown(f"""
+            st.markdown(
+                f"""
             <div class="question-card">
                 <span class="category-tag">{q.get('category', 'General')}</span>
             </div>
-            """, unsafe_allow_html=True)
-            
+            """,
+                unsafe_allow_html=True,
+            )
+
             # Render question with LaTeX support
             st.markdown(f"### Q{idx+1}. {q['question']}")
-        
+
         # Answer Selection
         current_answer = st.session_state.user_answers.get(idx, None)
-        
+
         selected_option = st.radio(
             "Select an answer:",
-            q['options'],
-            index=q['options'].index(current_answer) if current_answer in q['options'] else None,
+            q["options"],
+            index=(
+                q["options"].index(current_answer)
+                if current_answer in q["options"]
+                else None
+            ),
             key=f"radio_{idx}",
-            label_visibility="collapsed"
+            label_visibility="collapsed",
         )
-        
+
         if selected_option:
             st.session_state.user_answers[idx] = selected_option
-            
+
         st.markdown("---")
-            
+
         # Navigation Buttons (Bottom)
         col_prev, col_spacer, col_next = st.columns([1, 2, 1])
         with col_prev:
@@ -375,13 +424,16 @@ if st.session_state.exam_started and not st.session_state.submitted:
 elif st.session_state.submitted:
     st.balloons()
     st.success("Exam Submitted Successfully!")
-    
+
     score = 0
     total = len(st.session_state.questions)
-    
+
     # Initialize counters for each section
     sections = ["Computer Science", "Mathematics", "Logical Reasoning"]
-    stats = {sec: {"correct": 0, "wrong": 0, "unattempted": 0, "score": 0, "time": 0.0} for sec in sections}
+    stats = {
+        sec: {"correct": 0, "wrong": 0, "unattempted": 0, "score": 0, "time": 0.0}
+        for sec in sections
+    }
     total_score = 0
     total_correct = 0
     total_wrong = 0
@@ -390,72 +442,82 @@ elif st.session_state.submitted:
     # Calculate stats
     for i, q in enumerate(st.session_state.questions):
         user_ans = st.session_state.user_answers.get(i)
-        correct_ans = q['answer']
-        category = q.get('category', 'General')
+        correct_ans = q["answer"]
+        category = q.get("category", "General")
         time_spent = st.session_state.time_spent.get(i, 0)
-        
+
         if category in stats:
             stats[category]["time"] += time_spent
-        
+
         if user_ans is None:
             total_unattempted += 1
-            if category in stats: stats[category]["unattempted"] += 1
+            if category in stats:
+                stats[category]["unattempted"] += 1
         elif user_ans == correct_ans:
             total_correct += 1
-            if category in stats: stats[category]["correct"] += 1
+            if category in stats:
+                stats[category]["correct"] += 1
             mark = 4
             total_score += mark
-            if category in stats: stats[category]["score"] += mark
+            if category in stats:
+                stats[category]["score"] += mark
         else:
             total_wrong += 1
-            if category in stats: stats[category]["wrong"] += 1
+            if category in stats:
+                stats[category]["wrong"] += 1
             mark = -1
             total_score += mark
-            if category in stats: stats[category]["score"] += mark
+            if category in stats:
+                stats[category]["score"] += mark
 
     # Display Overall Summary
     st.markdown("## 📊 Performance Analysis")
-    
+
     with st.container():
         c1, c2, c3, c4 = st.columns(4)
         c1.metric("Total Score", f"{total_score}", delta=None)
         c2.metric("Total Correct", total_correct, delta_color="normal")
         c3.metric("Total Wrong", total_wrong, delta_color="inverse")
         c4.metric("Total Unattempted", total_unattempted, delta_color="off")
-    
+
     st.markdown("---")
-    
+
     # Display Section-wise Stats
     st.markdown("### 📑 Section-wise Breakdown")
-    
+
     for sec in sections:
         with st.container():
             st.markdown(f"**{sec}**")
             sc1, sc2, sc3, sc4, sc5 = st.columns(5)
             s_data = stats[sec]
-            
+
             sc1.metric("Score", s_data["score"])
             sc2.metric("Correct", s_data["correct"], delta_color="normal")
             sc3.metric("Wrong", s_data["wrong"], delta_color="inverse")
             sc4.metric("Unattempted", s_data["unattempted"], delta_color="off")
-            sc5.metric("Avg Time", f"{(s_data['time'] / max(1, (s_data['correct'] + s_data['wrong'] + s_data['unattempted']))):.1f}s")
+            sc5.metric(
+                "Avg Time",
+                f"{(s_data['time'] / max(1, (s_data['correct'] + s_data['wrong'] + s_data['unattempted']))):.1f}s",
+            )
             st.divider()
 
     # Detailed Analysis
     with st.expander("Show Detailed Question Analysis"):
         for i, q in enumerate(st.session_state.questions):
             user_ans = st.session_state.user_answers.get(i)
-            correct_ans = q['answer']
+            correct_ans = q["answer"]
             time_spent = st.session_state.time_spent.get(i, 0)
-            
-            is_correct = (user_ans == correct_ans)
+
+            is_correct = user_ans == correct_ans
             icon = "✅" if is_correct else "❌"
-            
+
             st.markdown(f"**Q{i+1}: {q['question']}** {icon}")
-            
+
             c1, c2 = st.columns(2)
             with c1:
-                st.markdown(f"- **Your Answer:** {user_ans if user_ans else 'No Answer'}")
+                st.markdown(
+                    f"- **Your Answer:** {user_ans if user_ans else 'No Answer'}"
+                )
                 st.markdown(f"- **Correct Answer:** {correct_ans}")
             with c2:
                 st.markdown(f"- **Time Spent:** {time_spent:.1f}s")
@@ -464,7 +526,7 @@ elif st.session_state.submitted:
 
     if st.button("🔄 Retake Exam", type="primary"):
         # Preserve question history across retakes
-        history = st.session_state.get('question_history', [])
+        history = st.session_state.get("question_history", [])
         for key in list(st.session_state.keys()):
             del st.session_state[key]
         st.session_state.question_history = history
@@ -475,30 +537,36 @@ else:
     with st.container():
         c1, c2, c3 = st.columns([1, 2, 1])
         with c2:
-            st.image("https://streamlit.io/images/brand/streamlit-mark-color.png", width=100) # Placeholder logo
+            st.image(
+                "https://streamlit.io/images/brand/streamlit-mark-color.png", width=100
+            )  # Placeholder logo
             st.markdown("## Instructions")
-            st.info(f"""
+            st.info(
+                f"""
             - **Duration:** {TOTAL_TIME_MINUTES} Minutes
             - **Total Questions:** {CS_COUNT + MATH_COUNT + LR_COUNT}
             - **Marking Scheme:** +4 for Correct, -1 for Incorrect
-            """)
-            
+            """
+            )
+
             # Show question history status
-            history_count = len(st.session_state.get('question_history', []))
+            history_count = len(st.session_state.get("question_history", []))
             if history_count > 0:
-                st.success(f"""
+                st.success(
+                    f"""
                 🎯 **Smart Randomization Active**  
                 {history_count} questions from recent attempts will have lower probability.  
                 Numerical values are slightly varied to enhance practice.
-                """)
-            
+                """
+                )
+
             st.markdown("### Subject Distribution")
             col_a, col_b, col_c = st.columns(3)
             col_a.metric("Computer Science", CS_COUNT)
             col_b.metric("Mathematics", MATH_COUNT)
             col_c.metric("Logical Reasoning", LR_COUNT)
-            
+
             st.markdown("<br>", unsafe_allow_html=True)
-            
+
             if st.button("🚀 Start Exam", type="primary", use_container_width=True):
                 start_exam()
