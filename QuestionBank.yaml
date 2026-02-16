@@ -204,7 +204,7 @@ math:
   - 3/8
   - 1/8
   - 5/8
-  answer: 7/8
+  answer: 3/8
 - question: 'If $a, b, c$ are in Geometric Progression and $a^{1/x} = b^{1/y} = c^{1/z}$, then $x, y, z$ are in:'
   options:
   - Arithmetic Progression
