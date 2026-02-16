@@ -145,7 +145,7 @@ logical_reasoning:
   - 1, 1
   - 1, 0, 1
   - '0'
-  answer: ''
+  answer: '0'
 - question: 'Numerical Analogy: If 24 is related to 102 in a certain way (24 = 2×2×2×3, sum of factors = 1+2+3+4+6+8+12+24 = 60, plus 42 = 102), then 16 is related to which number?'
   options:
   - '47'
@@ -187,7 +187,7 @@ logical_reasoning:
   - Only conclusion II follows
   - Either I or II follows
   - Neither I nor II follows
-  answer: Neither I nor II follows
+  answer: Only conclusion II follows
 - question: |
     Syllogism: Statements: No table is lion. All lions are bells.
     
@@ -425,7 +425,7 @@ math:
   - $\log(x^2+x+2)+c$
   - $\log(1/2)+c$
   - None of the above
-  answer: None of the above
+  answer: $\frac{x^2}{4} + \frac{x}{4} + \frac{7}{8} \log(2x+1) + c$
 - question: 'Bag A contains 3 Red and 4 Black balls while Bag B contains 5 Red and 6 Black balls. One ball is drawn at random from one of the bags and is found to be red. The probability it was from Bag B is:'
   options:
   - 35/68
@@ -498,7 +498,7 @@ cs:
   - (A), (B) and (C) only
   - (A), (B), (C) and (D)
   - (A) only
-  answer: ''
+  answer: (A) only
 - question: 'A situation where two or more processes are blocked, waiting for resources
     held by each other is called:'
   options:
@@ -506,14 +506,14 @@ cs:
   - Deadlock
   - Thrashing
   - Paging
-  answer: ''
+  answer: Deadlock
 - question: 'External fragmentation occurs:'
   options:
   - When total memory exists for a request but is not contiguous.
   - When total memory exists and is contiguous.
   - When memory is empty.
   - Always.
-  answer: ''
+  answer: When total memory exists for a request but is not contiguous.
 - question: Which disk scheduling algorithm looks for the track closest to the current
     head position?
   options:
@@ -521,7 +521,7 @@ cs:
   - SSTF
   - FCFS
   - SCAN
-  answer: ''
+  answer: SSTF
 - question: Which CPU scheduling algorithm prefers the process with the shortest burst
     time?
   options:
@@ -529,14 +529,14 @@ cs:
   - SJF
   - Round Robin
   - Priority Scheduling
-  answer: ''
+  answer: SJF
 - question: '''The Dining Philosopher'' problem can be solved by:'
   options:
   - Use of semaphores
   - Use of overlays
   - Mutual exclusion
   - Bounded waiting
-  answer: ''
+  answer: Use of semaphores
 - question: 'For a deadlock to occur, the four conditions namely Mutual Exclusion,
     Hold and wait, No preemption, circular wait:'
   options:
@@ -544,7 +544,7 @@ cs:
   - Circular wait does not imply hold and wait
   - Are completely independent
   - Must hold simultaneously
-  answer: ''
+  answer: Must hold simultaneously
 - question: Which of the following is a way to recover from the deadlock which has
     already occurred?
   options:
@@ -552,7 +552,7 @@ cs:
   - Non preemption of resources
   - Banker's algorithm
   - Circular wait
-  answer: ''
+  answer: Process termination
 - question: 'Logical address space: 32 KB, Page Size: 4 KB, Physical Memory size:
     64 KB. The number of pages and page frames are:'
   options:
@@ -560,7 +560,7 @@ cs:
   - 4, 12
   - 8, 16
   - 3, 16
-  answer: ''
+  answer: 8, 16
 - question: 'Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2. Page frames:
     3. Calculate page faults using LRU.'
   options:
@@ -568,7 +568,7 @@ cs:
   - '8'
   - '9'
   - '11'
-  answer: ''
+  answer: '9'
 - question: |
     Match CPU Scheduling Algorithms with Features:
 
@@ -625,7 +625,7 @@ cs:
   - (C), (A), (B), (D)
   - (C), (A), (D), (B)
   - (C), (B), (D), (A)
-  answer: ''
+  answer: (C), (A), (D), (B)
 - question: |
     Arrange MS DOS layers from innermost to outermost:
 
@@ -638,14 +638,14 @@ cs:
   - (D), (B), (C), (A)
   - (B), (A), (D), (C)
   - (C), (B), (D), (A)
-  answer: ''
+  answer: (A), (C), (B), (D)
 - question: Which of the following is not an application of DFS?
   options:
   - Topological Sort
   - Determining Strongly Connected Components
   - Finding minimum distance in unweighted graph optimally
   - Solving Maze Problem
-  answer: ''
+  answer: Finding minimum distance in unweighted graph optimally
 - question: |
     Match Algorithms with Data Structures:
 
@@ -675,7 +675,7 @@ cs:
   - O(n) for insertion and O(lg n) for deletion
   - O(n) for insertion and O(n) for deletion
   - O(lg n) for insertion and O(n) for deletion
-  answer: ''
+  answer: O(n) for insertion and O(n) for deletion
 - question: |
     Match Algorithm with Recurrence Relation:
 
@@ -710,7 +710,7 @@ cs:
   - (B), (C), (D), (A)
   - (B), (A), (D), (C)
   - (C), (B), (D), (A)
-  answer: ''
+  answer: (B), (C), (D), (A)
 - question: |
     Which statements are TRUE? (|E| = number of edges)
 
@@ -723,14 +723,14 @@ cs:
   - (A), (B) and (C) only
   - (A), (B), (C) and (D)
   - (B), (C) and (D) only
-  answer: ''
+  answer: (A), (B) and (C) only
 - question: In ____ the search time is independent of the number of elements n.
   options:
   - Binary Search
   - Hashing
   - Linear Search
   - Jump search
-  answer: ''
+  answer: Hashing
 - question: |
     Which statements are TRUE for shortest path in unweighted graph?
 
@@ -750,22 +750,14 @@ cs:
   - TREE-MAXIMUM
   - INORDER-WALK
   - TREE-MINIMUM
-  answer: ''
-- question: 'All elements hashing to the same slot are placed in the same linked list
-    in:'
-  options:
-  - Universal hashing
-  - Linear Probing
-  - Quadratic probing
-  - Chaining
-  answer: ''
+  answer: INORDER-WALK
 - question: 'Quicksort and randomized Quicksort differ in:'
   options:
   - Selection of Pivot element
   - Worst case time complexity
   - Best case time Complexity
   - Final Output
-  answer: ''
+  answer: Selection of Pivot element
 - question: |
     Arrange pseudocode for searching element k in linked list L:
 
@@ -774,18 +766,18 @@ cs:
     - (C) return x
     - (D) while x != NIL and x.key != k
   options:
-  - (B), (A), (C), (D)
+  - (B), (D), (C), (A)
+  - (B), (A), (D), (C)
+  - (B), (D), (A), (C)
   - (A), (B), (C), (D)
-  - (C), (B), (A), (D)
-  - (B), (C), (A), (D)
-  answer: '(B), (A), (C), (D)'
+  answer: '(B), (D), (A), (C)'
 - question: 'Given index i in a heap, we cannot compute:'
   options:
   - Parent (i)
   - Heap size
   - Left (i)
   - Right (i)
-  answer: ''
+  answer: Heap size
 - question: 'Simplify the boolean expression: Y = AB + A(B+C) + B(B+C)'
   options:
   - 'AB + AC'
@@ -805,7 +797,7 @@ cs:
   - (A), (C), (B), (D)
   - (B), (D), (C), (A)
   - (D), (B), (C), (A)
-  answer: ''
+  answer: (D), (B), (C), (A)
 - question: |
     Match decimal additions (signed-complement) with binary representations:
 
@@ -818,8 +810,8 @@ cs:
     **List-II (Binary Results):**
     - (I) 00000111
     - (II) 00010011
-    - (III) 11111101
-    - (IV) 11110011
+    - (III) 11111001
+    - (IV) 11101101
 
     Choose the correct matching:
   options:
@@ -827,7 +819,7 @@ cs:
   - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
   - (A)-(I), (B)-(II), (C)-(IV), (D)-(III)
   - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-  answer: ''
+  answer: (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
 - question: |
     Arrange 3 to 8 line decoder steps in correct order:
 
@@ -840,7 +832,7 @@ cs:
   - (A), (D), (C), (B)
   - (A), (C), (D), (B)
   - (A), (B), (D), (C)
-  answer: ''
+  answer: (A), (C), (D), (B)
 - question: |
     Minimum hamming distance $d_{min}$ required to correct $p$ errors:
   options:
@@ -863,7 +855,7 @@ cs:
   - (A), (B) and (D) only
   - (A), (B), (C) and (D)
   - (B), (C) and (D) only
-  answer: ''
+  answer: (A) and (D) only
 - question: |
     Match JK Flip Flop inputs with Next State:
 
@@ -892,35 +884,35 @@ cs:
   - 'true'
   - error
   - '1'
-  answer: ''
+  answer: 'false'
 - question: 'IEEE754 representation of +0 and -0:'
   options:
   - Same sign, different mantissa.
   - Differ only in sign bit.
   - Same representation.
   - Differ in exponent and mantissa.
-  answer: ''
+  answer: Differ only in sign bit.
 - question: 'Minimum number of 2:1 Muxes to design a 16:1 Mux:'
   options:
   - '12'
   - '14'
   - '15'
   - '16'
-  answer: ''
+  answer: '15'
 - question: 'Simplify: a''b'' + ab + a''b'
   options:
   - a + b'
   - a' + b
   - a' + b'
   - a + b
-  answer: ''
+  answer: a' + b
 - question: 'Memory capacity 32K×16 address/data lines:'
   options:
   - addr = 14, data = 16
   - addr = 15, data = 16
   - addr = 14, data = 4
   - addr = 15, data = 4
-  answer: ''
+  answer: addr = 15, data = 16
 - question: 'Which logic gate produces a HIGH output only if the inputs are different?'
   options:
   - XOR GATE
@@ -1329,10 +1321,10 @@ cs:
     Using K-Map, simplify the Boolean function $F(x,y,z) = \sum m(1,2,3,5,7)$. Which of the following is the minimal sum-of-products form?
   options:
   - $xy + xz' + x'y'z$
-  - $x + y'z$
+  - $z + x'y$
   - $x'z + xy + y'z'$
   - $x'y'z + xy + xz'$
-  answer: $x + y'z$
+  answer: $z + x'y$
 - question: |
     Given the following processes and burst times with Time Quantum = 5ms:
 
@@ -1348,9 +1340,9 @@ cs:
   options:
   - 25.2 ms
   - 26.2 ms
-  - 27.2 ms
+  - 24.6 ms
   - 24.2 ms
-  answer: 26.2 ms
+  answer: 24.6 ms
 - question: 'MOV [BX], AL is an example of which addressing mode?'
   options:
   - Direct
@@ -1401,13 +1393,6 @@ cs:
   - Dynamic Programming
   - Divide and Conquer
   answer: Divide and Conquer
-- question: 'Number of rotations to build AVL Tree with keys: 9, 6, 5, 8, 7, 10.'
-  options:
-  - '0'
-  - '1'
-  - '2'
-  - '3'
-  answer: '3'
 - question: 'Physical location determined by a formula transforming a file key is:'
   options:
   - B-Tree
@@ -1439,13 +1424,13 @@ cs:
     4. Enqueue(Q, w)
     5. Push(S, Dequeue(Q)); Push(S, Dequeue(Q))
     
-    If x=1, y=2, z=3, w=4, what is the sequence of elements popped from S if we execute Pop(S) three times now?
+    If x=1, y=2, z=3, w=4, what is the sequence of elements popped from S if we execute Pop(S) two times now?
   options:
-  - 3, 2, 1
-  - 2, 3, 4
-  - 2, 3, 1
-  - 1, 2, 4
-  answer: 2, 3, 1
+  - 3, 2
+  - 2, 3
+  - 3, 1
+  - 2, 1
+  answer: 2, 3
 - question: 'Which is NOT a valid Boolean Algebra Law?'
   options:
   - x+xy=x
@@ -1515,11 +1500,11 @@ cs:
 - question: |
     A disk queue contains requests for the following cylinder numbers in order: 10, 22, 2, 40, 6, 38. The disk head is currently positioned at cylinder 20. Using the Shortest Seek Time First (SSTF) algorithm, what is the total head movement (in cylinders) required to service all requests?
   options:
+  - 60 cylinders
   - 76 cylinders
   - 98 cylinders
   - 102 cylinders
-  - 118 cylinders
-  answer: 76 cylinders
+  answer: 60 cylinders
 - question: 'Given the boolean operation $x \# y = x''y + xy''$ (XOR operation), which derived equation is always TRUE?'
   options:
   - $x \# x = 1$
@@ -1617,11 +1602,11 @@ cs:
     
     $F(W,X,Y,Z) = \sum m(0,1,2,5,6,7,8,9,14)$
   options:
-  - $W'X' + XY' + W'YZ$
+  - $X'Y' + XYZ' + W'XZ + W'YZ'$
   - $W'X + XY + WZ'$
   - $WX' + X'Y + WYZ$
   - $WX + XY' + W'Z$
-  answer: $W'X' + XY' + W'YZ$
+  answer: $X'Y' + XYZ' + W'XZ + W'YZ'$
 - question: |
     In a K-Map, what is the maximum size of a group that can be formed?
   options:
@@ -1637,7 +1622,7 @@ cs:
   - $AC$
   - $AD$
   - $BC$
-  answer: $AD$
+  answer: $BD$
 - question: |
     A CPU has 24-bit instructions. A program starts at address 300 (in decimal). Which one of the following is a legal program counter (all values in decimal)?
   options:
@@ -1751,6 +1736,221 @@ cs:
   - 1, 3
   - 2, 3
   answer: '2,3'
+- question: |
+    Which of the following is/are true of the auto increment addressing mode?
+    
+    (1) It is useful in creating self-relocating code
+    (2) If it is included in an Instruction set architecture, then an additional ALU is required for effective calculations
+    (3) The amount of increment depends on the size of the data item accessed
+  options:
+  - 1 only
+  - 2 only
+  - 3 only
+  - 2 and 3 only
+  answer: 3 only
+- question: |
+    Which of the following is not true? (Set operations: Đ = symmetric difference, u = union, n = intersection, ~ = complement)
+  options:
+  - AĐB=(A-B)u(B-A)
+  - A-B=An~B
+  - AĐB=(AuB)-(AnB)
+  - A-B=AU~B
+  answer: A-B=AU~B
+- question: 'The hexadecimal equivalent of (10111)₂ × (1110)₂ is:'
+  options:
+  - '150'
+  - '241'
+  - '142'
+  - '101011110'
+  answer: '142'
+- question: 'What is the maximum number of edges in a bipartite graph having 10 vertices?'
+  options:
+  - '24'
+  - '21'
+  - '25'
+  - '16'
+  answer: '25'
+- question: |
+    Match List-I with List-II (Hamiltonian Graphs):
+    
+    List-I:
+    (A) Hamiltonian Cycle
+    (B) Dirac's Theorem
+    (C) Hamiltonian Path
+    (D) Ore's Theorem
+    
+    List-II:
+    (1) If the sum of the degrees of any two non-adjacent vertices is at least n, then the graph is Hamiltonian.
+    (2) A path that visits every vertex exactly once but does not return to the starting vertex.
+    (3) A graph with n vertices where each vertex has a degree of at least n/2 is Hamiltonian.
+    (4) A cycle that visits every vertex exactly once and returns to the starting vertex.
+  options:
+  - A-1, B-2, C-3, D-4
+  - A-1, B-4, C-3, D-2
+  - A-3, B-2, C-1, D-4
+  - A-4, B-3, C-2, D-1
+  answer: A-4, B-3, C-2, D-1
+- question: 'Graph G is obtained by adding vertex s to K₉,₄ and making s adjacent to every vertex of K₉,₄. The minimum number of colours required to edge colour G is:'
+  options:
+  - '9'
+  - '11'
+  - '13'
+  - '7'
+  answer: '13'
+- question: |
+    For the given directed graph:
+    
+    P --> Q
+    |    /|
+    |   / |
+    ↓  ↙  ↓
+    S <-- R
+    
+    Which one of the following is true?
+  options:
+  - The graph does not have any topological ordering
+  - Both PQRS and SRQP are topological orderings
+  - Both PSRQ and SPRQ are topological orderings
+  - PSRQ is the only topological ordering
+  answer: The graph does not have any topological ordering
+- question: 'Backtracking uses ____ node generation ____ bounding functions:'
+  options:
+  - Breadth first, with
+  - Breadth first, without
+  - Depth-first, with
+  - Depth-first, without
+  answer: Depth-first, with
+- question: |
+    The Breadth First Search (BFS) algorithm has been implemented using the queue data structure. Which one of the following is a possible order of visiting the nodes in the graph below?
+    
+    Graph structure (undirected, starting from M):
+    
+          M
+        / | \
+       N  O  P
+       |\ | /|
+       | \|/ |
+       Q  R--+
+    
+    Edges: M-N, M-O, M-P, N-Q, N-R, O-R, P-R, Q-R
+    (Multiple nodes connected to R, creating a more complex structure)
+  options:
+  - MNOPQR
+  - NQMPOR
+  - QMNROP
+  - POQNMR
+  answer: MNOPQR
+- question: |
+    Breadth First Search (BFS) is started on a binary tree beginning from the root vertex. There is a vertex t at a distance 4 from the root. If t is the nth vertex in this BFS traversal, then the maximum possible value of n is:
+  options:
+  - '15'
+  - '7'
+  - '31'
+  - '62'
+  answer: '31'
+- question: |
+    Match List-I with List-II (Algorithms):
+    
+    List-I:
+    (P) Prim's algorithm for minimum spanning tree
+    (Q) Floyd-Warshall algorithm for all pairs shortest paths
+    (R) Mergesort
+    (S) Hamiltonian circuit
+    
+    List-II:
+    (i) Backtracking
+    (ii) Greedy method
+    (iii) Dynamic programming
+    (iv) Divide and conquer
+  options:
+  - P-iii, Q-ii, R-iv, S-i
+  - P-i, Q-ii, R-iv, S-iii
+  - P-ii, Q-iii, R-iv, S-i
+  - P-ii, Q-i, R-iii, S-iv
+  answer: P-ii, Q-iii, R-iv, S-i
+- question: |
+    Match all items in Group 1 with the best match from the options given in Group 2.
+    
+    Group-1:
+    (P) Min-and max-heaps
+    (Q) B-tree
+    (R) Arrays
+    (S) Graphs
+    
+    Group-2:
+    (1) File system implementations
+    (2) Priority queue implementations
+    (3) Expensive insertion and deletion operations
+    (4) Electronic circuit design analysis
+  options:
+  - P-2, Q-3, R-4, S-1
+  - P-4, Q-3, R-2, S-1
+  - P-2, Q-1, R-3, S-4
+  - P-3, Q-4, R-1, S-2
+  answer: P-2, Q-1, R-3, S-4
+- question: |
+    Which of the following rotations is called a double rotation in AVL Tree?
+    
+    (1) RL and RR
+    (2) LR and RL
+    (3) LL and RR
+  options:
+  - 1, 2
+  - 1, 2, 3
+  - 2 ONLY
+  - None of these
+  answer: 2 ONLY
+- question: 'The number of rotations required to insert a sequence of elements 9, 6, 5, 8, 7, 10 into an empty AVL tree is:'
+  options:
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  answer: '3'
+- question: |
+    In a shift register, if a binary number 1101 is initially stored and the register is made to shift two times to the right, which of the following would be the content of the register?
+  options:
+  - '0110'
+  - '1101'
+  - '0011'
+  - '1110'
+  answer: '0011'
+- question: 'The arrangement of the ___ along with ___ is used to form the sequential circuits:'
+  options:
+  - combinational circuits, memory devices
+  - flip-flop, combinational circuits
+  - SR flip-flop and JK flip flop
+  - flip-flop and latch device
+  answer: combinational circuits, memory devices
+- question: 'In a JK flip-flop, if J = K, then it acts as a/an:'
+  options:
+  - T flip-flop
+  - D flip-flop
+  - RS flip-flop
+  - Decoder
+  answer: T flip-flop
+- question: 'Which of the following is an example of a sequential circuit?'
+  options:
+  - Flip-flop
+  - Encoder
+  - Code converter
+  - Adder
+  answer: Flip-flop
+- question: 'A ______ arithmetic circuit adds two binary digits, giving a sum bit and a carry bit.'
+  options:
+  - half-adder
+  - full-subtractor
+  - full-adder
+  - half-subtractor
+  answer: half-adder
+- question: |
+    For a full Adder, which equations are correct?
+  options:
+  - Sum = AB Đ BC Đ CA, Carry = A, B, C
+  - Sum = A, B, C, Carry = A Đ B Đ C
+  - Sum = A Đ B Đ C, Carry = A, B, C
+  - Sum = A Đ B Đ C, Carry = AB + BC + AC
+  answer: Sum = A Đ B Đ C, Carry = AB + BC + AC
 
 
 

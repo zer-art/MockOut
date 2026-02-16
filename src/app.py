@@ -113,7 +113,7 @@ def get_question_id(question):
 
 
 def weighted_sample(questions, count, question_history, max_history=5):
-    """Sample questions with lower probability for recently used ones."""
+    """Sample questions WITHOUT replacement, with lower probability for recently used ones."""
     if not questions or count <= 0:
         return []
 
@@ -134,15 +134,29 @@ def weighted_sample(questions, count, question_history, max_history=5):
             weight = 1.0
         weights.append(weight)
 
-    # Normalize weights
-    total_weight = sum(weights)
-    if total_weight == 0:
-        return random.sample(questions, count)
+    # Weighted sampling WITHOUT replacement
+    selected = []
+    available_indices = list(range(len(questions)))
+    available_weights = weights[:]
 
-    normalized_weights = [w / total_weight for w in weights]
+    for _ in range(count):
+        if not available_indices:
+            break
+        # Normalize weights for remaining items
+        total_weight = sum(available_weights)
+        if total_weight == 0:
+            # Fallback: pick randomly from remaining
+            pick = random.choice(range(len(available_indices)))
+        else:
+            normalized = [w / total_weight for w in available_weights]
+            pick = random.choices(
+                range(len(available_indices)), weights=normalized, k=1
+            )[0]
 
-    # Use weighted random selection
-    selected = random.choices(questions, weights=normalized_weights, k=count)
+        selected.append(questions[available_indices[pick]])
+        available_indices.pop(pick)
+        available_weights.pop(pick)
+
     return selected
 
 
