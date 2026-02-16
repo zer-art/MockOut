@@ -32,13 +32,7 @@ logical_reasoning:
   - NKKRANKRAUK
   - RURNKAAUNAK
   answer: AKNUARRANKA
-- question: From the given sets, which is an infinite set?
-  options:
-  - '{x:x∈N and (x-1)(x-2)=0}'
-  - '{x:x∈N and x is prime number and less than 199}'
-  - '{x:x∈N and x is odd}'
-  - '{x:x∈N and x < 100}'
-  answer: '{x:x∈N and x is odd}'
+
 - question: |
     Identify the missing number (?) from the following table:
 
@@ -53,23 +47,7 @@ logical_reasoning:
   - '18'
   - '20'
   answer: '12'
-- question: Introducing a man to her husband, a woman said, "His brother's father
-    is the only son of my grandfather." How is the woman related to this man?
-  options:
-  - Mother
-  - Aunt
-  - Sister
-  - Daughter
-  answer: Sister
-- question: 'Find missing word (?) which is similar to the given words.
 
-    Sitar: Guitar: Tanpura: ?'
-  options:
-  - Trumpet
-  - Violin
-  - Harmonium
-  - Mridanga
-  answer: Violin
 - question: |
     Match List-I (Letter number series) with List-II (Missing term):
 
@@ -101,51 +79,20 @@ logical_reasoning:
   - '4027'
   - '4407'
   answer: '1707'
-- question: In an examination, a student scores 4 marks for every correct answer and
-    loses 1 mark for every wrong answer. If she/he attempts all 60 questions and secures
-    130 marks, the number of questions she/he attempts wrongly, are?
+- question: In a competitive exam, a candidate is awarded 5 marks for every correct answer and loses 2 marks for every incorrect answer. If the candidate attempts all 80 questions and secures a total of 190 marks, how many questions did they answer correctly?
   options:
-  - '38'
-  - '22'
-  - '21'
-  - '37'
-  answer: '22'
-- question: 'Choose the correct option to replace the ''?'':
-
-    Milk: Emulsion :: Butter:?'
+  - '40'
+  - '50'
+  - '45'
+  - '55'
+  answer: '50'
+- question: 'Consider the following alphabet series: ABCDEFGHIJKLMNOPQRSTUVWXYZ. Condition: If the first half of the alphabet series is written in reverse order, which letter will be ninth to the left of the ninth letter from the right end?'
   options:
-  - Aerosol
-  - Suspension
-  - Sol
-  - Gel
-  answer: Gel
-- question: 'Consider the following four words, out of which three are alike in some
-    manner and one is different: (A) Arrow, (B) Missile, (C) Sword, (D) Bullet. Choose
-    the combination that has alike words.'
-  options:
-  - (A), (B) and (D) only
-  - (B), (C) and (D) only
-  - (A), (B) and (C) only
-  - (A), (C) and (D) only
-  answer: (A), (B) and (D) only
-- question: 'Consider the following alphabet series: ABCDEFGHIJKLMNOPQRSTUVWXYZ. If
-    the second half of the given alphabet series is written in reverse order, which
-    letter will be seventh to the right of the twelfth letter from the left end?'
-  options:
-  - R
+  - c
   - S
-  - U
-  - T
+  - E
+  - D
   answer: U
-- question: Which figure comes next in the given series below?  (The document displays
-    a sequence involving binary-like digits '0' and '1' in grids labeled A, B, C,
-    D)
-  options:
-  - 0, 0
-  - 1, 1
-  - 1, 0, 1
-  - '0'
-  answer: '0'
 - question: 'Numerical Analogy: If 24 is related to 102 in a certain way (24 = 2×2×2×3, sum of factors = 1+2+3+4+6+8+12+24 = 60, plus 42 = 102), then 16 is related to which number?'
   options:
   - '47'
@@ -167,13 +114,6 @@ logical_reasoning:
   - Enmity
   - Hatred
   answer: Amity
-- question: 'Verbal Analogy: Courage is to Cowardice as Generosity is to:'
-  options:
-  - Kindness
-  - Selfishness
-  - Charity
-  - Wealth
-  answer: Selfishness
 - question: |
     Syllogism: Statements: Some roads are metro. Some metro are cars.
     
@@ -203,14 +143,6 @@ logical_reasoning:
   - Neither I nor II follows
   answer: Only conclusion II follows
 - question: |
-    Linear Seating Arrangement: Five people V, W, X, Y, Z are sitting in a row facing North. W is between V and X. Y is to the left of Z, who is at one end. X is at the center. Who is to the right of X?
-  options:
-  - V
-  - W
-  - Y
-  - Z
-  answer: Z
-- question: |
     Linear Seating Arrangement: Seven people A, B, C, D, E, F, G are sitting in a row. C is sitting between A and E. B is third to the right of E. F is at one extreme end. D is between B and G. Who is sitting in the middle?
   options:
   - A
@@ -219,21 +151,13 @@ logical_reasoning:
   - E
   answer: E
 - question: |
-    Circular Seating Arrangement: Six people Jassi, Akash, Garima, Nitin, Vaishali, and Kailash are sitting around a round table facing the center. Kailash is to the left of Garima. Garima is opposite Akash. Vaishali is between Akash and Jassi. Who is to the left of Nitin?
-  options:
-  - Jassi
-  - Kailash
-  - Garima
-  - Vaishali
-  answer: Jassi
-- question: |
     Circular Seating Arrangement: Eight friends P, Q, R, S, T, U, V, W are sitting around a circular table facing the center. P sits third to the left of Q. R sits second to the right of P. S is not a neighbor of Q. T sits second to the left of S. U sits between T and W. Who sits opposite to R?
   options:
   - S
   - T
   - U
   - W
-  answer: T
+  answer: U
 - question: |
     Mathematical Operations: Using the symbol replacements (# = +, @ = ×, & = ÷, $ = -), calculate the value of: 200 & 5 @ 3 $ 20 # 5
   options:
@@ -251,14 +175,6 @@ logical_reasoning:
   - '95'
   answer: '97'
 - question: |
-    Blood Relations: Pointing to a photograph, a man said "She is the daughter of my grandfather's only son." How is the woman in the photograph related to the man?
-  options:
-  - Mother
-  - Sister
-  - Daughter
-  - Wife
-  answer: Sister
-- question: |
     Blood Relations: A is B's sister. C is B's mother. D is C's father. E is D's mother. How is A related to D?
   options:
   - Grandmother
@@ -275,36 +191,6 @@ math:
   - '156'
   answer: '144'
 - question: |
-    Match List-I with List-II:
-
-    **List-I:**
-    - (A) If X and Y are sets, n(X)=17, n(Y)=23, n(X∪Y)=38, then n(X∩Y) is
-    - (B) If n(X)=28, n(Y)=32, n(X∩Y)=10, then n(X∪Y) is
-    - (C) If n(X)=10, then n(7X) is
-    - (D) If n(Y)=20, then n(Y/2) is
-
-    **List-II:**
-    - (I) 50
-    - (II) 2
-    - (III) 10
-    - (IV) 20
-
-    Choose the correct matching:
-  options:
-  - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
-  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
-  - (A)-(II), (B)-(III), (C)-(IV), (D)-(I)
-  - (A)-(III), (B)-(II), (C)-(I), (D)-(IV)
-  answer: (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
-- question: Out of 5 consonants and 4 vowels, how many words of 3 consonants and 3
-    vowels can be made?
-  options:
-  - '40'
-  - '80'
-  - '20'
-  - '240'
-  answer: '40'
-- question: |
     If A and B are two sets with $n(A) = 12$, $n(B) = 15$, and $n(A \cap B) = 5$, then what is $n(A \cup B)$ and $n(A - B)$ respectively?
   options:
   - 22 and 7
@@ -312,36 +198,13 @@ math:
   - 22 and 5
   - 27 and 7
   answer: 22 and 7
-- question: 'A fair coin is tossed three times. Let A be the event of getting exactly
-    two heads and B be the event of getting at most two tails, then P(A∪B) is:'
+- question: 'Three fair coins are tossed simultaneously. Let Event A be getting at least one head, and Event B be getting exactly two tails. What is the probability P(A∩B)?'
   options:
   - 1/2
   - 3/8
   - 1/8
-  - 7/8
+  - 5/8
   answer: 7/8
-- question: |
-    Match List-I with List-II:
-
-    **List-I:**
-    - (A) If $\begin{vmatrix} \lambda-1 & 0 \\ 0 & \lambda-1 \end{vmatrix}=0$, then $\lambda$ is
-    - (B) If $\Delta = \begin{vmatrix} 1 & 2 \\ 2 & 4 \end{vmatrix}$, then $\Delta$ is
-    - (C) If $A = \begin{bmatrix} 1 & 0 \\ 0 & 1/2 \end{bmatrix}$, then $|A^{-1}|$ is
-    - (D) If $\begin{bmatrix} a+1 & 1 \\ 1 & 2 \end{bmatrix} = \begin{bmatrix} -1 & 1 \\ 1 & 2 \end{bmatrix}$, then $a$ is
-
-    **List-II:**
-    - (I) 2
-    - (II) -2
-    - (III) 1
-    - (IV) 0
-
-    Choose the correct matching:
-  options:
-  - (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-  - (A)-(II), (B)-(I), (C)-(III), (D)-(IV)
-  - (A)-(IV), (B)-(III), (C)-(I), (D)-(II)
-  - (A)-(III), (B)-(I), (C)-(IV), (D)-(II)
-  answer: (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
 - question: 'If $a, b, c$ are in Geometric Progression and $a^{1/x} = b^{1/y} = c^{1/z}$, then $x, y, z$ are in:'
   options:
   - Arithmetic Progression
@@ -349,13 +212,7 @@ math:
   - 2/y=1/x+1/z
   - x=y+z
   answer: Arithmetic Progression
-- question: 'If $(x-1)$ is a factor of $2x^2 - 5x + k = 0$, then the value of $k$ is:'
-  options:
-  - '2'
-  - '5'
-  - '3'
-  - '4'
-  answer: '3'
+
 - question: 'If $x = (2+\sqrt{3})^{1/3} + (2+\sqrt{3})^{-1/3}$ and $x^3 - 3x + k = 0$, then the value of $k$ is:'
   options:
   - '-4'
@@ -363,6 +220,7 @@ math:
   - '3'
   - '4'
   answer: '-4'
+  
 - question: 'If $\begin{vmatrix} 1 & bc & a(b+c) \\ 1 & ca & b(c+a) \\ 1 & ab & c(a+b) \end{vmatrix} = k$, then the value of $k$ is:'
   options:
   - (ab+bc+ca)
@@ -377,13 +235,7 @@ math:
   - '$2\sqrt{2}, (\pm\sqrt{3}, 0)$'
   - '$2\sqrt{3}, (\pm\sqrt{3}, 0)$'
   answer: '$2\sqrt{3}, (0, \pm\sqrt{3})$'
-- question: 'The center and radius for the circle $x^2 + y^2 + 6x - 4y + 4 = 0$ respectively are:'
-  options:
-  - (2, 3) and 3
-  - (3, 2) and 8
-  - (2, -3) and 3
-  - (-3, 2) and 3
-  answer: (-3, 2) and 3
+
 - question: 'If the line through (3, y) and (2, 7) is parallel to the line through (-1, 4) and (0, 6), then the value of $y$ is:'
   options:
   - '-7'
@@ -455,13 +307,13 @@ math:
   - (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
   - (A)-(I), (B)-(III), (C)-(II), (D)-(IV)
   answer: (A)-(III), (B)-(IV), (C)-(I), (D)-(II)
-- question: 'Find the equation of the parabola with focus at (0,0) and directrix given by the line x+y−4=0.'
+- question: 'Find the equation of the parabola with its focus at (1, 1) and a directrix given by the line x−y+2=0.'
   options:
-  - 'x^2 + y^2 - 2xy + 8x + 8y - 16 = 0'
-  - 'x^2 + y^2 + 2xy + 8x + 8y - 16 = 0'
-  - 'x^2 + y^2 - 2xy - 8x - 8y + 16 = 0'
-  - 'x^2 + y^2 + 2xy - 8x - 8y + 16 = 0'
-  answer: 'x^2 + y^2 - 2xy + 8x + 8y - 16 = 0'
+  - 'x^2 + y^2 - 2xy + 8x + 4y - 4 = 0'
+  - 'x^2 + y^2 + 2xy + 6x + 8y - 4 = 0'
+  - 'x^2 + y^2 - 2xy - 2x + 6y + 2 = 0'
+  - 'x^2 + y^2 + 2xy - 8x + 4y - 4 = 0'
+  answer: 'x^2 + y^2 + 2xy - 8x + 4y - 4 = 0'
 - question: 'Find the vertex, focus, axis, and tangent at the vertex for the parabola equation: y^2 - 4x - 4y = 0.'
   options:
   - 'Vertex: (-1,2), Focus: (0,2), Axis: y=2, Tangent: x=-1'
@@ -490,6 +342,27 @@ math:
   - 'x^2 = -4ay'
   - 'x^2 = 4ay'
   answer: 'y^2 = -4ax'
+- question: 'If $(x-1)$ and $(x+2)$ are both factors of the polynomial $P(x) = x^3 + ax^2 + bx - 8$, then what are the values of $a$ and $b$?'
+  options:
+  - '$a=5, b=2$'
+  - '$a=6, b=1$'
+  - '$a=5, b=-14$'
+  - '$a=2, b=-8$'
+  answer: '$a=5, b=2$'
+- question: |
+    Three manufacturing units (X, Y, and Z) produce the same type of microchips for a tech company.
+
+    - Unit X produces 50% of the chips, with a 2% defect rate.
+    - Unit Y produces 30% of the chips, with a 4% defect rate.
+    - Unit Z produces 20% of the chips, with a 5% defect rate.
+
+    A chip is picked at random from the total production and found to be defective. What is the probability that it was manufactured by Unit Y?
+  options:
+  - 3/8
+  - 12/32
+  - 6/17
+  - 4/13
+  answer: 3/8
 cs:
 - question: Which of the following scheduler/schedulers is/are also called CPU scheduler?
     (A) Short Term, (B) Long Term, (C) Medium Term, (D) Asymmetric.
@@ -1951,6 +1824,79 @@ cs:
   - Sum = A Đ B Đ C, Carry = A, B, C
   - Sum = A Đ B Đ C, Carry = AB + BC + AC
   answer: Sum = A Đ B Đ C, Carry = AB + BC + AC
+
+- question: 'Select the number-pair in which the two numbers are related in the same way as are the two numbers of the given number pair: 13:338'
+  options:
+  - '9:729'
+  - '15:225'
+  - '8:128'
+  - '5:52'
+  answer: '8:128'
+
+- question: 'Select the option that is related to the fourth term in the same way as the second term is related to the first term: EGJ : JLO :: ? : TVY'
+  options:
+  - ORT
+  - NPS
+  - OQT
+  - NPR
+  answer: ORT
+
+- question: '''Mass'' is related to ''Kilogram'' in the same way as ''Force'' is related to:'
+  options:
+  - Joule
+  - Second
+  - Newton
+  - Pascal
+  answer: Newton
+
+- question: 'Which number will replace the question mark (?) in the following series: 2, 5, 10, 17, 26, 37, ?, 65, 82, 101'
+  options:
+  - '48'
+  - '42'
+  - '50'
+  - '49'
+  answer: '50'
+
+- question: 'Which number will replace the question mark (?) in the following series: 3, 7, 16, 35, ?, 153'
+  options:
+  - '84'
+  - '74'
+  - '78'
+  - '63'
+  answer: '74'
+
+- question: 'Which number will replace the question mark (?) in the following series: 2, 5, 11, 23, 44, ?'
+  options:
+  - '77'
+  - '51'
+  - '63'
+  - '66'
+  answer: '77'
+
+- question: 'Blood Relations: A is husband of M who is sister-in-law of N. N is daughter of R and U. M is daughter-in-law of U. How is A related to U?'
+  options:
+  - Father
+  - Brother
+  - Son
+  - Brother-in-law
+  answer: Son
+
+- question: 'Introducing a lady, Raman said, "She is the wife of my father''s father-in-law." How is the lady related to Raman?'
+  options:
+  - Mother-in-law
+  - Paternal grandmother
+  - Maternal grandmother
+  - Maternal aunt
+  answer: Maternal grandmother
+
+- question: |
+    Richa starts walking from her home and walks 50 m towards west and then turns left and walks 90 m. Then she again turns left and walks 30 m. After that she again turns left and goes 120 m. She finally turns right and walks 20 m and reaches her final destination. How far is she from her home now and in which direction in reference to her home?
+  options:
+  - 40 m, North West
+  - 40 m, North East
+  - 30 m, South
+  - 30 m, North
+  answer: 30 m, North 
 
 
 
