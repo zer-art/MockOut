@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>localStorage Test</title>
+</head>
+<body>
+    <h1>Question Usage Tracking Test</h1>
+    
+    <button onclick="saveTestData()">Save Test Data</button>
+    <button onclick="loadTestData()">Load Test Data</button>
+    <button onclick="clearTestData()">Clear Test Data</button>
+    
+    <div id="output"></div>
+    
+    <script>
+        const STORAGE_KEY = 'mock_test_question_usage';
+        
+        function saveTestData() {
+            const testData = {
+                usage_history: [12345, 67890, 11111, 22222, 33333],
+                last_updated: new Date().toISOString()
+            };
+            
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(testData));
+            document.getElementById('output').innerHTML = '<p>✅ Saved: ' + JSON.stringify(testData, null, 2) + '</p>';
+        }
+        
+        function loadTestData() {
+            const stored = localStorage.getItem(STORAGE_KEY);
+            if (stored) {
+                const data = JSON.parse(stored);
+                document.getElementById('output').innerHTML = '<p>📦 Loaded: ' + JSON.stringify(data, null, 2) + '</p>';
+            } else {
+                document.getElementById('output').innerHTML = '<p>❌ No data found</p>';
+            }
+        }
+        
+        function clearTestData() {
+            localStorage.removeItem(STORAGE_KEY);
+            document.getElementById('output').innerHTML = '<p>🗑️ Cleared</p>';
+        }
+        
+        // Auto-load on page load
+        loadTestData();
+    </script>
+</body>
+</html>

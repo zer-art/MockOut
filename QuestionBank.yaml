@@ -363,6 +363,86 @@ math:
   - 6/17
   - 4/13
   answer: 3/8
+- question: |
+    Evaluate the trigonometric limit where the angle is in degrees: lim (x → 0) [sin(x°)/x]
+  options:
+  - '1'
+  - 'π/180'
+  - '180/π'
+  - '0'
+  answer: 'π/180'
+- question: |
+    Calculate the limit using the Squeeze Theorem: lim (x → ∞) [sin(x)/x]
+  options:
+  - '1'
+  - '0'
+  - '∞'
+  - 'Does not exist'
+  answer: '0'
+- question: |
+    Solve the following limit involving a trigonometric ratio: lim (x → 0) [x/sin(10x)]
+  options:
+  - '10'
+  - '1'
+  - '1/10'
+  - '0'
+  answer: '1/10'
+- question: |
+    Determine the limit for the following ratio of sines: lim (x → 0) [sin(αx)/sin(βx)]
+  options:
+  - '1'
+  - 'α/β'
+  - 'β/α'
+  - 'α·β'
+  answer: 'α/β'
+- question: |
+    Evaluate the limit of the given rational function: lim (x → 2) [(x² - 5x + 6)/(x² - 4)]
+  options:
+  - '-1/4'
+  - '1/4'
+  - '0'
+  - 'Does not exist'
+  answer: '-1/4'
+- question: |
+    Find the value of the following trigonometric limit: lim (x → 0) [(1 - cos x)/x²]
+  options:
+  - '0'
+  - '1'
+  - '1/2'
+  - '2'
+  answer: '1/2'
+- question: |
+    Evaluate the limit of the Greatest Integer Function (GIF): lim (x → 3) [x/[x]]
+  options:
+  - '1'
+  - '3/2'
+  - '0'
+  - 'Does not exist'
+  answer: 'Does not exist'
+- question: |
+    Calculate the limit of the exponential function: lim (x → 0) [(e^x - 1)/x]
+  options:
+  - '0'
+  - 'e'
+  - '1'
+  - 'log 2'
+  answer: '1'
+- question: |
+    Determine the limit of the function at the origin: lim (x → 0) [x/cos x]
+  options:
+  - '0'
+  - '1'
+  - '∞'
+  - 'Does not exist'
+  answer: '0'
+- question: |
+    Evaluate the limit as x approaches pi: lim (x → π) [sin x / x]
+  options:
+  - '1'
+  - '0'
+  - '1/π'
+  - 'π'
+  answer: '0'
 cs:
 - question: Which of the following scheduler/schedulers is/are also called CPU scheduler?
     (A) Short Term, (B) Long Term, (C) Medium Term, (D) Asymmetric.
@@ -1896,10 +1976,178 @@ cs:
   - 40 m, North East
   - 30 m, South
   - 30 m, North
-  answer: 30 m, North 
+  answer: 30 m, North
+- question: 'A ___ arithmetic circuit adds two binary digits, giving a sum bit and a carry bit.'
+  options:
+  - Half-adder
+  - Full-subtractor
+  - Full-adder
+  - Half-subtractor
+  answer: Half-adder
+- question: |
+    For a full Adder, which of the following is correct?
+  options:
+  - 'Sum = A⊕B⊕C, Carry = AB + BC + AC'
+  - 'Sum = AB⊕BC⊕CA, Carry = A⊕B⊕C'
+  - 'Sum = A⊕B, Carry = A⊕B⊕C'
+  - 'Sum = A⊕B⊕C, Carry = A⊕B'
+  answer: 'Sum = A⊕B⊕C, Carry = AB + BC + AC'
+- question: "The 2's complement of 11011111 is:"
+  options:
+  - '11011111'
+  - '00100001'
+  - '00110001'
+  - '00100000'
+  answer: '00100001'
+- question: 'Which of the following is a feature of a multiprocessor?'
+  options:
+  - The processors can share the memory.
+  - It has multiple computers, each of which can have multiple processors.
+  - It supports distributed computing.
+  - It is called message passing multi computers.
+  answer: The processors can share the memory.
+- question: |
+    Match List-I with List-II:
 
+    **List-I (Memory Device):**
+    - (A) Main Memory
+    - (B) Cache Memory
+    - (C) Hard Disk
+    - (D) CD ROM
 
+    **List-II (Memory Type):**
+    - (I) Magnetic Memory
+    - (II) Dynamic Random Access Memory
+    - (III) Optical Memory
+    - (IV) Static Random Access Memory
 
-
+    Choose the correct matching:
+  options:
+  - (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+  - (A)-(I), (B)-(II), (C)-(III), (D)-(IV)
+  - (A)-(IV), (B)-(II), (C)-(III), (D)-(I)
+  - (A)-(II), (B)-(I), (C)-(IV), (D)-(III)
+  answer: (A)-(II), (B)-(IV), (C)-(I), (D)-(III)
+- question: 'Which memory is very high-speed memory placed in between RAM and CPU?'
+  options:
+  - Cache memory
+  - New memory
+  - Primary memory
+  - Buffer memory
+  answer: Cache memory
+- question: |
+    Arrange the following in increasing order of their per unit cost:
+    (A) DRAM
+    (B) Magnetic disk
+    (C) Optical disk
+    (D) SRAM
+    (E) Magnetic tape
+  options:
+  - (E), (C), (B), (A), (D)
+  - (E), (C), (B), (D), (A)
+  - (C), (B), (E), (D), (A)
+  - (C), (B), (D), (E), (A)
+  answer: (E), (C), (B), (A), (D)
+- question: 'The time required to create a new thread in an existing process is:'
+  options:
+  - Greater than the time required to create a new process
+  - Less than the time required to create a new process
+  - Equal to the time required to create a new process
+  - Double the time required to create a new process
+  answer: Less than the time required to create a new process
+- question: 'A thread is also called:'
+  options:
+  - A virtual process
+  - A lightweight process
+  - A heavyweight process
+  - A scheduler
+  answer: A lightweight process
+- question: 'If a kernel thread performs a blocking system call, then:'
+  options:
+  - The kernel can schedule another thread in the application for execution
+  - The kernel cannot schedule another thread in the same application for execution
+  - The kernel must schedule another thread of a different application for execution
+  - The kernel must schedule another thread of the same application on a different processor
+  answer: The kernel can schedule another thread in the application for execution
+- question: 'Which of the following is FALSE?'
+  options:
+  - Context switch time is longer for kernel level threads than for user level threads
+  - User level threads do not need any hardware support
+  - Related kernel level threads can be scheduled on different processors in a multiprocessor system
+  - Blocking one kernel level thread blocks all other related threads
+  answer: Blocking one kernel level thread blocks all other related threads
+- question: |
+    Given two statements:
+    (I) Insertion of an element should be done at the last node in a circular list
+    (II) Deletion of an element should be done at the last node of the circular list
+  options:
+  - Both are true
+  - Both are false
+  - First is false and second is true
+  - None of the above
+  answer: First is false and second is true
+- question: 'Suppose a system contains n processes and the system uses the round-robin algorithm for CPU scheduling. Which data structure is best suited for the ready queue of the process?'
+  options:
+  - Stack
+  - Queue
+  - Circular queue
+  - Tree
+  answer: Circular queue
+- question: 'Increasing the RAM of a computer typically improves performance because:'
+  options:
+  - Virtual Memory increases
+  - Larger RAMs are faster
+  - Fewer page faults occur
+  - Fewer segmentation faults occur
+  answer: Fewer page faults occur
+- question: 'Virtual memory is:'
+  options:
+  - Part of Main Memory only used for swapping
+  - A technique to allow a program, of size more than the size of main memory, to run
+  - Part of secondary storage used in program execution
+  - None of these
+  answer: A technique to allow a program, of size more than the size of main memory, to run
+- question: 'A virtual memory based memory management algorithm partially swaps out a process. This is an example of:'
+  options:
+  - Short term scheduling
+  - Long term scheduling
+  - Medium term scheduling
+  - Mutual exclusion
+  answer: Medium term scheduling
+- question: 'A web page contains many small images. We can speed up the performance of the browser by:'
+  options:
+  - Having multiple processes executed simultaneously
+  - Having multiple threads
+  - Increasing the speed of the transmission line
+  - Increasing the main memory of the system
+  answer: Having multiple threads
+- question: 'The term ______ refers to the use of electronics and software within a product, as opposed to a general purpose computer such as a laptop or desktop system:'
+  options:
+  - Complex system
+  - Simple system
+  - Fuzzy logic
+  - Embedded system
+  answer: Embedded system
+- question: 'The problem of indefinite blockage of low priority jobs in general priority scheduling algorithm can be solved using:'
+  options:
+  - Swapping
+  - Dirty bit
+  - Aging
+  - Compaction
+  answer: Aging
+- question: 'Page fault frequency in an operating system is reduced when the:'
+  options:
+  - Process tend to be I/O bound
+  - Locality of reference is applicable to the process
+  - Size of pages is reduced
+  - Process tend to be CPU bound
+  answer: Locality of reference is applicable to the process
+- question: 'Disk requests come to a disk driver for cylinders in the order 10, 22, 20, 2, 40, 6 and 38 at a given time when the given disk drive is reading from cylinder 20. The seek time is 6ms per cylinder. What is the total seek time, if the disk arm scheduling algorithm FCFS is used?'
+  options:
+  - 900 ms
+  - 850 ms
+  - 360 ms
+  - 876 ms
+  answer: 876 ms
 
 

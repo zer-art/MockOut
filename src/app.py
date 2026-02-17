@@ -4,14 +4,17 @@ import random
 import time
 import re
 import copy
+import json
 import streamlit.components.v1 as components
 
 # --- Constants ---
 QUESTIONS_FILE = "QuestionBank.yaml"
+LOCAL_STORAGE_KEY = "mock_test_question_usage"
 TOTAL_TIME_MINUTES = 90
 CS_COUNT = 36
 MATH_COUNT = 24
 LR_COUNT = 15
+MAX_USAGE_HISTORY = 50  # Keep track of last 50 question usages
 
 
 # --- Custom CSS ---
@@ -57,6 +60,122 @@ def local_css():
 
 
 # --- functions ---
+def init_usage_from_browser():
+    """Initializes usage history from browser's localStorage on app start."""
+    # Only run once per session
+    if "usage_init_attempted" in st.session_state:
+        return
+
+    st.session_state.usage_init_attempted = True
+
+    # JavaScript to read localStorage and store count for display
+    js_code = f"""
+    <script>
+        (function() {{
+            const storedData = localStorage.getItem('{LOCAL_STORAGE_KEY}');
+            let count = 0;
+            
+            if (storedData) {{
+                try {{
+                    const parsed = JSON.parse(storedData);
+                    const usageHistory = parsed.usage_history || [];
+                    count = usageHistory.length;
+                    
+                    // Log for debugging
+                    console.log('Loaded', count, 'question IDs from localStorage');
+                }} catch (e) {{
+                    console.error('Failed to parse usage history:', e);
+                }}
+            }}
+        }})();
+    </script>
+    """
+
+    components.html(js_code, height=0)
+
+
+def load_question_usage():
+    """Loads question usage history from browser localStorage."""
+    # JavaScript that both loads from localStorage AND returns the data
+    js_code = f"""
+    <script>
+        const storedData = localStorage.getItem('{LOCAL_STORAGE_KEY}');
+        let usageHistory = [];
+        
+        if (storedData) {{
+            try {{
+                const parsed = JSON.parse(storedData);
+                usageHistory = parsed.usage_history || [];
+                console.log('Loaded', usageHistory.length, 'question IDs from localStorage for selection');
+            }} catch (e) {{
+                console.error('Failed to parse usage history:', e);
+            }}
+        }}
+        
+        // Make available globally for debugging
+        window.currentUsageHistory = usageHistory;
+    </script>
+    <div id="usage-data" style="display:none">{{}}</div>
+    """
+
+    # Execute JS
+    components.html(js_code, height=0)
+
+    # Return from session cache (which gets populated by save_question_usage)
+    # On first run, this will be empty, which is fine
+    return st.session_state.get("usage_history_cache", [])
+
+
+def save_question_usage(usage_history):
+    """Saves question usage history to browser's localStorage using JavaScript."""
+    # Update cache
+    st.session_state.usage_history_cache = usage_history[:MAX_USAGE_HISTORY]
+
+    # JavaScript to write to localStorage
+    usage_json = json.dumps(usage_history[:MAX_USAGE_HISTORY])
+    js_code = f"""
+    <script>
+        (function() {{
+            const usageHistory = {usage_json};
+            const data = {{
+                usage_history: usageHistory,
+                last_updated: new Date().toISOString()
+            }};
+            
+            try {{
+                localStorage.setItem('{LOCAL_STORAGE_KEY}', JSON.stringify(data));
+                console.log('Saved', usageHistory.length, 'question IDs to localStorage');
+            }} catch (e) {{
+                console.error('Failed to save usage history:', e);
+            }}
+        }})();
+    </script>
+    """
+
+    components.html(js_code, height=0)
+
+
+def clear_usage_history():
+    """Clears the question usage history from browser localStorage."""
+    st.session_state.usage_history_cache = []
+    st.session_state.usage_history_loaded = True
+
+    js_code = f"""
+    <script>
+        (function() {{
+            try {{
+                localStorage.removeItem('{LOCAL_STORAGE_KEY}');
+                console.log('Question usage history cleared from localStorage');
+            }} catch (e) {{
+                console.error('Failed to clear usage history:', e);
+            }}
+        }})();
+    </script>
+    """
+
+    components.html(js_code, height=0)
+
+
 def load_questions():
     """Loads questions from the YAML file."""
     try:
@@ -71,40 +190,6 @@ def load_questions():
         return None
 
 
-def tweak_numbers_in_text(text, variance=0.15):
-    """Tweaks numerical values in text by a small random variance."""
-    if not text or not isinstance(text, str):
-        return text
-
-    def replace_number(match):
-        num_str = match.group(0)
-        try:
-            # Skip if it's part of a LaTeX command or variable name
-            if match.start() > 0 and text[match.start() - 1] in ["$", "\\", "_", "^"]:
-                return num_str
-
-            num = float(num_str)
-            # Don't tweak small numbers (0-5) or common constants
-            if abs(num) <= 5 or num in [10, 100, 1000]:
-                return num_str
-
-            # Apply random variance
-            variation = random.uniform(-variance, variance)
-            new_num = num * (1 + variation)
-
-            # Keep integer if original was integer
-            if "." not in num_str:
-                new_num = int(round(new_num))
-                return str(new_num)
-            else:
-                return f"{new_num:.2f}"
-        except:
-            return num_str
-
-    # Match numbers but avoid LaTeX commands
-    return re.sub(r"\b\d+(?:\.\d+)?\b", replace_number, text)
-
-
 def get_question_id(question):
     """Generate a unique ID for a question based on its content."""
     # Use first 50 chars of question as ID
@@ -112,7 +197,7 @@ def get_question_id(question):
     return hash(q_text)
 
 
-def weighted_sample(questions, count, question_history, max_history=5):
+def weighted_sample(questions, count, usage_history, max_history=5):
     """Sample questions WITHOUT replacement, with lower probability for recently used ones."""
     if not questions or count <= 0:
         return []
@@ -120,13 +205,13 @@ def weighted_sample(questions, count, question_history, max_history=5):
     if len(questions) <= count:
         return questions[:]
 
-    # Calculate weights based on history
+    # Calculate weights based on persistent usage history
     weights = []
     for q in questions:
         q_id = get_question_id(q)
-        # Find how recently this question was used
+        # Find how recently this question was used in the persistent history
         try:
-            recent_index = question_history.index(q_id)
+            recent_index = usage_history.index(q_id)
             # More recent = lower weight (0.2 for most recent, gradually increases)
             weight = 0.2 + (recent_index / max_history) * 0.8
         except ValueError:
@@ -164,50 +249,37 @@ def select_questions(all_questions):
     """Randomly selects questions based on category counts with weighted selection."""
     selected = []
 
-    # Get question history from session state
-    question_history = st.session_state.get("question_history", [])
+    # Load persistent usage history from file (not session state)
+    usage_history = load_question_usage()
 
     if "cs" in all_questions:
-        cs_qs = weighted_sample(all_questions["cs"], CS_COUNT, question_history)
+        cs_qs = weighted_sample(all_questions["cs"], CS_COUNT, usage_history)
         for q in cs_qs:
             q["category"] = "Computer Science"
         selected.extend(cs_qs)
 
     if "math" in all_questions:
-        math_qs = weighted_sample(all_questions["math"], MATH_COUNT, question_history)
+        math_qs = weighted_sample(all_questions["math"], MATH_COUNT, usage_history)
         for q in math_qs:
             q["category"] = "Mathematics"
         selected.extend(math_qs)
 
     if "logical_reasoning" in all_questions:
         lr_qs = weighted_sample(
-            all_questions["logical_reasoning"], LR_COUNT, question_history
+            all_questions["logical_reasoning"], LR_COUNT, usage_history
         )
         for q in lr_qs:
             q["category"] = "Logical Reasoning"
         selected.extend(lr_qs)
 
-    # Tweak numerical values in questions
-    tweaked_selected = []
-    for q in selected:
-        q_copy = copy.deepcopy(q)
-        # Tweak question text
-        q_copy["question"] = tweak_numbers_in_text(q_copy["question"])
-        # Tweak options if they contain numbers
-        if "options" in q_copy:
-            q_copy["options"] = [
-                tweak_numbers_in_text(opt) for opt in q_copy["options"]
-            ]
-        tweaked_selected.append(q_copy)
-
-    # Update question history with newly selected questions
+    # Update persistent usage history with newly selected questions
     new_ids = [get_question_id(q) for q in selected]
-    updated_history = new_ids + question_history
-    # Keep only last 50 question IDs
-    st.session_state.question_history = updated_history[:50]
+    updated_history = new_ids + usage_history
+    # Save to file (persists across page reloads)
+    save_question_usage(updated_history[:MAX_USAGE_HISTORY])
 
-    random.shuffle(tweaked_selected)
-    return tweaked_selected
+    random.shuffle(selected)
+    return selected
 
 
 def initialize_session_state():
@@ -228,8 +300,6 @@ def initialize_session_state():
         st.session_state.q_start_time = None
     if "submitted" not in st.session_state:
         st.session_state.submitted = False
-    if "question_history" not in st.session_state:
-        st.session_state.question_history = []  # Track recently used questions
 
 
 def update_time_spent():
@@ -539,15 +609,16 @@ elif st.session_state.submitted:
             st.divider()
 
     if st.button("🔄 Retake Exam", type="primary"):
-        # Preserve question history across retakes
-        history = st.session_state.get("question_history", [])
+        # Clear session state (usage history persists in browser localStorage)
         for key in list(st.session_state.keys()):
             del st.session_state[key]
-        st.session_state.question_history = history
         st.rerun()
 
 # --- Start Screen ---
 else:
+    # Initialize usage history from browser on app start
+    init_usage_from_browser()
+
     with st.container():
         c1, c2, c3 = st.columns([1, 2, 1])
         with c2:
@@ -563,16 +634,25 @@ else:
             """
             )
 
-            # Show question history status
-            history_count = len(st.session_state.get("question_history", []))
-            if history_count > 0:
+            # Show question usage tracking status
+            usage_history = st.session_state.get("usage_history_cache", [])
+            if len(usage_history) > 0:
                 st.success(
                     f"""
                 🎯 **Smart Randomization Active**  
-                {history_count} questions from recent attempts will have lower probability.  
-                Numerical values are slightly varied to enhance practice.
+                Tracking {len(usage_history)} recently used questions.  
+                Recent questions will have lower probability (saved in browser).
                 """
                 )
+
+            # Add button to clear history
+            if st.button(
+                "🗑️ Clear Question History",
+                help="Reset question tracking to get a completely fresh randomization",
+            ):
+                clear_usage_history()
+                st.success("Question history cleared!")
+                st.rerun()
 
             st.markdown("### Subject Distribution")
             col_a, col_b, col_c = st.columns(3)
