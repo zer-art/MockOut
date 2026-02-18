@@ -2149,5 +2149,83 @@ cs:
   - 360 ms
   - 876 ms
   answer: 876 ms
+- question: 'Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the number-pair that is different from the rest.'
+  options:
+  - '651'
+  - '725'
+  - '853'
+  - '421'
+  answer: '421'
+- question: 'Four number-pairs have been given, out of which three are alike in some manner and one is different. Select the number-pair that is different from the rest.'
+  options:
+  - '25:200'
+  - '15:120'
+  - '22:166'
+  - '14:112'
+  answer: '22:166'
+- question: 'Four letter-groups have been given, out of which three are alike in some manner and one is different. Select the letter-group that is different from the rest.'
+  options:
+  - CUZ
+  - DPT
+  - EYC
+  - BDH
+  answer: CUZ
+- question: 'If TEMPLE is coded as ELPMET, then how will CHURCH be coded as?'
+  options:
+  - HCURHC
+  - HCRUHC
+  - HURCH
+  - HCRUCH
+  answer: HCRUHC
+- question: "In a certain code language, 'mee muk pic' means 'roses are yellow', 'nil dic' means 'white flowers' and 'pic muk dic' means 'flowers are fruits'. What is the code for 'white' in that language?"
+  options:
+  - nil
+  - pic
+  - dic
+  - muk
+  answer: nil
+- question: 'Select the letter cluster that will come next in the following series: BOP, DPN, FQL, HRJ, ?'
+  options:
+  - JSH
+  - JSI
+  - ISH
+  - ITI
+  answer: JSH
+- question: 'Find the next term in the series: 5, 9, ?, 29, 45'
+  options:
+  - '25'
+  - '17'
+  - '15'
+  - '19'
+  answer: '17'
+- question: |
+    Statements:
+    1. Some carpenters are technicians.
+    2. All technicians are mechanics.
+
+    Conclusions:
+    I. Some carpenters are mechanics.
+    II. Some mechanics are technicians.
+    III. All carpenters are mechanics.
+  options:
+  - None of the conclusions follow
+  - Only I follows
+  - Only I and II follow
+  - Only II and III follow
+  answer: Only I and II follow
+- question: |
+    Statements:
+    1. Some teachers are philosophers.
+    2. Some philosophers are writers.
+
+    Conclusions:
+    I. Some writers are teachers.
+    II. No writer is a teacher.
+  options:
+  - Only I follows
+  - Only II follows
+  - Either I or II follows
+  - Neither I nor II follows
+  answer: Either I or II follows
 
 
